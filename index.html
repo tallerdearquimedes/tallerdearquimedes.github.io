@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taller de Arquímedes | Sitio en construcción</title>
+  <meta name="description" content="Sitio oficial de Taller de Arquímedes. Actualmente en construcción." />
+  <style>
+    :root {
+      --fondo: #f4f1ea;
+      --panel: #ffffff;
+      --texto: #1f1f1f;
+      --secundario: #6d6d6d;
+      --acento: #7a4b2a;
+      --acento-hover: #5e381f;
+      --borde: #ddd6cc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #f4f1ea, #e9e2d6);
+      color: var(--texto);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .contenedor {
+      width: 100%;
+      max-width: 720px;
+      background: var(--panel);
+      border: 1px solid var(--borde);
+      border-radius: 18px;
+      padding: 40px 28px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .logo {
+      max-width: 180px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: var(--acento);
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: normal;
+      color: var(--secundario);
+      margin-bottom: 24px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    .destacado {
+      background: #f9f6f1;
+      border: 1px solid var(--borde);
+      border-radius: 12px;
+      padding: 18px;
+      margin: 24px 0;
+      color: var(--texto);
+    }
+
+    .botones {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 26px;
+    }
+
+    .boton {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--acento);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: background 0.25s ease;
+    }
+
+    .boton:hover {
+      background: var(--acento-hover);
+    }
+
+    footer {
+      margin-top: 28px;
+      font-size: 0.9rem;
+      color: var(--secundario);
+    }
+
+    @media (max-width: 600px) {
+      .contenedor {
+        padding: 28px 20px;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+
+      .botones {
+        flex-direction: column;
+      }
+
+      .boton {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="contenedor">
+    <!-- Cambia el nombre del archivo por el de tu logotipo -->
+    <img src="web_tallerarquimedes.png" alt="Logotipo de Taller de Arquímedes" class="logo" />
+
+    <h1>Taller de Arquímedes</h1>
+    <h2>Sitio web en construcción</h2>
+
+    <p>
+      Este espacio está siendo preparado para compartir información sobre mi perfil profesional,
+      proyectos, contenidos y recursos.
+    </p>
+
+    <div class="destacado">
+      Muy pronto encontrarás aquí más información sobre el trabajo, publicaciones y medios de contacto.
+    </div>
+
+    <p>
+      Mientras tanto, puedes visitar mis otros espacios:
+    </p>
+
+    <div class="botones">
+      <a class="boton" href="https://tallerdearquimedes.blogspot.com/" target="_blank" rel="noopener noreferrer">Visitar blog</a>
+      <a class="boton" href="https://www.youtube.com/channel/UCfHBl6mJ3eJ4r3R0IgXS_-A" target="_blank" rel="noopener noreferrer">Canal de YouTube</a>
+    </div>
+
+    <footer>
+      © 2026 Taller de Arquímedes. Todos los derechos reservados.
+    </footer>
+  </main>
+</body>
+</html>
