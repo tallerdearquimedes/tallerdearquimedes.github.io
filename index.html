@@ -1,149 +1,168 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>El Taller de Arquímedes</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>El Taller de Arquímedes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #000;
-      color: #fff;
-    }
+<style>
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
-    }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
 
-    .center {
-      text-align: center;
-    }
+  /* Fondo mejorado */
+  background: radial-gradient(circle at top, #111 0%, #000 60%);
+}
 
-    img.logo {
-      width: 140px;
-      margin-bottom: 20px;
-    }
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 20px;
+}
 
-    h1 {
-      color: #f2c300;
-      font-size: 2.2rem;
-      margin-bottom: 10px;
-    }
+.center {
+  text-align: center;
+}
 
-    h2 {
-      font-size: 1.4rem;
-      font-weight: normal;
-      margin-bottom: 10px;
-    }
+img.logo {
+  width: 160px;
+  margin-bottom: 25px;
+}
 
-    h3 {
-      color: #f2c300;
-      margin-top: 40px;
-    }
+h1 {
+  color: #f2c300;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
 
-    p {
-      color: #ccc;
-      line-height: 1.6;
-    }
+h2 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
 
-    .section {
-      margin-top: 60px;
-    }
+h3 {
+  color: #f2c300;
+  margin-bottom: 20px;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
+p {
+  color: #bbb;
+  line-height: 1.6;
+}
 
-    .card {
-      border: 1px solid #333;
-      padding: 20px;
-      border-radius: 10px;
-      background-color: #111;
-    }
+.section {
+  margin-top: 80px;
+}
 
-    .footer {
-      margin-top: 80px;
-      font-size: 0.9rem;
-      color: #777;
-      text-align: center;
-    }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
 
-    @media (max-width: 700px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+.card {
+  border: 1px solid #222;
+  padding: 25px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #0a0a0a, #111);
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+/* EFECTO INTERACTIVO */
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #f2c300;
+  box-shadow: 0 10px 25px rgba(242,195,0,0.15);
+}
+
+.card strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer {
+  margin-top: 100px;
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
 </head>
 
 <body>
 
-  <div class="container center">
+<div class="container center">
 
-    <img src="perfil_talleraquimedes.png" alt="Logo" class="logo">
+  <img src="perfil_talleraquimedes.png" class="logo">
 
-    <h1>El Taller de Arquímedes</h1>
-    <h2>Diseño, construcción y prueba de tecnología</h2>
+  <h1>El Taller de Arquímedes</h1>
+  <h2>Diseño, construcción y prueba de tecnología</h2>
 
-    <p style="color:#888;">IA² · Ingeniería aplicada × inteligencia artificial</p>
+  <p style="color:#888;">IA² · Ingeniería aplicada × inteligencia artificial</p>
 
-    <p>
-      Espacio orientado al diseño, construcción y prueba de soluciones tecnológicas,
-      con enfoque en ingeniería aplicada, prototipado, manufactura e inteligencia artificial.
-    </p>
+  <p>
+    Espacio orientado al diseño, construcción y prueba de soluciones tecnológicas,
+    con enfoque en ingeniería aplicada, prototipado, manufactura e inteligencia artificial.
+  </p>
 
-  </div>
+</div>
 
-  <div class="container section">
+<div class="container section">
 
-    <h3>Líneas de trabajo</h3>
+  <h3>Líneas de trabajo</h3>
 
-    <div class="grid">
+  <div class="grid">
 
-      <div class="card">
-        <strong>Ingeniería y manufactura</strong>
-        <p>Diseño y fabricación de piezas y sistemas mediante procesos como CNC, corte láser e impresión 3D.</p>
-      </div>
+    <div class="card">
+      <strong>Ingeniería y manufactura</strong>
+      <p>Diseño y fabricación de piezas y sistemas mediante procesos como CNC, corte láser e impresión 3D.</p>
+    </div>
 
-      <div class="card">
-        <strong>Prototipado tecnológico</strong>
-        <p>Desarrollo rápido de soluciones funcionales integrando mecánica, electrónica y software.</p>
-      </div>
+    <div class="card">
+      <strong>Prototipado tecnológico</strong>
+      <p>Desarrollo rápido de soluciones funcionales integrando mecánica, electrónica y software.</p>
+    </div>
 
-      <div class="card">
-        <strong>Desarrollo y programación</strong>
-        <p>Implementación de soluciones mediante programación estructurada, automatización y lógica aplicada.</p>
-      </div>
+    <div class="card">
+      <strong>Desarrollo y programación</strong>
+      <p>Implementación de soluciones mediante programación estructurada, automatización y lógica aplicada.</p>
+    </div>
 
-      <div class="card">
-        <strong>Inteligencia artificial aplicada</strong>
-        <p>Exploración e implementación de herramientas de IA orientadas a la solución de problemas y optimización de procesos.</p>
-      </div>
-
+    <div class="card">
+      <strong>Inteligencia artificial aplicada</strong>
+      <p>Exploración e implementación de herramientas de IA orientadas a la solución de problemas y optimización de procesos.</p>
     </div>
 
   </div>
 
-  <div class="container section">
+</div>
 
-    <h3>Reflexión y pensamiento</h3>
+<div class="container section">
 
-    <p>
-      Espacio de análisis sobre educación, formación, familia y sociedad desde una perspectiva estructurada
-      y orientada a la comprensión de los procesos humanos.
-    </p>
+  <h3>Reflexión y pensamiento</h3>
 
-  </div>
+  <p>
+    Espacio de análisis sobre educación, formación, familia y sociedad desde una perspectiva estructurada
+    y orientada a la comprensión de los procesos humanos.
+  </p>
 
-  <div class="footer">
-    © 2026 El Taller de Arquímedes
-  </div>
+</div>
+
+<div class="footer">
+  © 2026 El Taller de Arquímedes
+</div>
 
 </body>
 </html>
