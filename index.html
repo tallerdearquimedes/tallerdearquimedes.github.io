@@ -1,165 +1,149 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Taller de Arquímedes | Sitio en construcción</title>
-  <meta name="description" content="Sitio oficial de Taller de Arquímedes. Actualmente en construcción." />
+  <meta charset="UTF-8">
+  <title>El Taller de Arquímedes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
-    :root {
-      --fondo: #f4f1ea;
-      --panel: #ffffff;
-      --texto: #1f1f1f;
-      --secundario: #6d6d6d;
-      --acento: #7a4b2a;
-      --acento-hover: #5e381f;
-      --borde: #ddd6cc;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
+      margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #f4f1ea, #e9e2d6);
-      color: var(--texto);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
+      background-color: #000;
+      color: #fff;
     }
 
-    .contenedor {
-      width: 100%;
-      max-width: 720px;
-      background: var(--panel);
-      border: 1px solid var(--borde);
-      border-radius: 18px;
-      padding: 40px 28px;
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .center {
       text-align: center;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     }
 
-    .logo {
-      max-width: 180px;
-      width: 100%;
-      height: auto;
-      margin-bottom: 24px;
+    img.logo {
+      width: 140px;
+      margin-bottom: 20px;
     }
 
     h1 {
-      font-size: 2rem;
+      color: #f2c300;
+      font-size: 2.2rem;
       margin-bottom: 10px;
-      color: var(--acento);
     }
 
     h2 {
-      font-size: 1.1rem;
+      font-size: 1.4rem;
       font-weight: normal;
-      color: var(--secundario);
-      margin-bottom: 24px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      color: #f2c300;
+      margin-top: 40px;
     }
 
     p {
-      font-size: 1rem;
+      color: #ccc;
       line-height: 1.6;
-      margin-bottom: 18px;
     }
 
-    .destacado {
-      background: #f9f6f1;
-      border: 1px solid var(--borde);
-      border-radius: 12px;
-      padding: 18px;
-      margin: 24px 0;
-      color: var(--texto);
+    .section {
+      margin-top: 60px;
     }
 
-    .botones {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      justify-content: center;
-      margin-top: 26px;
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
     }
 
-    .boton {
-      display: inline-block;
-      text-decoration: none;
-      background: var(--acento);
-      color: #fff;
-      padding: 12px 20px;
+    .card {
+      border: 1px solid #333;
+      padding: 20px;
       border-radius: 10px;
-      font-weight: bold;
-      transition: background 0.25s ease;
+      background-color: #111;
     }
 
-    .boton:hover {
-      background: var(--acento-hover);
-    }
-
-    footer {
-      margin-top: 28px;
+    .footer {
+      margin-top: 80px;
       font-size: 0.9rem;
-      color: var(--secundario);
+      color: #777;
+      text-align: center;
     }
 
-    @media (max-width: 600px) {
-      .contenedor {
-        padding: 28px 20px;
-      }
-
-      h1 {
-        font-size: 1.7rem;
-      }
-
-      h2 {
-        font-size: 1rem;
-      }
-
-      .botones {
-        flex-direction: column;
-      }
-
-      .boton {
-        width: 100%;
+    @media (max-width: 700px) {
+      .grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
+
 <body>
-  <main class="contenedor">
-    <!-- Cambia el nombre del archivo por el de tu logotipo -->
-    <img src="web_tallerarquimedes.png" alt="Logotipo de Taller de Arquímedes" class="logo" />
 
-    <h1>Taller de Arquímedes</h1>
-    <h2>Sitio web en construcción</h2>
+  <div class="container center">
 
-    <p>
-      Este espacio está siendo preparado para compartir información sobre mi perfil profesional,
-      proyectos, contenidos y recursos.
-    </p>
+    <img src="web_tallerarquimedes.png" alt="Logo" class="logo">
 
-    <div class="destacado">
-      Muy pronto encontrarás aquí más información sobre el trabajo, publicaciones y medios de contacto.
-    </div>
+    <h1>El Taller de Arquímedes</h1>
+    <h2>Diseño, construcción y prueba de tecnología</h2>
+
+    <p style="color:#888;">IA² · Ingeniería aplicada × inteligencia artificial</p>
 
     <p>
-      Mientras tanto, puedes visitar mis otros espacios:
+      Espacio orientado al diseño, construcción y prueba de soluciones tecnológicas,
+      con enfoque en ingeniería aplicada, prototipado, manufactura e inteligencia artificial.
     </p>
 
-    <div class="botones">
-      <a class="boton" href="https://tallerdearquimedes.blogspot.com/" target="_blank" rel="noopener noreferrer">Visitar blog</a>
-      <a class="boton" href="https://www.youtube.com/channel/UCfHBl6mJ3eJ4r3R0IgXS_-A" target="_blank" rel="noopener noreferrer">Canal de YouTube</a>
+  </div>
+
+  <div class="container section">
+
+    <h3>Líneas de trabajo</h3>
+
+    <div class="grid">
+
+      <div class="card">
+        <strong>Ingeniería y manufactura</strong>
+        <p>Diseño y fabricación de piezas y sistemas mediante procesos como CNC, corte láser e impresión 3D.</p>
+      </div>
+
+      <div class="card">
+        <strong>Prototipado tecnológico</strong>
+        <p>Desarrollo rápido de soluciones funcionales integrando mecánica, electrónica y software.</p>
+      </div>
+
+      <div class="card">
+        <strong>Desarrollo y programación</strong>
+        <p>Implementación de soluciones mediante programación estructurada, automatización y lógica aplicada.</p>
+      </div>
+
+      <div class="card">
+        <strong>Inteligencia artificial aplicada</strong>
+        <p>Exploración e implementación de herramientas de IA orientadas a la solución de problemas y optimización de procesos.</p>
+      </div>
+
     </div>
 
-    <footer>
-      © 2026 Taller de Arquímedes. Todos los derechos reservados.
-    </footer>
-  </main>
+  </div>
+
+  <div class="container section">
+
+    <h3>Reflexión y pensamiento</h3>
+
+    <p>
+      Espacio de análisis sobre educación, formación, familia y sociedad desde una perspectiva estructurada
+      y orientada a la comprensión de los procesos humanos.
+    </p>
+
+  </div>
+
+  <div class="footer">
+    © 2026 El Taller de Arquímedes
+  </div>
+
 </body>
 </html>
