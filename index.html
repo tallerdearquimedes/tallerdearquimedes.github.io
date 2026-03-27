@@ -1,186 +1,586 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>El Taller de Arquímedes</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Taller de Arquímedes</title>
 
-<style>
+  <!-- ========================================================= -->
+  <!-- SECCION CSS 01 - VARIABLES GENERALES                      -->
+  <!-- ========================================================= -->
+  <style>
+    :root {
+      --color-fondo: #0b0b0b;
+      --color-fondo-secundario: #111111;
+      --color-borde: #222222;
+      --color-texto: #ffffff;
+      --color-texto-secundario: #c8c8c8;
+      --color-texto-suave: #8a8a8a;
+      --color-acento: #f2c300;
+      --ancho-maximo: 1100px;
+      --radio: 14px;
+      --sombra-acento: 0 10px 25px rgba(242, 195, 0, 0.12);
+    }
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #0b0b0b;
-  color: #fff;
-}
+    /* ========================================================= */
+    /* SECCION CSS 02 - REGLAS GENERALES                         */
+    /* ========================================================= */
+    * {
+      box-sizing: border-box;
+    }
 
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 60px 20px;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-.center {
-  text-align: center;
-}
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--color-fondo);
+      color: var(--color-texto);
+    }
 
-img.logo {
-  width: 150px;
-  margin-bottom: 20px;
-}
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-h1 {
-  color: #f2c300;
-  font-size: 2.4rem;
-}
+    img {
+      max-width: 100%;
+      display: block;
+    }
 
-h2 {
-  font-weight: normal;
-  margin-bottom: 10px;
-}
+    .contenedor {
+      max-width: var(--ancho-maximo);
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
 
-h3 {
-  color: #f2c300;
-}
+    .centrado {
+      text-align: center;
+    }
 
-p {
-  color: #bbb;
-  line-height: 1.6;
-}
+    .seccion {
+      margin-top: 20px;
+    }
 
-.section {
-  margin-top: 80px;
-}
+    .titulo-seccion {
+      color: var(--color-acento);
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
-}
+    .texto {
+      color: var(--color-texto-secundario);
+      line-height: 1.7;
+      font-size: 1rem;
+    }
 
-.card {
-  padding: 25px;
-  border-radius: 12px;
-  background-color: #111;
-  border: 1px solid #222;
-  transition: 0.3s;
-  cursor: pointer;
-}
+    .texto-suave {
+      color: var(--color-texto-suave);
+    }
 
-.card:hover {
-  transform: translateY(-6px);
-  border-color: #f2c300;
-}
+    /* ========================================================= */
+    /* SECCION CSS 03 - HERO / BLOQUE INICIAL                    */
+    /* ========================================================= */
+    #hero {
+      padding-top: 80px;
+      padding-bottom: 70px;
+    }
 
-/* GALERÍA */
+    .logo-principal {
+      width: 170px;
+      margin: 0 auto 24px auto;
+    }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
+    .titulo-principal {
+      color: var(--color-acento);
+      font-size: 2.7rem;
+      margin: 0 0 12px 0;
+      font-weight: 600;
+    }
 
-.gallery img {
-  width: 100%;
-  border-radius: 8px;
-  transition: 0.3s;
-}
+    .frase-principal {
+      font-size: 1.45rem;
+      font-weight: 400;
+      margin: 0 0 14px 0;
+      color: var(--color-texto);
+    }
 
-.gallery img:hover {
-  transform: scale(1.03);
-}
+    .frase-secundaria {
+      color: var(--color-texto-suave);
+      font-size: 0.98rem;
+      margin-bottom: 24px;
+    }
 
-/* BOTONES */
+    .descripcion-principal {
+      max-width: 760px;
+      margin: 0 auto;
+      color: var(--color-texto-secundario);
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
 
-.button {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 18px;
-  border-radius: 8px;
-  background-color: #f2c300;
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-}
+    /* ========================================================= */
+    /* SECCION CSS 04 - BOTONES                                  */
+    /* ========================================================= */
+    .grupo-botones {
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
 
-.footer {
-  text-align: center;
-  margin-top: 80px;
-  color: #666;
-}
+    .boton {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: 0.25s ease;
+      border: 1px solid var(--color-acento);
+    }
 
-@media (max-width: 700px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
+    .boton-principal {
+      background-color: var(--color-acento);
+      color: #000000;
+    }
 
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-}
+    .boton-principal:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--sombra-acento);
+    }
 
-</style>
+    .boton-secundario {
+      background-color: transparent;
+      color: var(--color-texto);
+    }
+
+    .boton-secundario:hover {
+      background-color: var(--color-fondo-secundario);
+      transform: translateY(-2px);
+    }
+
+    /* ========================================================= */
+    /* SECCION CSS 05 - GRID GENERAL                             */
+    /* ========================================================= */
+    .grid-dos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px;
+    }
+
+    /* ========================================================= */
+    /* SECCION CSS 06 - TARJETAS GENERALES                       */
+    /* ========================================================= */
+    .tarjeta {
+      background-color: var(--color-fondo-secundario);
+      border: 1px solid var(--color-borde);
+      border-radius: var(--radio);
+      padding: 24px;
+    }
+
+    .tarjeta h3,
+    .tarjeta h4 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      color: var(--color-texto);
+    }
+
+    /* ========================================================= */
+    /* SECCION CSS 07 - TARJETAS GIRATORIAS                      */
+    /* ========================================================= */
+    .contenedor-tarjetas-giro {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+      margin-top: 28px;
+    }
+
+    .tarjeta-giro {
+      background: transparent;
+      height: 320px;
+      perspective: 1000px;
+    }
+
+    .tarjeta-giro-interior {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.7s;
+      transform-style: preserve-3d;
+    }
+
+    .tarjeta-giro:hover .tarjeta-giro-interior {
+      transform: rotateY(180deg);
+    }
+
+    .tarjeta-giro-frente,
+    .tarjeta-giro-reverso {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--radio);
+      backface-visibility: hidden;
+      overflow: hidden;
+      border: 1px solid var(--color-borde);
+      background-color: var(--color-fondo-secundario);
+    }
+
+    .tarjeta-giro-frente {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px;
+      background: linear-gradient(to top, rgba(0,0,0,0.88), rgba(0,0,0,0.25)),
+                  url('https://placehold.co/600x900/111111/f2c300?text=Imagen') center/cover no-repeat;
+    }
+
+    .tarjeta-giro-reverso {
+      transform: rotateY(180deg);
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .titulo-tarjeta {
+      color: var(--color-acento);
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .texto-tarjeta {
+      color: var(--color-texto-secundario);
+      line-height: 1.65;
+      font-size: 0.98rem;
+    }
+
+    /* ========================================================= */
+    /* SECCION CSS 08 - ACERCA DE                                */
+    /* ========================================================= */
+    #acerca .tarjeta {
+      padding: 28px;
+    }
+
+    /* ========================================================= */
+    /* SECCION CSS 09 - GALERIA / LABORATORIO                    */
+    /* ========================================================= */
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .galeria-item {
+      background-color: var(--color-fondo-secundario);
+      border: 1px solid var(--color-borde);
+      border-radius: 12px;
+      overflow: hidden;
+      min-height: 220px;
+    }
+
+    .galeria-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ========================================================= */
+    /* SECCION CSS 10 - ENLACES DE CONTENIDO                     */
+    /* ========================================================= */
+    .bloques-contenido {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 26px;
+    }
+
+    .bloque-enlace {
+      background-color: var(--color-fondo-secundario);
+      border: 1px solid var(--color-borde);
+      border-radius: var(--radio);
+      padding: 28px;
+      transition: 0.25s ease;
+    }
+
+    .bloque-enlace:hover {
+      border-color: var(--color-acento);
+      transform: translateY(-4px);
+      box-shadow: var(--sombra-acento);
+    }
+
+    .bloque-enlace h4 {
+      color: var(--color-acento);
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .bloque-enlace p {
+      color: var(--color-texto-secundario);
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+
+    /* ========================================================= */
+    /* SECCION CSS 11 - PIE DE PAGINA                            */
+    /* ========================================================= */
+    footer {
+      padding: 40px 20px 60px 20px;
+      text-align: center;
+      color: var(--color-texto-suave);
+      font-size: 0.92rem;
+    }
+
+    /* ========================================================= */
+    /* SECCION CSS 12 - RESPONSIVE                               */
+    /* ========================================================= */
+    @media (max-width: 980px) {
+      .contenedor-tarjetas-giro {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .galeria {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .titulo-principal {
+        font-size: 2.2rem;
+      }
+
+      .frase-principal {
+        font-size: 1.2rem;
+      }
+
+      .grid-dos,
+      .bloques-contenido,
+      .contenedor-tarjetas-giro,
+      .galeria {
+        grid-template-columns: 1fr;
+      }
+
+      .tarjeta-giro {
+        height: 300px;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="container center">
+  <!-- ========================================================= -->
+  <!-- SECCION 01 - HERO / PORTADA PRINCIPAL                    -->
+  <!-- ========================================================= -->
+  <section id="hero" class="contenedor centrado">
+    <img src="perfil_talleraquimedes.png" alt="Logotipo de El Taller de Arquímedes" class="logo-principal" />
 
-  <img src="perfil_talleraquimedes.png" class="logo">
+    <h1 class="titulo-principal">El Taller de Arquímedes</h1>
 
-  <h1>El Taller de Arquímedes</h1>
-  <h2>Diseño, construcción y prueba de tecnología</h2>
+    <p class="frase-principal">Diseño, construcción y prueba de tecnología</p>
 
-  <p style="color:#888;">IA² · Ingeniería aplicada × inteligencia artificial</p>
+    <p class="frase-secundaria">IA² · Ingeniería aplicada × inteligencia artificial</p>
 
-  <p>
-    Espacio orientado al diseño, construcción y prueba de soluciones tecnológicas,
-    con enfoque en ingeniería aplicada, prototipado, manufactura e inteligencia artificial.
-  </p>
+    <p class="descripcion-principal">
+      Espacio orientado al diseño, construcción y prueba de soluciones tecnológicas,
+      con enfoque en ingeniería aplicada, prototipado, manufactura e inteligencia artificial.
+    </p>
 
-</div>
+    <div class="grupo-botones">
+      <a href="#lineas-trabajo" class="boton boton-principal">Explorar líneas de trabajo</a>
+      <a href="#contenido" class="boton boton-secundario">Ver contenido</a>
+    </div>
+  </section>
 
-<div class="container section">
+  <!-- ========================================================= -->
+  <!-- SECCION 02 - LINEAS DE TRABAJO                           -->
+  <!-- ========================================================= -->
+  <section id="lineas-trabajo" class="contenedor seccion">
+    <h2 class="titulo-seccion">Líneas de trabajo</h2>
 
-  <h3>Líneas de trabajo</h3>
+    <div class="contenedor-tarjetas-giro">
 
-  <div class="grid">
+      <!-- TARJETA 01 -->
+      <article class="tarjeta-giro" id="tarjeta-ingenieria-manufactura">
+        <div class="tarjeta-giro-interior">
+          <div class="tarjeta-giro-frente" style="background:
+            linear-gradient(to top, rgba(0,0,0,0.88), rgba(0,0,0,0.20)),
+            url('https://placehold.co/600x900/111111/f2c300?text=Manufactura') center/cover no-repeat;">
+            <div>
+              <div class="titulo-tarjeta">Ingeniería y manufactura</div>
+            </div>
+          </div>
+          <div class="tarjeta-giro-reverso">
+            <div class="titulo-tarjeta">Ingeniería y manufactura</div>
+            <div class="texto-tarjeta">
+              Diseño y fabricación de piezas y sistemas donde la idea deja el papel y entra al taller:
+              CNC, corte láser, impresión 3D y procesos reales de manufactura.
+            </div>
+          </div>
+        </div>
+      </article>
 
-    <div class="card">Ingeniería y manufactura</div>
-    <div class="card">Prototipado tecnológico</div>
-    <div class="card">Desarrollo y programación</div>
-    <div class="card">Inteligencia artificial aplicada</div>
+      <!-- TARJETA 02 -->
+      <article class="tarjeta-giro" id="tarjeta-prototipado">
+        <div class="tarjeta-giro-interior">
+          <div class="tarjeta-giro-frente" style="background:
+            linear-gradient(to top, rgba(0,0,0,0.88), rgba(0,0,0,0.20)),
+            url('https://placehold.co/600x900/111111/f2c300?text=Prototipado') center/cover no-repeat;">
+            <div>
+              <div class="titulo-tarjeta">Prototipado tecnológico</div>
+            </div>
+          </div>
+          <div class="tarjeta-giro-reverso">
+            <div class="titulo-tarjeta">Prototipado tecnológico</div>
+            <div class="texto-tarjeta">
+              Desarrollo rápido de soluciones funcionales integrando mecánica, electrónica y software
+              para llevar una idea al terreno de la prueba.
+            </div>
+          </div>
+        </div>
+      </article>
 
-  </div>
+      <!-- TARJETA 03 -->
+      <article class="tarjeta-giro" id="tarjeta-programacion">
+        <div class="tarjeta-giro-interior">
+          <div class="tarjeta-giro-frente" style="background:
+            linear-gradient(to top, rgba(0,0,0,0.88), rgba(0,0,0,0.20)),
+            url('https://placehold.co/600x900/111111/f2c300?text=Programacion') center/cover no-repeat;">
+            <div>
+              <div class="titulo-tarjeta">Desarrollo y programación</div>
+            </div>
+          </div>
+          <div class="tarjeta-giro-reverso">
+            <div class="titulo-tarjeta">Desarrollo y programación</div>
+            <div class="texto-tarjeta">
+              Construcción de lógica aplicada para automatización, control y operación de sistemas
+              donde el código no adorna: gobierna.
+            </div>
+          </div>
+        </div>
+      </article>
 
-</div>
+      <!-- TARJETA 04 -->
+      <article class="tarjeta-giro" id="tarjeta-ia">
+        <div class="tarjeta-giro-interior">
+          <div class="tarjeta-giro-frente" style="background:
+            linear-gradient(to top, rgba(0,0,0,0.88), rgba(0,0,0,0.20)),
+            url('https://placehold.co/600x900/111111/f2c300?text=IA') center/cover no-repeat;">
+            <div>
+              <div class="titulo-tarjeta">Inteligencia artificial aplicada</div>
+            </div>
+          </div>
+          <div class="tarjeta-giro-reverso">
+            <div class="titulo-tarjeta">Inteligencia artificial aplicada</div>
+            <div class="texto-tarjeta">
+              Exploración e implementación de herramientas de inteligencia artificial orientadas
+              a resolver problemas, ampliar capacidades técnicas y abrir nuevas rutas de trabajo.
+            </div>
+          </div>
+        </div>
+      </article>
 
-<div class="container section">
+    </div>
+  </section>
 
-  <h3>Proyectos / Laboratorio</h3>
+  <!-- ========================================================= -->
+  <!-- SECCION 03 - ACERCA DE                                   -->
+  <!-- ========================================================= -->
+  <section id="acerca" class="contenedor seccion">
+    <h2 class="titulo-seccion">Acerca de</h2>
 
-  <div class="gallery">
-    <img src="img1.jpg">
-    <img src="img2.jpg">
-    <img src="img3.jpg">
-  </div>
+    <div class="tarjeta">
+      <p class="texto">
+        El Taller de Arquímedes es un espacio orientado al diseño, construcción y prueba de soluciones
+        tecnológicas. Su enfoque integra ingeniería aplicada, manufactura, programación, prototipado e
+        inteligencia artificial como parte de una práctica técnica en desarrollo continuo.
+      </p>
 
-</div>
+      <p class="texto">
+        Más que presentar un currículum, este sitio busca mostrar una línea de trabajo: ideas que pasan por
+        el diseño, entran a prueba y se convierten en resultados observables, documentados y comunicables.
+      </p>
+    </div>
+  </section>
 
-<div class="container section center">
+  <!-- ========================================================= -->
+  <!-- SECCION 04 - LABORATORIO / GALERIA                       -->
+  <!-- ========================================================= -->
+  <section id="laboratorio" class="contenedor seccion">
+    <h2 class="titulo-seccion">Laboratorio</h2>
 
-  <h3>Contenido</h3>
+    <p class="texto">
+      Registro visual de pruebas, piezas, procesos y experimentos. Esta sección puede crecer después con
+      fotografías reales de tus trabajos en CNC, corte láser, impresión 3D y prototipos.
+    </p>
 
-  <p>Explora el desarrollo de proyectos, ideas y procesos en mis plataformas:</p>
+    <div class="galeria">
+      <div class="galeria-item">
+        <img src="https://placehold.co/800x600/111111/f2c300?text=Proyecto+01" alt="Proyecto 1" />
+      </div>
+      <div class="galeria-item">
+        <img src="https://placehold.co/800x600/111111/f2c300?text=Proyecto+02" alt="Proyecto 2" />
+      </div>
+      <div class="galeria-item">
+        <img src="https://placehold.co/800x600/111111/f2c300?text=Proyecto+03" alt="Proyecto 3" />
+      </div>
+    </div>
+  </section>
 
-  <a class="button" href="https://youtube.com" target="_blank">YouTube</a>
-  <a class="button" href="https://tu-blog.com" target="_blank">Blog</a>
+  <!-- ========================================================= -->
+  <!-- SECCION 05 - REFLEXION Y PENSAMIENTO                     -->
+  <!-- ========================================================= -->
+  <section id="reflexion" class="contenedor seccion">
+    <h2 class="titulo-seccion">Reflexión y pensamiento</h2>
 
-</div>
+    <div class="tarjeta">
+      <p class="texto">
+        Espacio de escritura orientado a la recuperación de ideas, reflexiones y análisis sobre educación,
+        familia, derecho y otros procesos humanos observados desde una mirada estructurada.
+      </p>
+    </div>
+  </section>
 
-<div class="footer">
-  © 2026 El Taller de Arquímedes
-</div>
+  <!-- ========================================================= -->
+  <!-- SECCION 06 - CONTENIDO EXTERNO                           -->
+  <!-- ========================================================= -->
+  <section id="contenido" class="contenedor seccion">
+    <h2 class="titulo-seccion">Contenido</h2>
+
+    <div class="bloques-contenido">
+
+      <!-- BLOQUE BLOG -->
+      <a class="bloque-enlace" id="bloque-blog" href="https://tallerdearquimedes.blogspot.com/" target="_blank" rel="noopener noreferrer">
+        <h4>Blog</h4>
+        <p>
+          Espacio de escritura y recuperación de pensamiento, donde se reúnen reflexiones, análisis y textos
+          vinculados con educación, familia, derecho y otros temas de interés.
+        </p>
+        <span class="boton boton-secundario">Ir al blog</span>
+      </a>
+
+      <!-- BLOQUE YOUTUBE -->
+      <a class="bloque-enlace" id="bloque-youtube" href="https://www.youtube.com/channel/UCfHBl6mJ3eJ4r3R0IgXS_-A" target="_blank" rel="noopener noreferrer">
+        <h4>Canal de YouTube</h4>
+        <p>
+          Registro audiovisual de ideas, pruebas, proyectos y procesos técnicos. Un espacio pensado para mostrar
+          desarrollo real, experimentación y construcción tecnológica.
+        </p>
+        <span class="boton boton-secundario">Ir al canal</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- SECCION 07 - PIE DE PAGINA                               -->
+  <!-- ========================================================= -->
+  <footer>
+    © 2026 El Taller de Arquímedes
+  </footer>
 
 </body>
 </html>
