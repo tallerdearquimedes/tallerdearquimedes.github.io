@@ -10,14 +10,12 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #0b0b0b;
   color: #fff;
-
-  /* Fondo mejorado */
-  background: radial-gradient(circle at top, #111 0%, #000 60%);
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   padding: 60px 20px;
 }
@@ -27,25 +25,22 @@ body {
 }
 
 img.logo {
-  width: 160px;
-  margin-bottom: 25px;
+  width: 150px;
+  margin-bottom: 20px;
 }
 
 h1 {
   color: #f2c300;
   font-size: 2.4rem;
-  margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 1.4rem;
   font-weight: normal;
   margin-bottom: 10px;
 }
 
 h3 {
   color: #f2c300;
-  margin-bottom: 20px;
 }
 
 p {
@@ -64,36 +59,62 @@ p {
 }
 
 .card {
-  border: 1px solid #222;
   padding: 25px;
   border-radius: 12px;
-  background: linear-gradient(145deg, #0a0a0a, #111);
-  transition: all 0.25s ease;
+  background-color: #111;
+  border: 1px solid #222;
+  transition: 0.3s;
   cursor: pointer;
 }
 
-/* EFECTO INTERACTIVO */
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
   border-color: #f2c300;
-  box-shadow: 0 10px 25px rgba(242,195,0,0.15);
 }
 
-.card strong {
-  display: block;
-  margin-bottom: 10px;
-  color: #fff;
+/* GALERÍA */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+/* BOTONES */
+
+.button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background-color: #f2c300;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .footer {
-  margin-top: 100px;
-  font-size: 0.9rem;
-  color: #666;
   text-align: center;
+  margin-top: 80px;
+  color: #666;
 }
 
 @media (max-width: 700px) {
   .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
     grid-template-columns: 1fr;
   }
 }
@@ -125,25 +146,10 @@ p {
 
   <div class="grid">
 
-    <div class="card">
-      <strong>Ingeniería y manufactura</strong>
-      <p>Diseño y fabricación de piezas y sistemas mediante procesos como CNC, corte láser e impresión 3D.</p>
-    </div>
-
-    <div class="card">
-      <strong>Prototipado tecnológico</strong>
-      <p>Desarrollo rápido de soluciones funcionales integrando mecánica, electrónica y software.</p>
-    </div>
-
-    <div class="card">
-      <strong>Desarrollo y programación</strong>
-      <p>Implementación de soluciones mediante programación estructurada, automatización y lógica aplicada.</p>
-    </div>
-
-    <div class="card">
-      <strong>Inteligencia artificial aplicada</strong>
-      <p>Exploración e implementación de herramientas de IA orientadas a la solución de problemas y optimización de procesos.</p>
-    </div>
+    <div class="card">Ingeniería y manufactura</div>
+    <div class="card">Prototipado tecnológico</div>
+    <div class="card">Desarrollo y programación</div>
+    <div class="card">Inteligencia artificial aplicada</div>
 
   </div>
 
@@ -151,12 +157,24 @@ p {
 
 <div class="container section">
 
-  <h3>Reflexión y pensamiento</h3>
+  <h3>Proyectos / Laboratorio</h3>
 
-  <p>
-    Espacio de análisis sobre educación, formación, familia y sociedad desde una perspectiva estructurada
-    y orientada a la comprensión de los procesos humanos.
-  </p>
+  <div class="gallery">
+    <img src="img1.jpg">
+    <img src="img2.jpg">
+    <img src="img3.jpg">
+  </div>
+
+</div>
+
+<div class="container section center">
+
+  <h3>Contenido</h3>
+
+  <p>Explora el desarrollo de proyectos, ideas y procesos en mis plataformas:</p>
+
+  <a class="button" href="https://youtube.com" target="_blank">YouTube</a>
+  <a class="button" href="https://tu-blog.com" target="_blank">Blog</a>
 
 </div>
 
