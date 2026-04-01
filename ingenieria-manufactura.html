@@ -341,7 +341,7 @@
       <!-- PROYECTO 01 -->
       <article class="proyecto">
         <div class="proyecto-imagen">
-          <img src="IyM_pagina1.png" alt="Proyecto de ingeniería y manufactura 1">
+          <img src="IyM_pagina1.png" alt="Proyecto de ingeniería y manufactura 1" onclick="abrirImagen(this.src)>
         </div>
         <div class="proyecto-texto">
           <h3>Ajedrez 3D — dominio digital-físico</h3>
@@ -354,7 +354,7 @@
       <!-- PROYECTO 02 -->
       <article class="proyecto">
         <div class="proyecto-imagen">
-          <img src="IyM_pagina2.png" alt="Proyecto de ingeniería y manufactura 2">
+          <img src="IyM_pagina2.png" alt="Proyecto de ingeniería y manufactura 2" onclick="abrirImagen(this.src)>
         </div>
         <div class="proyecto-texto">
           <h3>Lámpara láser — producto funcional</h3>
@@ -367,7 +367,7 @@
       <!-- PROYECTO 03 -->
       <article class="proyecto">
         <div class="proyecto-imagen">
-          <img src="IyM_pagina3.png" alt="Proyecto de ingeniería y manufactura 3">
+          <img src="IyM_pagina3.png" alt="Proyecto de ingeniería y manufactura 3" onclick="abrirImagen(this.src)>
         </div>
         <div class="proyecto-texto">
           <h3>Caja ensamblada — precisión estructural</h3>
@@ -380,7 +380,7 @@
       <!-- PROYECTO 04 -->
       <article class="proyecto">
         <div class="proyecto-imagen">
-          <img src="IyM_pagina4.png" alt="Proyecto de ingeniería y manufactura 3">
+          <img src="IyM_pagina4.png" alt="Proyecto de ingeniería y manufactura 4" onclick="abrirImagen(this.src)>
         </div>
         <div class="proyecto-texto">
           <h3>Grabado láser — detalle técnico</h3>
@@ -393,7 +393,20 @@
       <!-- PROYECTO 05 -->
       <article class="proyecto">
         <div class="proyecto-imagen">
-          <img src="IyM_pagina5.png" alt="Proyecto de ingeniería y manufactura 3">
+          <img src="IyM_pagina5.png" alt="Proyecto de ingeniería y manufactura 5" onclick="abrirImagen(this.src)>
+        </div>
+        <div class="proyecto-texto">
+          <h3>Ornamento — refinamiento estético</h3>
+          <p>
+            Pieza decorativa circular con base estable, diseñada bajo un concepto de escena multicapa. El trabajo de corte láser permite distinguir diferentes planos: desde la fauna y flora en primer plano hasta el detalle sutil de la escarcha dorada en los bordes. Coronada con una estrella y elementos naturales (yute y piñas), esta obra equilibra la calidez de la madera con la rigurosidad del diseño asistido por computadora.
+          </p>
+        </div>
+      </article>
+
+      <!-- PROYECTO 06 -->
+      <article class="proyecto">
+        <div class="proyecto-imagen">
+          <img src="IyM_pagina6.png" alt="Proyecto de ingeniería y manufactura 6" onclick="abrirImagen(this.src)>
         </div>
         <div class="proyecto-texto">
           <h3>Ornamento — refinamiento estético</h3>
@@ -433,5 +446,46 @@
     © 2026 El Taller de Arquímedes
   </footer>
 
+<!-- ========================================================= -->
+<!-- SECCION 07 - VISOR DE IMAGEN (LIGHTBOX)                  -->
+<!-- ========================================================= -->
+
+<div id="visor-imagen" onclick="cerrarImagen()">
+  <img id="imagen-ampliada">
+</div>
+
+<style>
+#visor-imagen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+#visor-imagen img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+</style>
+
+<script>
+function abrirImagen(src) {
+  document.getElementById("visor-imagen").style.display = "flex";
+  document.getElementById("imagen-ampliada").src = src;
+}
+
+function cerrarImagen() {
+  document.getElementById("visor-imagen").style.display = "none";
+}
+</script>
+  
 </body>
 </html>
