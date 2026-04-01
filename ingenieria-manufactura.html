@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ingeniería y manufactura | El Taller de Arquímedes</title>
+
+  <!-- ========================================================= -->
+  <!-- SECCION CSS 01 - VARIABLES GENERALES                      -->
+  <!-- ========================================================= -->
+  <style>
+    :root {
+      --color-fondo: #0b0b0b;
+      --color-fondo-secundario: #111111;
+      --color-borde: #222222;
+      --color-texto: #ffffff;
+      --color-texto-secundario: #c8c8c8;
+      --color-texto-suave: #8a8a8a;
+      --color-acento: #f2c300;
+      --ancho-maximo: 1100px;
+      --radio: 14px;
+      --sombra-acento: 0 10px 25px rgba(242, 195, 0, 0.12);
+    }
+
+    /* ========================================================= */
+    /* SECCION CSS 02 - REGLAS GENERALES                         */
+    /* ========================================================= */
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--color-fondo);
+      color: var(--color-texto);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .contenedor {
+      max-width: var(--ancho-maximo);
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .centrado {
+      text-align: center;
+    }
+
+    .titulo-seccion {
+      color: var(--color-acento);
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .texto {
+      color: var(--color-texto-secundario);
+      line-height: 1.75;
+      font-size: 1rem;
+    }
+
+    .texto-suave {
+      color: var(--color-texto-suave);
+    }
+
+    .tarjeta {
+      background-color: var(--color-fondo-secundario);
+      border: 1px solid var(--color-borde);
+      border-radius: var(--radio);
+      padding: 28px;
+    }
+
+    .boton {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: 0.25s ease;
+      border: 1px solid var(--color-acento);
+    }
+
+    .boton-principal {
+      background-color: var(--color-acento);
+      color: #000000;
+    }
+
+    .boton-principal:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--sombra-acento);
+    }
+
+    .boton-secundario {
+      background-color: transparent;
+      color: var(--color-texto);
+    }
+
+    .boton-secundario:hover {
+      background-color: var(--color-fondo-secundario);
+      transform: translateY(-2px);
+    }
+
+    /* ========================================================= */
+    /* SECCION CSS 03 - ENCABEZADO                               */
+    /* ========================================================= */
+    .encabezado-interno {
+      padding-top: 70px;
+      padding-bottom: 40px;
+    }
+
+    .navegacion-superior {
+      margin-bottom: 30px;
+    }
+
+    .navegacion-superior a {
+      color: var(--color-texto-suave);
+      font-size: 0.95rem;
+    }
+
+    .navegacion-superior a:hover {
+      color: var(--color-acento);
+    }
+
+    .titulo-principal {
+      color: var(--color-acento);
+      font-size: 2.5rem;
+      margin-bottom: 12px;
+    }
+
+    .subtitulo-principal {
+      font-size: 1.2rem;
+      color: var(--color-texto);
+      margin-bottom: 20px;
+    }
+
+    .descripcion-principal {
+      max-width: 780px;
+      color: var(--color-texto-secundario);
+      line-height: 1.8;
+    }
+
+    /* ========================================================= */
+    /* SECCION CSS 04 - BLOQUES DOBLES                           */
+    /* ========================================================= */
+    .grid-dos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 28px;
+    }
+
+    /* ========================================================= */
+    /* SECCION CSS 05 - GALERIA DE PROYECTOS                     */
+    /* ========================================================= */
+    .galeria-proyectos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .proyecto {
+      background-color: var(--color-fondo-secundario);
+      border: 1px solid var(--color-borde);
+      border-radius: var(--radio);
+      overflow: hidden;
+      transition: 0.25s ease;
+    }
+
+    .proyecto:hover {
+      transform: translateY(-4px);
+      border-color: var(--color-acento);
+      box-shadow: var(--sombra-acento);
+    }
+
+    .proyecto-imagen img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+    }
+
+    .proyecto-texto {
+      padding: 18px;
+    }
+
+    .proyecto-texto h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: var(--color-acento);
+      font-size: 1.1rem;
+    }
+
+    .proyecto-texto p {
+      margin: 0;
+      color: var(--color-texto-secundario);
+      line-height: 1.7;
+      font-size: 0.96rem;
+    }
+
+    /* ========================================================= */
+    /* SECCION CSS 06 - LISTA DE PROCESOS                        */
+    /* ========================================================= */
+    .lista-procesos {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--color-texto-secundario);
+      line-height: 1.9;
+    }
+
+    /* ========================================================= */
+    /* SECCION CSS 07 - LLAMADA FINAL                            */
+    /* ========================================================= */
+    .llamada-final {
+      margin-top: 28px;
+    }
+
+    /* ========================================================= */
+    /* SECCION CSS 08 - FOOTER                                   */
+    /* ========================================================= */
+    footer {
+      padding: 40px 20px 60px 20px;
+      text-align: center;
+      color: var(--color-texto-suave);
+      font-size: 0.92rem;
+    }
+
+    /* ========================================================= */
+    /* SECCION CSS 09 - RESPONSIVE                               */
+    /* ========================================================= */
+    @media (max-width: 900px) {
+      .galeria-proyectos {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .titulo-principal {
+        font-size: 2rem;
+      }
+
+      .grid-dos,
+      .galeria-proyectos {
+        grid-template-columns: 1fr;
+      }
+
+      .proyecto-imagen img {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================================= -->
+  <!-- SECCION 01 - ENCABEZADO INTERNO                          -->
+  <!-- ========================================================= -->
+  <section class="contenedor encabezado-interno">
+    <div class="navegacion-superior">
+      <a href="index.html">← Volver al inicio</a>
+    </div>
+
+    <h1 class="titulo-principal">Ingeniería y manufactura</h1>
+
+    <p class="subtitulo-principal">
+      Diseño y fabricación de piezas y sistemas mediante procesos reales de manufactura.
+    </p>
+
+    <p class="descripcion-principal">
+      Esta sección reúne una parte del trabajo desarrollado en torno al diseño, construcción y prueba de piezas, objetos y soluciones fabricadas mediante procesos como corte láser, maquinado CNC e impresión 3D. Más que una galería, es un registro de práctica técnica: materia, proceso y resultado.
+    </p>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- SECCION 02 - APERTURA / ENFOQUE                          -->
+  <!-- ========================================================= -->
+  <section class="contenedor">
+    <div class="tarjeta">
+      <h2 class="titulo-seccion">Enfoque</h2>
+      <p class="texto">
+        La manufactura no aparece aquí como adorno ni como catálogo, sino como una práctica concreta de construcción tecnológica. Cada pieza, prueba o experimento representa un paso dentro de un proceso donde el diseño entra al taller, se confronta con el material y se somete a prueba.
+      </p>
+      <p class="texto">
+        El interés no está solo en fabricar objetos, sino en comprender cómo se comportan, cómo pueden mejorarse y cómo integrarse en soluciones más amplias.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- SECCION 03 - PROCESOS Y ALCANCE                          -->
+  <!-- ========================================================= -->
+  <section class="contenedor">
+    <div class="grid-dos">
+
+      <div class="tarjeta">
+        <h2 class="titulo-seccion">Procesos</h2>
+        <ul class="lista-procesos">
+          <li>Corte láser para piezas, ornamentos y pruebas de precisión.</li>
+          <li>Maquinado CNC para fabricación y exploración de geometrías funcionales.</li>
+          <li>Impresión 3D para prototipos y desarrollo rápido.</li>
+          <li>Integración de materiales y ajustes sobre piezas reales.</li>
+        </ul>
+      </div>
+
+      <div class="tarjeta">
+        <h2 class="titulo-seccion">Alcance</h2>
+        <p class="texto">
+          Esta línea de trabajo permite abordar desde objetos de carácter experimental hasta piezas orientadas al prototipado, la personalización y la documentación de procesos de fabricación.
+        </p>
+        <p class="texto">
+          También abre la puerta a mostrar cómo una idea se transforma en una pieza concreta mediante decisiones de diseño, material y proceso.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- SECCION 04 - GALERIA DE PROYECTOS                        -->
+  <!-- ========================================================= -->
+  <section class="contenedor">
+    <h2 class="titulo-seccion">Proyectos y evidencias</h2>
+
+    <div class="galeria-proyectos">
+
+      <!-- PROYECTO 01 -->
+      <article class="proyecto">
+        <div class="proyecto-imagen">
+          <img src="ingenieria-manufactura.jpg" alt="Proyecto de ingeniería y manufactura 1">
+        </div>
+        <div class="proyecto-texto">
+          <h3>Trabajo en madera con corte láser</h3>
+          <p>
+            Pieza desarrollada como muestra de trabajo real en taller, donde el diseño, el material y el proceso convergen en un resultado visible y verificable.
+          </p>
+        </div>
+      </article>
+
+      <!-- PROYECTO 02 -->
+      <article class="proyecto">
+        <div class="proyecto-imagen">
+          <img src="proyecto-manufactura-02.jpg" alt="Proyecto de ingeniería y manufactura 2">
+        </div>
+        <div class="proyecto-texto">
+          <h3>Proyecto en desarrollo</h3>
+          <p>
+            Espacio reservado para incorporar una segunda evidencia visual. Aquí puede entrar otra pieza, una toma de máquina o una composición trabajada con intención técnica.
+          </p>
+        </div>
+      </article>
+
+      <!-- PROYECTO 03 -->
+      <article class="proyecto">
+        <div class="proyecto-imagen">
+          <img src="proyecto-manufactura-03.jpg" alt="Proyecto de ingeniería y manufactura 3">
+        </div>
+        <div class="proyecto-texto">
+          <h3>Proyecto en desarrollo</h3>
+          <p>
+            Espacio reservado para un tercer trabajo. La página está preparada para crecer con nuevas piezas, procesos y resultados documentados.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- SECCION 05 - CIERRE                                       -->
+  <!-- ========================================================= -->
+  <section class="contenedor">
+    <div class="tarjeta llamada-final">
+      <h2 class="titulo-seccion">Cierre</h2>
+      <p class="texto">
+        Cada imagen presentada en esta sección forma parte de una práctica real de exploración y construcción tecnológica. El objetivo no es solo mostrar piezas terminadas, sino recuperar el proceso mediante el cual una idea entra en contacto con la materia y se convierte en una prueba concreta.
+      </p>
+
+      <p class="texto-suave">
+        Esta sección podrá ampliarse con nuevas evidencias, composiciones visuales y proyectos documentados.
+      </p>
+
+      <div style="margin-top: 22px;">
+        <a href="index.html" class="boton boton-principal">Volver al inicio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- SECCION 06 - FOOTER                                       -->
+  <!-- ========================================================= -->
+  <footer>
+    © 2026 El Taller de Arquímedes
+  </footer>
+
+</body>
+</html>
