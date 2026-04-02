@@ -74,7 +74,9 @@ respuestas: [
 `YouTube muestra la ejecución. Es donde las ideas pasan a ser sistemas funcionando.`,
 `En el canal de Youtube se documenta la ejecución: construcción, pruebas y funcionamiento de los proyectos.`,
 `El canal de Youtube es el lugar donde las ideas dejan de ser teoría.`
-]
+`Puedes ver los proyectos reales en el canal de YouTube. Si quieres, puedo llevarte directamente.`
+],
+accion: () => window.open("https://www.youtube.com/channel/UCfHBl6mJ3eJ4r3R0IgXS_-A", "_blank")  
 },
 {
 keys: ["blog"],
@@ -87,6 +89,7 @@ respuestas: [
 `El blog reúne dos dimensiones. Por un lado reflexión sobre formación, experiencia y criterio; Mientras que, por otro, incorpora pensamiento aplicado por medio de análisis que conecta la ingeniería con decisiones reales`,
 `En el Taller de Arquímedes tenemos muy presente que no todo lo que se construye se ve en una máquina. Parte del trabajo ocurre en la forma de pensar.`
 ]
+accion: () => window.open("https://tallerdearquimedes.blogspot.com/", "_blank")  
 },
 {
 keys: ["diferencia"],
@@ -107,8 +110,15 @@ function responder(input) {
   for (let item of base) {
     for (let key of item.keys) {
       if (limpio.includes(key)) {
+
         const opciones = item.respuestas;
-        return opciones[Math.floor(Math.random() * opciones.length)];
+        const respuesta = opciones[Math.floor(Math.random() * opciones.length)];
+
+        if (item.accion) {
+          setTimeout(item.accion, 800);
+        }
+
+        return respuesta;
       }
     }
   }
