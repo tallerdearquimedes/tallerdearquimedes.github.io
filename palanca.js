@@ -73,7 +73,7 @@ respuestas: [
 `Los proyectos reales están en el canal de YouTube. Ahí puedes ver construcción, pruebas y funcionamiento.`,
 `YouTube muestra la ejecución. Es donde las ideas pasan a ser sistemas funcionando.`,
 `En el canal de Youtube se documenta la ejecución: construcción, pruebas y funcionamiento de los proyectos.`,
-`El canal de Youtube es el lugar donde las ideas dejan de ser teoría.`
+`El canal de Youtube es el lugar donde las ideas dejan de ser teoría.`,
 `Puedes ver los proyectos reales en el canal de YouTube. Si quieres, puedo llevarte directamente.`
 ],
 accion: () => window.open("https://www.youtube.com/channel/UCfHBl6mJ3eJ4r3R0IgXS_-A", "_blank")  
@@ -162,29 +162,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-});
-
-// ============================
-// INICIALIZACIÓN
-// ============================
-
-document.addEventListener("DOMContentLoaded", () => {
-  const input = document.getElementById("chat-input");
-  const output = document.getElementById("chat-output");
-
-  input.addEventListener("keypress", function(e) {
-    if (e.key === "Enter") {
-
-      const texto = input.value;
-      input.value = "";
-
-      output.innerHTML += `<div><b>Tú:</b> ${texto}</div>`;
-
-      const respuesta = responder(texto);
-
-      output.innerHTML += `<div><b>Palanca:</b> ${respuesta}</div>`;
-
-      output.scrollTop = output.scrollHeight;
-    }
-  });
 });
