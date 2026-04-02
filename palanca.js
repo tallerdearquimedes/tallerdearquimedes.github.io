@@ -28,8 +28,8 @@ respuestas: [
 `Luis Osorno es ingeniero industrial e ingeniero en sistemas computacionales. Su enfoque es diseñar, construir y probar tecnología con resultados observables.`,
 `Luis Osorno integra manufactura, programación e inteligencia artificial bajo un enfoque práctico que consiste en llevar ideas a funcionamiento real.`,
 `Luis Osorno es ingeniero industrial e ingeniero en sistemas computacionales, enfocado en el diseño, construcción y prueba de tecnología.`,
-`Luis Osorno es un ingenieor que en su trabajo integra manufactura, programación e inteligencia artificial bajo un enfoque práctico: llevar ideas a resultados observables.`,
-`Luis Osorno es un ingenierp con experienca que complementa su formación con estudios en derecho, una maestría en ciencias de la familia y un doctorado en educación, lo que le permite integrar visión técnica, formativa y normativa en su práctica profesional.`
+`Luis Osorno es un ingeniero que en su trabajo integra manufactura, programación e inteligencia artificial bajo un enfoque práctico: llevar ideas a resultados observables.`,
+`Luis Osorno es un ingeniero con experienca que complementa su formación con estudios en derecho, una maestría en ciencias de la familia y un doctorado en educación, lo que le permite integrar visión técnica, formativa y normativa en su práctica profesional.`
 ]
 },
 {
@@ -88,7 +88,7 @@ respuestas: [
 `El blog ha evolucionado, con el tiempo, este espacio ha integrado tanto reflexión como análisis aplicado, conectando la experiencia humana con la práctica de la ingeniería.`,
 `El blog reúne dos dimensiones. Por un lado reflexión sobre formación, experiencia y criterio; Mientras que, por otro, incorpora pensamiento aplicado por medio de análisis que conecta la ingeniería con decisiones reales`,
 `En el Taller de Arquímedes tenemos muy presente que no todo lo que se construye se ve en una máquina. Parte del trabajo ocurre en la forma de pensar.`
-]
+],
 accion: () => window.open("https://tallerdearquimedes.blogspot.com/", "_blank")  
 },
 {
@@ -135,12 +135,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // MENSAJES INICIALES
   // ============================
 
-  output.innerHTML += `<div><b>IA:</b> Sistema activo. Puedes consultar sobre el taller, procesos o navegación.</div>`;
+  output.innerHTML = `
+    <div><b>IA:</b> Sistema activo. Puedes consultar sobre el taller, procesos o navegación.</div>
+    <div><b>Palanca:</b> Bienvenido al Taller de Arquímedes. Soy Palanca. Puedo ayudarte a entender cómo está organizado este espacio y qué tipo de trabajo se desarrolla aquí.</div>
+  `;
 
-  setTimeout(() => {
-    output.innerHTML += `<div><b>Palanca:</b> Bienvenido al Taller de Arquímedes. Soy Palanca. Puedo ayudarte a entender cómo está organizado este espacio y qué tipo de trabajo se desarrolla aquí.</div>`;
-    output.scrollTop = output.scrollHeight;
-  }, 300);
 
   // ============================
   // INTERACCIÓN
@@ -148,15 +147,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   input.addEventListener("keypress", function(e) {
     if (e.key === "Enter") {
+      const texto = input.value.trim();
+      if (!texto) return;
 
-      const texto = input.value;
       input.value = "";
 
       output.innerHTML += `<div><b>Tú:</b> ${texto}</div>`;
-
-      const respuesta = responder(texto);
-
-      output.innerHTML += `<div><b>Palanca:</b> ${respuesta}</div>`;
+      output.innerHTML += `<div><b>Palanca:</b> ${responder(texto)}</div>`;
 
       output.scrollTop = output.scrollHeight;
     }
