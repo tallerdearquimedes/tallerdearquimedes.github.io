@@ -8,6 +8,11 @@ function limpiar(texto) {
     .replace(/[¿?]/g, "");
 }
 
+function similitud(texto, clave) {
+  const palabras = texto.split(" ");
+  return palabras.some(p => p.startsWith(clave) || clave.startsWith(p));
+}
+
 // ============================
 // BASE DE CONOCIMIENTO
 // ============================
@@ -16,6 +21,7 @@ const base = [
 {
 keys: ["quien eres"],
 respuestas: [
+`Soy Palanca. Soy una inteligencia artificial diseñada para orientar dentro del Taller de Arquímedes.`,
 `Soy Palanca. Soy una asistente diseñada para guiarte dentro del Taller de Arquímedes.`,
 `Soy Palanca. Puedo guiarte dentro del sitio y explicarte cómo se organiza el trabajo.`,
 `Soy Palanca. Estoy aquí para ayudarte a entender cómo está estructurado el Taller y qué se desarrolla en cada área.`,
@@ -113,7 +119,7 @@ function responder(input) {
     for (let j = 0; j < item.keys.length; j++) {
       const key = item.keys[j];
 
-      if (limpio.includes(key)) {
+      if (limpio.includes(key) || similitud(limpio, key)) {
         const opciones = item.respuestas;
         const respuesta = opciones[Math.floor(Math.random() * opciones.length)];
 
@@ -126,7 +132,26 @@ function responder(input) {
     }
   }
 
-  return "Si lo deseas, puedo orientarte dentro del Taller. Intenta preguntar por una sección o concepto específico.";
+if (Math.random() < 0.2) {
+  const reflexiones = [
+    "En este espacio, la ingeniería no se entiende como especialización aislada, sino como integración de capacidades.",
+    "No todo lo que se construye es físico. Parte del trabajo ocurre en la forma de pensar.",
+    "El Taller se plantea como un entorno donde diseñar, construir y probar no son etapas separadas, sino un mismo proceso.",
+    "Aquí la tecnología no se presenta como producto terminado, sino como proceso observable."
+  ];
+
+  return reflexiones[Math.floor(Math.random() * reflexiones.length)];
+}
+  
+const fallback = [
+  "No puedo ayudarte directamente con eso. Pero puedo explicarte cómo funciona el Taller de Arquímedes si te interesa.",
+  "Esa consulta está fuera de mi alcance. Si quieres, puedo orientarte dentro del Taller o mostrarte cómo se estructura el trabajo.",
+  "No tengo información para responder eso con precisión. Pero puedo ayudarte a entender cómo se construyen los proyectos en este espacio.",
+  "Soy una inteligencia diseñada para orientar dentro del Taller de Arquímedes. Si quieres, puedo mostrarte sus áreas o cómo se desarrolla la ingeniería aquí.",
+  "No puedo responder eso directamente. Pero puedo explicarte cómo se integra la ingeniería, la programación y la inteligencia artificial en este espacio."
+];
+
+return fallback[Math.floor(Math.random() * fallback.length)];
 }
 
 function preguntar(texto) {
@@ -160,6 +185,7 @@ if (sugerencias) {
   sugerencias.innerHTML = `
     <div id="sugerencias" style="margin-top:10px;">
       <button data-pregunta="luis osorno">¿Quién es Luis Osorno?</button>
+      <button data-pregunta="quien eres">¿Quién eres?</button>
       <button data-pregunta="taller de arquimedes">¿Qué es el Taller?</button>
       <button data-pregunta="youtube">Ver proyectos</button>
       <button data-pregunta="blog">Ir al blog</button>
