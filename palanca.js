@@ -155,22 +155,27 @@ output.innerHTML = `
   <div><b>Palanca:</b> Bienvenido al Taller de Arquímedes. Soy Palanca. Puedo ayudarte a entender cómo está organizado este espacio y qué tipo de trabajo se desarrolla aquí.</div>`;
 
 const sugerencias = document.getElementById("palanca-sugerencias");
-sugerencias.innerHTML = `
-  <div id="sugerencias" style="margin-top:10px;">
-    <button data-pregunta="luis osorno">¿Quién es Luis Osorno?</button>
-    <button data-pregunta="taller de arquimedes">¿Qué es el Taller?</button>
-    <button data-pregunta="youtube">Ver proyectos</button>
-    <button data-pregunta="blog">Ir al blog</button>
-  </div>
-`;
+
+if (sugerencias) {
+  sugerencias.innerHTML = `
+    <div id="sugerencias" style="margin-top:10px;">
+      <button data-pregunta="luis osorno">¿Quién es Luis Osorno?</button>
+      <button data-pregunta="taller de arquimedes">¿Qué es el Taller?</button>
+      <button data-pregunta="youtube">Ver proyectos</button>
+      <button data-pregunta="blog">Ir al blog</button>
+    </div>
+  `;
+}  
   
 const botones = document.querySelectorAll("#sugerencias button");
 
-botones.forEach((boton) => {
-  boton.addEventListener("click", function() {
-    preguntar(this.dataset.pregunta);
+if (botones.length > 0) {
+  botones.forEach((boton) => {
+    boton.addEventListener("click", function() {
+      preguntar(this.dataset.pregunta);
+    });
   });
-});                    
+}               
                           
   // ============================
   // INTERACCIÓN
