@@ -153,6 +153,14 @@ document.addEventListener("DOMContentLoaded", () => {
   <button onclick="preguntar('blog')">Ir al blog</button>
 </div>
 
+const botones = document.querySelectorAll("#palanca-sugerencias button");
+
+botones.forEach((boton) => {
+  boton.addEventListener("click", function() {
+    enviarPregunta(this.dataset.pregunta);
+  });
+});                          
+                          
   // ============================
   // INTERACCIÓN
   // ============================
