@@ -29,7 +29,7 @@ respuestas: [
 `Luis Osorno integra manufactura, programación e inteligencia artificial bajo un enfoque práctico que consiste en llevar ideas a funcionamiento real.`,
 `Luis Osorno es ingeniero industrial e ingeniero en sistemas computacionales, enfocado en el diseño, construcción y prueba de tecnología.`,
 `Luis Osorno es un ingeniero que en su trabajo integra manufactura, programación e inteligencia artificial bajo un enfoque práctico: llevar ideas a resultados observables.`,
-`Luis Osorno es un ingeniero con experienca que complementa su formación con estudios en derecho, una maestría en ciencias de la familia y un doctorado en educación, lo que le permite integrar visión técnica, formativa y normativa en su práctica profesional.`
+`Luis Osorno es un ingeniero con experiencia que complementa su formación con estudios en derecho, una maestría en ciencias de la familia y un doctorado en educación, lo que le permite integrar visión técnica, formativa y normativa en su práctica profesional.`
 ]
 },
 {
