@@ -107,10 +107,13 @@ respuestas: [
 function responder(input) {
   const limpio = limpiar(input);
 
-  for (let item of base) {
-    for (let key of item.keys) {
-      if (limpio.includes(key)) {
+  for (let i = 0; i < base.length; i++) {
+    const item = base[i];
 
+    for (let j = 0; j < item.keys.length; j++) {
+      const key = item.keys[j];
+
+      if (limpio.includes(key)) {
         const opciones = item.respuestas;
         const respuesta = opciones[Math.floor(Math.random() * opciones.length)];
 
@@ -128,14 +131,20 @@ function responder(input) {
 
 function preguntar(texto) {
   const input = document.getElementById("chat-input");
-  input.value = texto;
-  input.dispatchEvent(new KeyboardEvent("keypress", { key: "Enter" }));
+  const output = document.getElementById("chat-output");
+
+  if (!input || !output) return;
+
+  output.innerHTML += `<div><b>Tú:</b> ${texto}</div>`;
+  output.innerHTML += `<div><b>Palanca:</b> ${responder(texto)}</div>`;
+  output.scrollTop = output.scrollHeight;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-
+document.addEventListener("DOMContentLoaded", function () {
   const input = document.getElementById("chat-input");
   const output = document.getElementById("chat-output");
+
+  if (!input || !output) return;
 
   // ============================
   // MENSAJES INICIALES
@@ -165,18 +174,13 @@ botones.forEach((boton) => {
   // INTERACCIÓN
   // ============================
 
-  input.addEventListener("keypress", function(e) {
+  input.addEventListener("keypress", function (e) {
     if (e.key === "Enter") {
       const texto = input.value.trim();
       if (!texto) return;
 
       input.value = "";
-
-      output.innerHTML += `<div><b>Tú:</b> ${texto}</div>`;
-      output.innerHTML += `<div><b>Palanca:</b> ${responder(texto)}</div>`;
-
-      output.scrollTop = output.scrollHeight;
+      preguntar(texto);
     }
   });
-
 });
