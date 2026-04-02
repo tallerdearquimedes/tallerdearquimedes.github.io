@@ -106,6 +106,10 @@ respuestas: [
 }
 ];
 
+if (limpio === "hola" || limpio === "buenas") {
+  return "Hola. Puedo ayudarte a entender cómo funciona el Taller de Arquímedes o mostrarte sus proyectos.";
+}
+
 // ============================
 // MOTOR
 // ============================
@@ -149,7 +153,7 @@ function responder(input) {
   // ============================
   // SI HAY COINCIDENCIAS
   // ============================
-  if (candidatos.length > 0) {
+  if (candidatos.length > 0 && candidatos[0].score >= 2)
 
     // Ordenar por relevancia
     candidatos.sort((a, b) => b.score - a.score);
@@ -194,6 +198,11 @@ function responder(input) {
     "No tengo información para responder eso con precisión. Pero puedo ayudarte a entender cómo se construyen los proyectos en este espacio.",
     "Soy una inteligencia diseñada para orientar dentro del Taller de Arquímedes. Si quieres, puedo mostrarte sus áreas o cómo se desarrolla la ingeniería aquí.",
     "No puedo responder eso directamente. Pero puedo explicarte cómo se integra la ingeniería, la programación y la inteligencia artificial en este espacio."
+    "No tengo información directa sobre ese tema. Pero puedo explicarte cómo se desarrollan los proyectos dentro del Taller de Arquímedes.",
+    "Ese tema está fuera del alcance de este sistema. Si quieres, puedo mostrarte cómo se estructuran los proyectos y procesos dentro del Taller.",
+    "No estoy diseñado para responder sobre eso. Pero puedo orientarte sobre ingeniería aplicada, prototipado y desarrollo dentro del Taller de Arquímedes.",
+    "No puedo ayudarte con ese tema en particular. Pero puedo explicarte cómo se diseñan, construyen y prueban soluciones tecnológicas en este espacio.",
+    "Ese tema no forma parte del enfoque del Taller. Si te interesa, puedo mostrarte los proyectos o el enfoque de trabajo que se desarrolla aquí."
   ];
 
   return fallback[Math.floor(Math.random() * fallback.length)];
