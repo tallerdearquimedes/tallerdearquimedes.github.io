@@ -150,12 +150,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // MENSAJES INICIALES
   // ============================
 
- output.innerHTML = `
+output.innerHTML = `
   <div><b>IA:</b> Sistema activo. Puedes consultar sobre el taller, procesos o navegación.</div>
-  <div><b>Palanca:</b> Bienvenido al Taller de Arquímedes. Soy Palanca. Puedo ayudarte a entender cómo está organizado este espacio y qué tipo de trabajo se desarrolla aquí.</div>
+  <div><b>Palanca:</b> Bienvenido al Taller de Arquímedes. Soy Palanca. Puedo ayudarte a entender cómo está organizado este espacio y qué tipo de trabajo se desarrolla aquí.</div>`;
 
+const sugerencias = document.getElementById("palanca-sugerencias");
+sugerencias.innerHTML = `
   <div id="sugerencias" style="margin-top:10px;">
-    <button data-pregunta="quien eres">¿Quién eres?</button>
+    <button data-pregunta="luis osorno">¿Quién es Luis Osorno?</button>
     <button data-pregunta="taller de arquimedes">¿Qué es el Taller?</button>
     <button data-pregunta="youtube">Ver proyectos</button>
     <button data-pregunta="blog">Ir al blog</button>
