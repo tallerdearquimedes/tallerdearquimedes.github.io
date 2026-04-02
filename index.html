@@ -652,6 +652,13 @@
         </div>
       </article>
 
+	  <script>
+      document.getElementById("tarjeta-ia")
+        .addEventListener("click", function() {
+          document.getElementById("chatbot").style.display = "flex";
+        });
+      </script>
+		
     </div>
   </section>
 
@@ -850,5 +857,82 @@ En conjunto, estos elementos permiten construir una identidad profesional clara,
     © 2026 El Taller de Arquímedes
   </footer>
 
+  <!-- ========================================================= -->
+  <!-- SECCION 08 - CHATBOT                                      -->
+  <!-- ========================================================= -->
+	
+  <div id="chatbot" style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 320px;
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 12px;
+    display: none;
+    flex-direction: column;
+    z-index: 9999;
+  ">
+
+    <div style="
+      padding: 10px;
+      background: #0b0b0b;
+      border-bottom: 1px solid #222;
+      color: #f2c300;
+      font-weight: bold;
+    ">
+      IA · Taller
+    </div>
+
+    <div id="chat-output" style="
+      height: 220px;
+      overflow-y: auto;
+      padding: 10px;
+      font-size: 0.9rem;
+      color: #c8c8c8;
+    ">
+    </div>
+
+    <input id="chat-input" type="text" placeholder="Consulta técnica..."
+      style="
+        border: none;
+        border-top: 1px solid #222;
+        padding: 10px;
+        background: #0b0b0b;
+        color: white;
+        outline: none;
+      ">
+  </div>
+
+<script>
+const API_URL = "https://little-sea-c843.arquimedestaller.workers.dev";
+
+const input = document.getElementById("chat-input");
+const output = document.getElementById("chat-output");
+
+input.addEventListener("keypress", async function(e) {
+  if (e.key === "Enter") {
+
+    const texto = input.value;
+    input.value = "";
+
+    output.innerHTML += "<div><b>Tú:</b> " + texto + "</div>";
+
+    const res = await fetch(API_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ input: texto })
+    });
+
+    const data = await res.json();
+
+    output.innerHTML += "<div><b>IA:</b> " + data.respuesta + "</div>";
+    output.scrollTop = output.scrollHeight;
+  }
+});
+</script>
+	
 </body>
 </html>
