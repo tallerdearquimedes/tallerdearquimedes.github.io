@@ -141,25 +141,25 @@ document.addEventListener("DOMContentLoaded", () => {
   // MENSAJES INICIALES
   // ============================
 
-  output.innerHTML = `
-    <div><b>IA:</b> Sistema activo. Puedes consultar sobre el taller, procesos o navegación.</div>
-    <div><b>Palanca:</b> Bienvenido al Taller de Arquímedes. Soy Palanca. Puedo ayudarte a entender cómo está organizado este espacio y qué tipo de trabajo se desarrolla aquí.</div>
-  `;
+ output.innerHTML = `
+  <div><b>IA:</b> Sistema activo. Puedes consultar sobre el taller, procesos o navegación.</div>
+  <div><b>Palanca:</b> Bienvenido al Taller de Arquímedes. Soy Palanca. Puedo ayudarte a entender cómo está organizado este espacio y qué tipo de trabajo se desarrolla aquí.</div>
 
-<div id="sugerencias">
-  <button onclick="preguntar('quien eres')">¿Quién eres?</button>
-  <button onclick="preguntar('taller de arquimedes')">¿Qué es el Taller?</button>
-  <button onclick="preguntar('youtube')">Ver proyectos</button>
-  <button onclick="preguntar('blog')">Ir al blog</button>
-</div>
-
-const botones = document.querySelectorAll("#palanca-sugerencias button");
+  <div id="sugerencias" style="margin-top:10px;">
+    <button data-pregunta="quien eres">¿Quién eres?</button>
+    <button data-pregunta="taller de arquimedes">¿Qué es el Taller?</button>
+    <button data-pregunta="youtube">Ver proyectos</button>
+    <button data-pregunta="blog">Ir al blog</button>
+  </div>
+`;
+  
+const botones = document.querySelectorAll("#sugerencias button");
 
 botones.forEach((boton) => {
   boton.addEventListener("click", function() {
-    enviarPregunta(this.dataset.pregunta);
+    preguntar(this.dataset.pregunta);
   });
-});                          
+});                    
                           
   // ============================
   // INTERACCIÓN
