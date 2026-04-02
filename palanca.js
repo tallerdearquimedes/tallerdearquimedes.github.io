@@ -1,4 +1,4 @@
-// ============================
+//============================
 // NORMALIZACIÓN
 // ============================
 function limpiar(texto) {
@@ -125,6 +125,44 @@ function responder(input) {
 
   return "Si lo deseas, puedo orientarte dentro del Taller. Intenta preguntar por una sección o concepto específico.";
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const input = document.getElementById("chat-input");
+  const output = document.getElementById("chat-output");
+
+  // ============================
+  // MENSAJES INICIALES
+  // ============================
+
+  output.innerHTML += `<div><b>IA:</b> Sistema activo. Puedes consultar sobre el taller, procesos o navegación.</div>`;
+
+  setTimeout(() => {
+    output.innerHTML += `<div><b>Palanca:</b> Bienvenido al Taller de Arquímedes. Soy Palanca. Puedo ayudarte a entender cómo está organizado este espacio y qué tipo de trabajo se desarrolla aquí.</div>`;
+    output.scrollTop = output.scrollHeight;
+  }, 300);
+
+  // ============================
+  // INTERACCIÓN
+  // ============================
+
+  input.addEventListener("keypress", function(e) {
+    if (e.key === "Enter") {
+
+      const texto = input.value;
+      input.value = "";
+
+      output.innerHTML += `<div><b>Tú:</b> ${texto}</div>`;
+
+      const respuesta = responder(texto);
+
+      output.innerHTML += `<div><b>Palanca:</b> ${respuesta}</div>`;
+
+      output.scrollTop = output.scrollHeight;
+    }
+  });
+
+});
 
 // ============================
 // INICIALIZACIÓN
