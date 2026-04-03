@@ -106,10 +106,6 @@ respuestas: [
 }
 ];
 
-if (limpio === "hola" || limpio === "buenas") {
-  return "Hola. Puedo ayudarte a entender cómo funciona el Taller de Arquímedes o mostrarte sus proyectos.";
-}
-
 // ============================
 // MOTOR
 // ============================
@@ -135,6 +131,13 @@ function puntuar(input, key) {
 function responder(input) {
   const limpio = limpiar(input);
 
+  // ============================
+  // SALUDOS
+  // ============================
+  if (limpio === "hola" || limpio === "buenas" || limpio === "buenos dias" || limpio === "buenas tardes" || limpio === "buenas noches") {
+    return "Hola. Puedo ayudarte a entender cómo funciona el Taller de Arquímedes, mostrarte sus proyectos o explicarte sus áreas de trabajo.";
+  }
+  
   let candidatos = [];
 
   // ============================
