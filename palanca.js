@@ -175,8 +175,16 @@ respuestas: [
 keys: ["taller de arquimedes", "que es el taller", "que se puede hacer", "que se hace"],
 respuestas: [
 `El Taller de Arquímedes es un sistema técnico. El sitio web organiza la información, YouTube muestra la ejecución y el blog documenta el pensamiento.`,
-`Es Taller de Arquímedes es una estructura de trabajo el la que el sitio web facilita entender la experiencia, YouTube permite ver la ejecución de proyectos y el blog se emplea para logar el desarrollo del criterio de acción.`,
+`El Taller de Arquímedes es una estructura de trabajo el la que el sitio web facilita entender la experiencia, YouTube permite ver la ejecución de proyectos y el blog se emplea para logar el desarrollo del criterio de acción.`,
 `El Taller de Arquímedes es un conjunto de elementos que permite entender no solo lo qué se hace, sino cómo se construye, por qué se hace y por qué funciona.`
+]
+},
+{
+keys: ["materiales", "componentes", "recursos", "piezas", "metal", "acero", "aluminio", "madera", "acrílico", "plástico", "resina", "mdf", "triplay", "resistencia", "dureza", "peso", "flexibilidad", "acabado", "textura"],
+respuestas: [
+`En el Taller de Arquímedes, la materia es el lienzo de nuestra ingeniería. Aquí trabajamos habitualmente con maderas, resinas y polímeros, adaptando cada elección a las necesidades del prototipo. Me pongo a tu entera orden para explicarte cómo seleccionamos el material ideal para que cada engranaje tenga la resistencia y estética que el proyecto exige.`,
+`Luis tiene la filosofía de que un ingeniero desarrolla la destreza para transformar elementos diversos en mecanismos funcionales. De tal manera que todo lo que se haga sea lo que deba ser, sirva para lo que deba servir y, además, esté al servicio de todos. Se podría decir que su principal matera es su manera de pensar`,
+`Desde que Luis amplió su horizonte hacia el dominio de tecnologías como el corte láser, la impresión 3D y el mecanizado CNC, podemos trabajar con materiales rígidos a formas de una complejidad asombrosa. Me pongo a tu entera orden para explicarte cómo seleccionamos el material ideal para que cada engranaje tenga la resistencia y estética que el proyecto exige.`
 ]
 },
 {
