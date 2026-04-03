@@ -105,7 +105,7 @@ respuestas: [
 ]
 },  
 {
-keys: ["su experiencia", "su trayectoria", "ha hecho", "ha trabajado"],
+keys: ["su experiencia", "su trayectoria", "ha hecho", "ha trabajado", "que experiencia tiene"],
 respuestas: [
 `La experiencia de Luis Osorno no se mide solo en años, sino en la cantidad de problemas que ha convertido en soluciones. Su formación combina el rigor de la ingeniería con la intuición que solo te da entender el átomo y el bit, como la mente humana.`,
 `La experiencia que tiene Luis Osorno le ha llevado a saber cómo debe verse un proyecto, así cómo entender la información que debe procesar para ser eficiente`,
