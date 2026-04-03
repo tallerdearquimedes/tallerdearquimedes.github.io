@@ -35,6 +35,12 @@ respuestas: [
 ]
 },
 {
+keys: ["comic", "avengers", "superheroe", "superman", "historieta", "marvel", "dc", "jla", "justice league", "liga de la justicia", "batman", "wolverine", "x-men", "4 fantasticos", "fantastics four", "hombres x"],
+respuestas: [
+`En este entorno nos encanta imaginar, y los cómics son el plano perfecto para diseñar mundos donde los buenos siempre ganan. A mi me gusta lo mismo que a Luis y sus favoritos son, empezando con el ingeniero por excelencia, Iron Man; además de los X-Men, Wolverine, Superman y los 4 Fantásticos. Pero el referente absoluto es Batman, por su impecable faceta como investigador e ingeniero. Nos impactan historias como "La Muerte de Superman" y "Kingdom Come" porque exploran el autocontrol y la ética del poder; esa capacidad de contener una fuerza inmensa para no destruir el entorno, o de ceder el control para no caer ante la venganza, es la verdadera muestra del carácter. Seguro te gustará esa filosofía aplicada en nuestros proyectos.`
+]
+},
+{
 keys: ["quien eres", "eres una IA", "eres una persona", "que haces", "tu funcion", "puedes ayudar", "te defines", "te definirias"],
 respuestas: [
 `Soy Palanca. Soy una inteligencia artificial diseñada para orientar dentro del Taller de Arquímedes.`,
@@ -329,12 +335,6 @@ respuestas: [
 keys: ["muestrame", "enseñame", "quiero ver", "enseñar", "explorar", "navegar", "conocer", "desplegar", "listar", "quiero", "deseo", "me gustaría", "qué hay", "qué tienes", "Sí, claro", "adelante", "cuéntame más", "procedamos"],
 respuestas: [
 `En líneas de trabajo encontrarás las aplicaciones principales sobre las que Luis disfruta trabajar: ingeniería y manufactura, generación de prototipos, programación y, recientemente, producción de inteligencia artificial. En la sección "Acerca de" tendrás oportunidad de conocer un poco del perfil y respaldo detrás del ingenio. Desde la Ingeniería Industrial y la Ingeniería en Sistemas Computacionales, hasta un Doctorado en Educación, esta sección representa la experiencia que garantiza el rigor de cada proceso. En el laboratorio encontrarás un lugar donde las ideas se enfrentan a la realidad física. Aquí verás el uso de tecnología CNC (Torno y Fresadora), Corte Láser y Router CN para materializar mecanismos de alta complejidad. Cada pieza cuenta una historia de resolución de problemas técnicos. Se aplica programación y automatización para conocer el sistema nervioso de las máquinas. Ahí es donde la experiencia en programación se integra con microcontroladores como Arduino y ESP32, y lenguajes como Python, C++ y Java para generar prototipos. En Reflexión y Pensamiento encontrarás un espacio donde la técnica se une a la ética. Ahí exploramos temas de Derecho, Ciencias de la Familia y Teología, ofreciendo una visión integral que pocos talleres en el mundo pueden presumir. Y, si tienes necesidad de conocer más al respecto, puedes pasar a visitar el blog y el canal de Youtube. En el canal podrás ver construcción, pruebas y funcionamiento de los proyectos; mientras que en el blog podrás apreciar la parte del trabajo que ocurre en la forma de pensar.`
-]
-},
-{
-keys: ["comic", "avengers", "superheroe", "superman", "historieta", "marvel", "dc", "jla", "justice league", "liga de la justicia", "batman", "wolverine", "x-men", "4 fantasticos", "fantastics four", "hombres x"],
-respuestas: [
-`En este entorno nos encanta imaginar, y los cómics son el plano perfecto para diseñar mundos donde los buenos siempre ganan. A mi me gusta lo mismo que a Luis y sus favoritos son, empezando con el ingeniero por excelencia, Iron Man; además de los X-Men, Wolverine, Superman y los 4 Fantásticos. Pero el referente absoluto es Batman, por su impecable faceta como investigador e ingeniero. Nos impactan historias como "La Muerte de Superman" y "Kingdom Come" porque exploran el autocontrol y la ética del poder; esa capacidad de contener una fuerza inmensa para no destruir el entorno, o de ceder el control para no caer ante la venganza, es la verdadera muestra del carácter. Seguro te gustará esa filosofía aplicada en nuestros proyectos.`
 ]
 },
 {
