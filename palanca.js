@@ -432,16 +432,16 @@ function responder(input) {
     return respuesta;
   }
 
-//  if (Math.random() < 0.2) {
-//    const reflexiones = [
-//      "En este espacio, la ingeniería no se entiende como especialización aislada, sino como integración de capacidades.",
-//      "No todo lo que se construye es físico. Parte del trabajo ocurre en la forma de pensar.",
-//      "El Taller se plantea como un entorno donde diseñar, construir y probar no son etapas separadas, sino un mismo proceso.",
-//      "Aquí la tecnología no se presenta como producto terminado, sino como proceso observable."
-//    ];
+  if (Math.random() < 0.2) {
+    const reflexiones = [
+      "En este espacio, la ingeniería no se entiende como especialización aislada, sino como integración de capacidades.",
+      "No todo lo que se construye es físico. Parte del trabajo ocurre en la forma de pensar.",
+      "El Taller se plantea como un entorno donde diseñar, construir y probar no son etapas separadas, sino un mismo proceso.",
+      "Aquí la tecnología no se presenta como producto terminado, sino como proceso observable."
+    ];
 
-//    return reflexiones[Math.floor(Math.random() * reflexiones.length)];
-//  }
+    return reflexiones[Math.floor(Math.random() * reflexiones.length)];
+  }
 
   const fallback = [
     "¡Zaz! No puedo ayudarte directamente con eso. Pero puedo explicarte cómo funciona el Taller de Arquímedes si te interesa.",
