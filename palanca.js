@@ -337,57 +337,86 @@ respuestas: [
 // MOTOR
 // ============================
 
+function puntuarCoincidencia(limpio, key) {
+  const palabras = limpio.split(" ");
+  const keyNormalizada = limpiar(key);
+  const palabrasKey = keyNormalizada.split(" ");
+
+  let score = 0;
+
+  // Frase completa
+  if (limpio.includes(keyNormalizada)) score += 10;
+
+  // Palabra exacta
+  for (const palabra of palabras) {
+    if (palabra === keyNormalizada) score += 8;
+  }
+
+  // Coincidencias por palabras dentro de la key
+  for (const pk of palabrasKey) {
+    for (const p of palabras) {
+      if (p === pk) score += 4;
+      else if (p.length >= 4 && pk.length >= 4) {
+        if (p.startsWith(pk) || pk.startsWith(p)) score += 2;
+      }
+    }
+  }
+
+  return score;
+}
+
 function responder(input) {
   const limpio = limpiar(input);
+
+  let mejorItem = null;
+  let mejorScore = 0;
 
   for (let i = 0; i < base.length; i++) {
     const item = base[i];
 
     for (let j = 0; j < item.keys.length; j++) {
       const key = item.keys[j];
+      const score = puntuarCoincidencia(limpio, key);
 
-      const palabras = limpio.split(" ");
-
-      const keyCompleta = key.includes(" ");
-      const matchDirecto = keyCompleta ? limpio.includes(key) : palabras.includes(key);
-      const matchExacto = palabras.includes(key);
-      const matchSimilar = similitud(limpio, key);
-
-      if (matchDirecto || matchExacto || matchSimilar) {
-        const opciones = item.respuestas;
-        const respuesta = opciones[Math.floor(Math.random() * opciones.length)];
-
-        if (item.accion) {
-          setTimeout(item.accion, 800);
-        }
-
-        return respuesta;
+      if (score > mejorScore) {
+        mejorScore = score;
+        mejorItem = item;
       }
     }
   }
 
-if (Math.random() < 0.2) {
-  const reflexiones = [
-    "En este espacio, la ingeniería no se entiende como especialización aislada, sino como integración de capacidades.",
-    "No todo lo que se construye es físico. Parte del trabajo ocurre en la forma de pensar.",
-    "El Taller se plantea como un entorno donde diseñar, construir y probar no son etapas separadas, sino un mismo proceso.",
-    "Aquí la tecnología no se presenta como producto terminado, sino como proceso observable."
+  if (mejorItem && mejorScore > 0) {
+    const opciones = mejorItem.respuestas;
+    const respuesta = opciones[Math.floor(Math.random() * opciones.length)];
+
+    if (mejorItem.accion) {
+      setTimeout(mejorItem.accion, 800);
+    }
+
+    return respuesta;
+  }
+
+  if (Math.random() < 0.2) {
+    const reflexiones = [
+      "En este espacio, la ingeniería no se entiende como especialización aislada, sino como integración de capacidades.",
+      "No todo lo que se construye es físico. Parte del trabajo ocurre en la forma de pensar.",
+      "El Taller se plantea como un entorno donde diseñar, construir y probar no son etapas separadas, sino un mismo proceso.",
+      "Aquí la tecnología no se presenta como producto terminado, sino como proceso observable."
+    ];
+
+    return reflexiones[Math.floor(Math.random() * reflexiones.length)];
+  }
+
+  const fallback = [
+    "No puedo ayudarte directamente con eso. Pero puedo explicarte cómo funciona el Taller de Arquímedes si te interesa.",
+    "Esa consulta está fuera de mi alcance. Si quieres, puedo orientarte dentro del Taller o mostrarte cómo se estructura el trabajo.",
+    "No tengo información para responder eso con precisión. Pero puedo ayudarte a entender cómo se construyen los proyectos en este espacio.",
+    "Soy una inteligencia diseñada para orientar dentro del Taller de Arquímedes. Si quieres, puedo mostrarte sus áreas o cómo se desarrolla la ingeniería aquí.",
+    "No puedo responder eso directamente. Pero puedo explicarte cómo se integra la ingeniería, la programación y la inteligencia artificial en este espacio."
   ];
 
-  return reflexiones[Math.floor(Math.random() * reflexiones.length)];
+  return fallback[Math.floor(Math.random() * fallback.length)];
 }
-  
-const fallback = [
-  "No puedo ayudarte directamente con eso. Pero puedo explicarte cómo funciona el Taller de Arquímedes si te interesa.",
-  "Esa consulta está fuera de mi alcance. Si quieres, puedo orientarte dentro del Taller o mostrarte cómo se estructura el trabajo.",
-  "No tengo información para responder eso con precisión. Pero puedo ayudarte a entender cómo se construyen los proyectos en este espacio.",
-  "Soy una inteligencia diseñada para orientar dentro del Taller de Arquímedes. Si quieres, puedo mostrarte sus áreas o cómo se desarrolla la ingeniería aquí.",
-  "No puedo responder eso directamente. Pero puedo explicarte cómo se integra la ingeniería, la programación y la inteligencia artificial en este espacio."
-];
-
-return fallback[Math.floor(Math.random() * fallback.length)];
-}
-
 function preguntar(texto) {
   const input = document.getElementById("chat-input");
   const output = document.getElementById("chat-output");
