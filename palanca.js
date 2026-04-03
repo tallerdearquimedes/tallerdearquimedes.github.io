@@ -35,7 +35,7 @@ respuestas: [
 ]
 },
 {
-keys: ["quien eres", "eres una IA", "eres una persona", "que haces", "tu funcion", "puedes ayudar", "te defines", "te definirias"],
+keys: ["quien eres", "eres una IA", "eres una persona", "tu funcion", "te defines", "te definirias"],
 respuestas: [
 `Soy Palanca. Soy una inteligencia artificial diseñada para orientar dentro del Taller de Arquímedes.`,
 `Soy Palanca. Soy una asistente diseñada para guiarte dentro del Taller de Arquímedes.`,
