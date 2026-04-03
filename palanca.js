@@ -414,7 +414,7 @@ function responder(input) {
     "Ese es un tema fascinante, pero confieso que mi programación aún no ha sido calibrada para procesar ese tema específico. Sin embargo, mi arquitectura está perfectamente lista para explicarte cómo funcionan la imaginación y la creatividad en el Taller de Arquímedes si te interesa.",
     "He analizado tu consulta y, aunque posee una lógica intrigante, se encuentra fuera del alcance de mi conocimiento actual. Lo que sí domino con total precisión es la estructura de este espacio; así que puedo orientarte dentro de las secciones del Taller de Arquímedes o mostrarte cómo se organiza el trabajo de ingeniería de Luis.",
     "¡Cielos! Admito que no cuento con la información necesaria para responderte con la exactitud que el Taller de Arquímedes. Estoy optimizada para la ingeniería y la creación. Si me lo permites, puedo mostrarte nuestras áreas de desarrollo o explicarte cómo se vive la ingeniería aplicada en este entorno.",
-    "La verdad, no puedo darte una respuesta directa sobre ese punto, pues mi motor de búsqueda prefiere enfocarse en lo que mejor sabemos hacer. Lo que sí puedo explicarte con detalle es cómo integramos la ingeniería, la programación y la inteligencia artificial en cada proyecto del Taller de Arquímedes",
+    "La verdad, no puedo darte una respuesta directa sobre ese punto, pues mi motor de búsqueda prefiere enfocarse en lo que mejor sabemos hacer. Lo que sí puedo explicarte con detalle es cómo integramos la ingeniería, la programación y la inteligencia artificial en cada proyecto del Taller de Arquímedes.",
   ];
 
   return fallback[Math.floor(Math.random() * fallback.length)];
