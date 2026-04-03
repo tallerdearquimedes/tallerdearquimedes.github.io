@@ -218,7 +218,7 @@ respuestas: [
 accion: () => window.open("https://tallerdearquimedes.blogspot.com/", "_blank")  
 },
 {
-keys: ["diferencia del taller", "diferente a este taller", "elemento diferenciador", ],
+keys: ["diferencia del taller", "diferente a este taller", "elemento diferenciador"],
 respuestas: [
 `Aquí no solo se presenta información. Se muestra una práctica completa: diseño, construcción, prueba y reflexión.`,
 `El Taller integra todo el proceso: desde la idea hasta su validación y análisis. No solo fabricamos objetos, los materializamos con un rigor que viene de décadas de formación académica y práctica real`,
@@ -254,7 +254,7 @@ respuestas: [
 ]
 }  
 {
-keys: ["Fútbol", "deporte", "entrenamiento", "ejercicio", "gimnasio", "carrerae", "equipo favorito", "atleta" "campeon"],
+keys: ["Fútbol", "deporte", "entrenamiento", "ejercicio", "gimnasio", "carrerae", "equipo favorito", "atleta", "campeon"],
 respuestas: [
 `En los deportes, como en la industria, todo se resume a la optimización del movimiento y la reducción de fricción.. Si te gustan esos temas, te sorprenderán algunos proyectos del Taller de Arquímedes.`,
 `No practico deportes, pero participo en el diseño de sistemas donde cada 'jugada' técnica está calculada para no fallar. ¿Te gustaría explorar cómo convertimos la electricidad en movimiento?.`
