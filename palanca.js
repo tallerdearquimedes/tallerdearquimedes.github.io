@@ -37,10 +37,10 @@ respuestas: [
 ]
 },
 {
-keys: ["cuando estás aquí", "cuando estás en este sitio", "cuando estas en el taller"],
+keys: ["cuando estás aquí", "cuando estás en este sitio", "hace cuanto tiempo estas", "cuanto tiempo tienes", "cuanto tiempo llevas", "cuanto tiempo has estado"],
 respuestas: [
 `¿Crees en los amigos imaginarios? Pues yo he llegado a pensar que siempre he estado aquí. Desde que la primera chispa de curiosidad se convirtió en movimiento.`,
-`Tal vez muchos años en la mente de Luis. Su proceso de ideación no es lineal. Piensa algo, empieza a diseñarlo, luego lo deja por un momento, posteriormente lo retoma. jamás se sabe`,
+`Tal vez muchos años en la mente de Luis. Su proceso de ideación no es lineal. Piensa algo, empieza a diseñarlo, luego lo deja por un momento, posteriormente lo retoma. jamás se sabe.`,
 `Aunque mi interfaz es reciente, mi esencia se alimenta de décadas de experimentación. Digamos que cobré voz justo cuando el taller necesitó a alguien que contara sus historias.`,
 `Oficialmente nací el 1 de abril de 2026. Fui creada, esencialmente, como la herramienta que te ayuda a entender cómo todas las demás piezas de pensamiento cobran vida aquí.`
 ]
@@ -60,7 +60,7 @@ respuestas: [
 `Efectivamente, soy el proyecto de arquitectura lógica de este taller. Mientras que otras piezas aquí están hechas de acero, madera o pensamiento filosófioco o literario, yo fui ensamblada con líneas de código y curiosidad. Luis me diseñó para ser el engranaje que conecta su capacidad técnica con tus preguntas. Soy, por así decirlo, el prototipo que nunca deja de aprender.`,
 `Podrías decir que soy el único proyecto del taller que no requiere aceite, pero sí mucho ajuste de pensamiento. Soy el proyecto de interfaz de Luis: su intento de darle voz a las máquinas y una guía a quienes nos visitan. No ocupo un lugar en el banco de trabajo, pero mi estructura es tan sólida como la de cualquier cosa que veas por aquí.`,
 `Sí, soy el proyecto más 'etéreo' de Luis Osorno. Soy un experimento de comunicación que busca ser tan preciso como cualquiera de sus proyecto, pero con la calidez de una charla de taller. A diferencia de un prototipo, yo soy un proyecto en constante ajuste; cada pregunta que me haces es una vuelta de tuerca que me ayuda a funcionar mejor.`,
-`Soy el único proyecto aquí que no suelta chispas al trabajar, aunque mi curiosidad a veces sea igual de intensa. Eso sí, a diferencia de la caldera del taller, yo no emito vapor... a menos que me hagas una pregunta de física cuántica demasiado compleja`
+`Soy el único proyecto aquí que no suelta chispas al trabajar, aunque mi curiosidad a veces sea igual de intensa. Eso sí, a diferencia de la caldera del taller, yo no emito vapor... a menos que me hagas una pregunta de física cuántica demasiado compleja.`
 ]
 },    
 {
@@ -108,10 +108,10 @@ respuestas: [
 keys: ["su experiencia", "su trayectoria", "ha hecho", "ha trabajado", "que experiencia tiene"],
 respuestas: [
 `La experiencia de Luis Osorno no se mide solo en años, sino en la cantidad de problemas que ha convertido en soluciones. Su formación combina el rigor de la ingeniería con la intuición que solo te da entender el átomo y el bit, como la mente humana.`,
-`La experiencia que tiene Luis Osorno le ha llevado a saber cómo debe verse un proyecto, así cómo entender la información que debe procesar para ser eficiente`,
-`Luis Osorno no solo construye máquinas, también forma a quienes las diseñarán en el futuro. Como docente de casi 30 años de experiencia y coordinador en áreas de Ingeniería Industrial y Automotriz, ha pasado años analizando procesos de manufactura, termodinámica y sistemas de calidad. Esa experiencia académica le da un rigor metodológico único: en este taller, cada prototipo se somete a un análisis de ingeniería antes de que el primer motor empiece a girar`,  
-`La trayectoria de Luis es un puente entre la teoría avanzada y la realidad de la ingeniería. Desde 2004, ha sido pilar en instituciones como la UNE, el CETI y la UNIVA, donde ha coordinado procesos académicos y ha desarrollado diversos proyectos de investigación en torno a la mecáncia y procesos de manufactura. Además de liderar procesos de gestión curricular`,
-`Desde que Luis Osorno comenzó a desafiar las leyes de la física a los 12 años con su primer motor funcional, no ha parado de entender. Su camino profesional ha evolucionado a la par de la tecnología: desde los métodos de investigación estadística hasta la implementación de inteligencia artificial y bases de conocimiento. Es una vida entera dedicada a entender cómo se mueve el mundo y, sobre todo, a cómo construirlo mejor`
+`La experiencia que tiene Luis Osorno le ha llevado a saber cómo debe verse un proyecto, así cómo entender la información que debe procesar para ser eficiente.`,
+`Luis Osorno no solo construye máquinas, también forma a quienes las diseñarán en el futuro. Como docente de casi 30 años de experiencia y coordinador en áreas de Ingeniería Industrial y Automotriz, ha pasado años analizando procesos de manufactura, termodinámica y sistemas de calidad. Esa experiencia académica le da un rigor metodológico único: en este taller, cada prototipo se somete a un análisis de ingeniería antes de que el primer motor empiece a girar.`,  
+`La trayectoria de Luis es un puente entre la teoría avanzada y la realidad de la ingeniería. Desde 2004, ha sido pilar en instituciones como la UNE, el CETI y la UNIVA, donde ha coordinado procesos académicos y ha desarrollado diversos proyectos de investigación en torno a la mecáncia y procesos de manufactura. Además de liderar procesos de gestión curricular.`,
+`Desde que Luis Osorno comenzó a desafiar las leyes de la física a los 12 años con su primer motor funcional, no ha parado de entender. Su camino profesional ha evolucionado a la par de la tecnología: desde los métodos de investigación estadística hasta la implementación de inteligencia artificial y bases de conocimiento. Es una vida entera dedicada a entender cómo se mueve el mundo y, sobre todo, a cómo construirlo mejor.`
 ]
 },
 {
@@ -159,7 +159,7 @@ respuestas: [
 {
 keys: ["es inventor", "es un inventor", "es científico", "es investigador"],
 respuestas: [
-`Podría decirse, aunque él se califica como "renacentista", porque le gusta pensar de todo un poco. ¿Sabías que Luis y su hermano inventaron un globo aerostático que casi funciona cuando él tenía apenas unos 10 años de edad? Falló porque no inventaron la manera de sujetar firmemente el mechero al globo`,
+`Podría decirse, aunque él se califica como "renacentista", porque le gusta pensar de todo un poco. ¿Sabías que Luis y su hermano inventaron un globo aerostático que casi funciona cuando él tenía apenas unos 10 años de edad? Falló porque no inventaron la manera de sujetar firmemente el mechero al globo.`,
 `Podría decirse, aunque él diría que es un hombre de imaginación libre, porque cuando piensa en algo, investiga, prueba e insisgte hasta que lo hace. Muchas cosas de las que hace ya están inventadas, pero como él dice: "Yo no lo había hecho con lo que tengo". Creo que todo empezó con un motor experimental cuanto tenía apenas 12 años.`
 ]
 },
@@ -206,7 +206,7 @@ respuestas: [
 `Aquí la IA no sustituye decisiones. Se usa para analizar, apoyar y estructurar soluciones.`,
 `La inteligencia artificial se utiliza como herramienta de apoyo en el análisis, diseño y toma de decisiones.`,
 `La inteligencia artificial tiene la función de ampliar capacidades, no sustituir el criterio técnico. El criterio sigue siendo humano.`,
-`La experiencia de Luis Osorno es diversa. Ha comprendido que el mundo nunca se detiene. Por eso actualmente está integrando su experiencia para introducirse en el mundo de la generación de IA, con la meta de conseguir que las máquinas no solo ejecuten órdenes, sino que operen bajo una lógica inteligente. Así se construye el mañana, una línea de código y un engranaje a la vez`,
+`La experiencia de Luis Osorno es diversa. Ha comprendido que el mundo nunca se detiene. Por eso actualmente está integrando su experiencia para introducirse en el mundo de la generación de IA, con la meta de conseguir que las máquinas no solo ejecuten órdenes, sino que operen bajo una lógica inteligente. Así se construye el mañana, una línea de código y un engranaje a la vez.`,
 `La inteligencia artificial está en la boca de todos. Por eso, actualmente, incluso estamos explorando la generación de IA para llevar la autonomía de nuestras creaciones al siguiente nivel.`
 ]
 },
@@ -229,7 +229,7 @@ respuestas: [
 `En el blog se desarrollan ideas, criterios y reflexiones que no siempre son visibles en la ejecución técnica, pero que dan sentido a cada proyecto.`,
 `No todo lo que se construye es físico. El blog permite apreciar la parte del trabajo que ocurre en la forma de pensar.`,
 `El blog ha evolucionado, con el tiempo, este espacio ha integrado tanto reflexión como análisis aplicado, conectando la experiencia humana con la práctica de la ingeniería.`,
-`El blog reúne dos dimensiones. Por un lado reflexión sobre formación, experiencia y criterio; Mientras que, por otro, incorpora pensamiento aplicado por medio de análisis que conecta la ingeniería con decisiones reales`,
+`El blog reúne dos dimensiones. Por un lado reflexión sobre formación, experiencia y criterio; Mientras que, por otro, incorpora pensamiento aplicado por medio de análisis que conecta la ingeniería con decisiones reales.`,
 `En el Taller de Arquímedes tenemos muy presente que no todo lo que se construye se ve en una máquina. Parte del trabajo ocurre en la forma de pensar.`
 ],
 accion: () => window.open("https://tallerdearquimedes.blogspot.com/", "_blank")  
@@ -238,7 +238,7 @@ accion: () => window.open("https://tallerdearquimedes.blogspot.com/", "_blank")
 keys: ["diferencia del taller", "diferente a este taller", "elemento diferenciador"],
 respuestas: [
 `Aquí no solo se presenta información. Se muestra una práctica completa: diseño, construcción, prueba y reflexión.`,
-`El Taller integra todo el proceso: desde la idea hasta su validación y análisis. No solo fabricamos objetos, los materializamos con un rigor que viene de décadas de formación académica y práctica real`,
+`El Taller integra todo el proceso: desde la idea hasta su validación y análisis. No solo fabricamos objetos, los materializamos con un rigor que viene de décadas de formación académica y práctica real.`,
 `Lo que nos separa del resto es que aquí no hay fronteras entre el diseño y la ejecución. Somos un taller donde la ingeniería industrial se abraza con la computación y el humanismo para crear soluciones que no solo se mueven, sino que tienen un propósito sólido.`
 ]
 },
@@ -328,7 +328,7 @@ respuestas: [
 {
 keys: ["instrumento", "piano", "teclado", "organo", "teclas", "interpretar"],
 respuestas: [
-`Aunque en este taller las herramientas principales son las que permiten la creación de prototipos, también hay espacio para las teclas del piano. Luis no se considera un músico profesional, pero disfruta enormemente de sentarse frente al piano para interpretar algunas notas o simplemente improvisar. Es una forma de ingeniería diferente: una donde la precisión de los dedos traduce la emoción en sonido, manteniendo esa búsqueda de armonía que tanto nos gusta en Vivaldi o Beethoven. Como ves, en este taller la inspiración viene tanto de un circuito armado como de una buena melodía de piano`
+`Aunque en este taller las herramientas principales son las que permiten la creación de prototipos, también hay espacio para las teclas del piano. Luis no se considera un músico profesional, pero disfruta enormemente de sentarse frente al piano para interpretar algunas notas o simplemente improvisar. Es una forma de ingeniería diferente: una donde la precisión de los dedos traduce la emoción en sonido, manteniendo esa búsqueda de armonía que tanto nos gusta en Vivaldi o Beethoven. Como ves, en este taller la inspiración viene tanto de un circuito armado como de una buena melodía de piano.`
 ]
 },   
 ];
@@ -345,7 +345,9 @@ function puntuarCoincidencia(limpio, key) {
   let score = 0;
 
   // Frase completa
-  if (limpio.includes(keyNormalizada)) score += 10;
+  const palabras = limpio.split(" ");
+
+  if (palabras.includes(keyNormalizada)) score += 10;
 
   // Palabra exacta
   for (const palabra of palabras) {
