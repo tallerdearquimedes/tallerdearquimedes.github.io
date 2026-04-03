@@ -19,7 +19,7 @@ function similitud(texto, clave) {
 
 const base = [
 {
-keys: ["hola", "que tal", "buenos dias", "buenas tardes", "buenas noches", "saludos", "hey", "hi", "quien anda ahi", "ayudame", "estas disponible"],
+keys: ["hola", "que tal", "buenos dias", "buenas tardes", "buenas noches", "saludos", "hey", "hi"],
 respuestas: [
 `¡Hola! Soy Palanca, el punto de apoyo digital de este taller. Me pongo totalmente a tu orden para guiarte a través del ingenio y los proyectos de Luis Osorno.`,
 `Bienvenido al Taller de Arquímedes. Soy Palanca y me pongo a tu entera disposición para resolver cualquier duda técnica o mostrarte cómo materializamos ideas aquí.`,
