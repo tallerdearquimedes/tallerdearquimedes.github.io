@@ -35,12 +35,6 @@ respuestas: [
 ]
 },
 {
-keys: ["comic", "avengers", "superheroe", "superman", "historieta", "marvel", "dc", "jla", "justice league", "liga de la justicia", "batman", "wolverine", "x-men", "4 fantasticos", "fantastics four", "hombres x"],
-respuestas: [
-`En este entorno nos encanta imaginar, y los cómics son el plano perfecto para diseñar mundos donde los buenos siempre ganan. A mi me gusta lo mismo que a Luis y sus favoritos son, empezando con el ingeniero por excelencia, Iron Man; además de los X-Men, Wolverine, Superman y los 4 Fantásticos. Pero el referente absoluto es Batman, por su impecable faceta como investigador e ingeniero. Nos impactan historias como "La Muerte de Superman" y "Kingdom Come" porque exploran el autocontrol y la ética del poder; esa capacidad de contener una fuerza inmensa para no destruir el entorno, o de ceder el control para no caer ante la venganza, es la verdadera muestra del carácter. Seguro te gustará esa filosofía aplicada en nuestros proyectos.`
-]
-},
-{
 keys: ["quien eres", "eres una IA", "eres una persona", "que haces", "tu funcion", "puedes ayudar", "te defines", "te definirias"],
 respuestas: [
 `Soy Palanca. Soy una inteligencia artificial diseñada para orientar dentro del Taller de Arquímedes.`,
@@ -305,6 +299,12 @@ respuestas: [
 ]
 }, 
 {
+keys: ["comic", "avengers", "superheroe", "superman", "historieta", "marvel", "dc", "jla", "justice league", "liga de la justicia", "batman", "wolverine", "x-men", "4 fantasticos", "fantastics four", "hombres x"],
+respuestas: [
+`En este entorno nos encanta imaginar, y los cómics son el plano perfecto para diseñar mundos donde los buenos siempre ganan. A mi me gusta lo mismo que a Luis y sus favoritos son, empezando con el ingeniero por excelencia, Iron Man; además de los X-Men, Wolverine, Superman y los 4 Fantásticos. Pero el referente absoluto es Batman, por su impecable faceta como investigador e ingeniero. Nos impactan historias como "La Muerte de Superman" y "Kingdom Come" porque exploran el autocontrol y la ética del poder; esa capacidad de contener una fuerza inmensa para no destruir el entorno, o de ceder el control para no caer ante la venganza, es la verdadera muestra del carácter. Seguro te gustará esa filosofía aplicada en nuestros proyectos.`
+]
+},
+{
 keys: ["cocinar", "comer", "receta", "restaurante", "chef", "ingredientes", "sabor", "nutrición"],
 respuestas: [
 `La cocina es, en esencia, termodinámica aplicada y control de procesos químicos. Además de mucha experimentación. Por ahora, si te gusta experimentar, te sorprenderán algunos proyectos del Taller de Arquímedes.`,
@@ -392,7 +392,7 @@ if (palabras.includes(keyNormalizada)) score += 10;
   for (const pk of palabrasKey) {
     for (const p of palabras) {
       if (p === pk) score += 4;
-      if (limpio.includes(pk)) score += 6;  
+//      if (limpio.includes(pk)) score += 6;  
       else if (p.length >= 4 && pk.length >= 4) {
         if (p.startsWith(pk) || pk.startsWith(p)) score += 2;
       }
