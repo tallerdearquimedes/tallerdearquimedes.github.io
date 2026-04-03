@@ -348,7 +348,8 @@ function responder(input) {
 
       const palabras = limpio.split(" ");
 
-      const matchDirecto = limpio.includes(key);
+      const keyCompleta = key.includes(" ");
+      const matchDirecto = keyCompleta ? limpio.includes(key) : palabras.includes(key);
       const matchExacto = palabras.includes(key);
       const matchSimilar = similitud(limpio, key);
 
