@@ -290,7 +290,7 @@ respuestas: [
 ]
 },
 {
-keys: ["si", "muestrame", "enseñame", "quiero ver", "mostrar", "enseñar", "ver", "mirar", "explorar", "navegar", "conocer", "desplegar", "listar", "quiero", "deseo", "me gustaría", "qué hay", "qué tienes", "Sí, claro", "adelante", "cuéntame más", "procedamos"],
+keys: ["muestrame", "enseñame", "quiero ver", "enseñar", "explorar", "navegar", "conocer", "desplegar", "listar", "quiero", "deseo", "me gustaría", "qué hay", "qué tienes", "Sí, claro", "adelante", "cuéntame más", "procedamos"],
 respuestas: [
 `En líneas de trabajo encontrarás las aplicaciones principales sobre las que Luis disfruta trabajar: ingeniería y manufactura, generación de prototipos, programación y, recientemente, producción de inteligencia artificial. En la sección "Acerca de" tendrás oportunidad de conocer un poco del perfil y respaldo detrás del ingenio. Desde la Ingeniería Industrial y la Ingeniería en Sistemas Computacionales, hasta un Doctorado en Educación, esta sección representa la experiencia que garantiza el rigor de cada proceso. En el laboratorio encontrarás un lugar donde las ideas se enfrentan a la realidad física. Aquí verás el uso de tecnología CNC (Torno y Fresadora), Corte Láser y Router CN para materializar mecanismos de alta complejidad. Cada pieza cuenta una historia de resolución de problemas técnicos. Se aplica programación y automatización para conocer el sistema nervioso de las máquinas. Ahí es donde la experiencia en programación se integra con microcontroladores como Arduino y ESP32, y lenguajes como Python, C++ y Java para generar prototipos. En Reflexión y Pensamiento encontrarás un espacio donde la técnica se une a la ética. Ahí exploramos temas de Derecho, Ciencias de la Familia y Teología, ofreciendo una visión integral que pocos talleres en el mundo pueden presumir. Y, si tienes necesidad de conocer más al respecto, puedes pasar a visitar el blog y el canal de Youtube. En el canal podrás ver construcción, pruebas y funcionamiento de los proyectos; mientras que en el blog podrás apreciar la parte del trabajo que ocurre en la forma de pensar.`
 ]
@@ -346,7 +346,13 @@ function responder(input) {
     for (let j = 0; j < item.keys.length; j++) {
       const key = item.keys[j];
 
-      if (limpio.includes(key) || similitud(limpio, key)) {
+      const palabras = limpio.split(" ");
+
+      const matchDirecto = limpio.includes(key);
+      const matchExacto = palabras.includes(key);
+      const matchSimilar = similitud(limpio, key);
+
+      if (matchDirecto || matchExacto || matchSimilar) {
         const opciones = item.respuestas;
         const respuesta = opciones[Math.floor(Math.random() * opciones.length)];
 
