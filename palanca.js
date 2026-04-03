@@ -9,8 +9,16 @@ function limpiar(texto) {
 }
 
 function similitud(texto, clave) {
-  const palabras = texto.split(" ");
-  return palabras.some(p => p.startsWith(clave) || clave.startsWith(p));
+  const palabrasTexto = texto.split(" ");
+  const palabrasClave = clave.split(" ");
+
+  return palabrasTexto.some(pt =>
+    palabrasClave.some(pc =>
+      pt.length >= 4 &&
+      pc.length >= 4 &&
+      (pt.startsWith(pc) || pc.startsWith(pt))
+    )
+  );
 }
 
 // ============================
