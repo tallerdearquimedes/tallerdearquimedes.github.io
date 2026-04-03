@@ -123,6 +123,15 @@ respuestas: [
 ]
 },
 {
+keys: ["logro", "éxito", "hito", "premio", "calmecac", "certificación", "galardon"],
+respuestas: [
+`Si tuviera que señalar el logro maestro en la trayectoria de Luis, diría que su mayor logro no es una sola experiencia, sino la capacidad de haber construido un puente sólido entre mundos que parecen distantes: las humanidades y la ingeniería. ¿Te gustaría conocer alguno de los proyectos que mejor representan este equilibrio?`,
+`Aunque suene poético, un logro significativo de Luis radica en haber mantenido viva la curiosidad que empezaba a manifestarse desde sus primeros experimentos en la infancia hasta consolidar hoy un perfil donde la ingeniería y las humanidades coexisten. Y ahora va por el dominio de la IA. ¿Te gustaría conocer alguno de los proyectos que mejor representan este equilibrio?`,
+`Para Luis, el éxito es haber perfeccionado una metodología donde el rigor técnico no apaga la chispa creativa; es ver cómo una idea compleja se materializa con precisión, sabiendo que los prototipos tienen un propósito ético y humano. ¿Te gustaría conocer alguno de los proyectos que mejor representan este equilibrio?`,
+`En este taller, el mayor triunfo es la mejora continua: aprender de cada error, como sugería Michael Jordan, para que el siguiente prototipo sea siempre el mejor. ¿Te gustaría conocer alguno de los proyectos que mejor representan este equilibrio?`
+]
+},
+{
 keys: ["UNIVA"],
 respuestas: [
 `UNIVA, la Universidad del Valle de Atemajac, es como la segunda casa de Luis Osorno. Ahí estudió su carrera profesional y ha trabajado por varios años.`
@@ -372,7 +381,6 @@ function puntuarCoincidencia(limpio, key) {
   let score = 0;
 
   // Frase completa
-//if (limpio.includes(keyNormalizada)) score += 10;
 if (palabras.includes(keyNormalizada)) score += 10;
   
   // Palabra exacta
@@ -384,6 +392,7 @@ if (palabras.includes(keyNormalizada)) score += 10;
   for (const pk of palabrasKey) {
     for (const p of palabras) {
       if (p === pk) score += 4;
+      if (limpio.includes(pk)) score += 6;  
       else if (p.length >= 4 && pk.length >= 4) {
         if (p.startsWith(pk) || pk.startsWith(p)) score += 2;
       }
