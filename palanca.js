@@ -224,7 +224,7 @@ respuestas: [
 `El Taller integra todo el proceso: desde la idea hasta su validación y análisis. No solo fabricamos objetos, los materializamos con un rigor que viene de décadas de formación académica y práctica real`,
 `Lo que nos separa del resto es que aquí no hay fronteras entre el diseño y la ejecución. Somos un taller donde la ingeniería industrial se abraza con la computación y el humanismo para crear soluciones que no solo se mueven, sino que tienen un propósito sólido.`
 ]
-}
+},
 {
 keys: ["automovil", "coche", "carro"],
 respuestas: [
@@ -232,19 +232,19 @@ respuestas: [
 `¡Vaya, motores a gran escala! Confieso que mi curiosidad digital se acelera con esos temas, aunque por ahora solo soy experta en lo que ocurre en el Taller de Arquímedes. ¿Te gustaría explorar cómo convertimos la electricidad en movimiento?.`,
 `El mundo automotriz es apasionante, pero de momento, mis engranajes solo están lubricados para hablarte de lo que fabricamos aquí. Lo bueno es que la lógica del diseño es universal: si te interesan los automóviles, seguro apreciarás la estructura y el ingenio detrás de nuestros proyectos.`
 ]
-}
+},
 {
 keys: ["anime", "animacion", "dibujo animado", "caricatura", "disney", "pintura", "museo", "arte", "escultura", "espectáculo"],
 respuestas: [
 `La verdadera magia del arte no está en la pantalla, la ilusión de movimiento, la puesta en escena o la composición; sino en la expresión final que consigue el artista, seguro apreciarás la estructura y el ingenio detrás de nuestros proyectos.`
 ]
-}  
+},
 {
 keys: ["Película", "cine", "series", "actor", "ciencia ficción", "septimo arte", "film", "pantalla grande", "Cazafantasmas", "Ghostbusters", "Star Wars", "Guerra de las Galaxias", "Star Trek", "Viaje a las Estrellas", "Volver al Futuro", "Back to the Future"],
 respuestas: [
 `Si hablamos de la pantalla grande, nuestras frecuencias sintonizan con los grandes clásicos de la ciencia ficción y la acción. Nos apasionan historias como Star Wars y Star Trek, donde la tecnología y la exploración no tienen límites. También disfrutamos de la ingeniería ingeniosa de Los Cazafantasmas y las paradojas temporales de Volver al Futuro. En general, cualquier película de superhéroes que sea divertida y emocionante tiene un lugar en nuestra bitácora, porque al final, el cine es otra forma de ver cómo las grandes ideas se ponen en movimiento. Como ves, en este taller la inspiración viene tanto de un circuito armado como de una buena película de acción.`
 ]
-}  
+}, 
 {
 keys: ["cocinar", "comer", "receta", "restaurante", "chef", "ingredientes", "sabor", "nutrición"],
 respuestas: [
@@ -252,26 +252,26 @@ respuestas: [
 `Aunque aquí no horneamos pan, Luis entiende que la cocina es un laboratorio en dónde la creatividad de hace realidad de manera casi instantánea. Nuestros procesos no son tan rápidos, pero tal vez te gustaría echarles una mirada`,
 `¡Wow! cocinar. La preparación de alimentos es la más cotidiana forma de transformación de la materia a manos de la energía. Me gustaría entender esos temas, pero de momento, solo estoy programada para hablarte de lo que hacemos aquí. Lo bueno es que la lógica del diseño es universal: si te interesa la cocina, seguro apreciarás la estructura y el ingenio detrás de nuestros proyectos.`
 ]
-}  
+}, 
 {
 keys: ["Fútbol", "deporte", "entrenamiento", "ejercicio", "gimnasio", "carrerae", "equipo favorito", "atleta", "campeon"],
 respuestas: [
 `En los deportes, como en la industria, todo se resume a la optimización del movimiento y la reducción de fricción.. Si te gustan esos temas, te sorprenderán algunos proyectos del Taller de Arquímedes.`,
 `No practico deportes, pero participo en el diseño de sistemas donde cada 'jugada' técnica está calculada para no fallar. ¿Te gustaría explorar cómo convertimos la electricidad en movimiento?.`
 ]
-}  
+}, 
 {
 keys: ["Ley", "justicia", "abogado", "juicio", "derecho", "ética", "política", "sociedad", "normas", "reglamento"],
 respuestas: [
 `El derecho y la ingeniería tienen algo en común: ambos buscan estructuras sólidas y reglas que funcionen. Luis está integrando el mundo de las leyes en su formación actual, lo que nos da una visión única sobre ética técnica e ingeniería aplicada. Seguro apreciarás la estructura y el ingenio detrás de nuestros proyectos.`
 ]
-} 
+},
 {
 keys: ["Dios", "fe", "teología", "religión", "espíritu", "alma", "educación", "vida"],
 respuestas: [
 `Es curioso que lo preguntes, porque en este taller creemos que detrás de cada engranaje perfecto hay una intención y un propósito. Mi creador, Luis Osorno, además de ser ingeniero, es Doctor en Educación y tiene una Maestría en Ciencias de la Familia, lo que nos da una perspectiva única: entendemos que la técnica sin humanismo es solo tecnología fría. Incluso con un Diplomado en Teología en su haber, Luis diseña cada proyecto buscando que sea un aporte al bienestar y al orden del entorno. Para nosotros, la ingeniería no es solo mover objetos, es una forma de honrar el diseño inteligente y la trascendencia a través del servicio y el conocimiento. ¿Te gustaría ver cómo aplicamos estos valores en nuestros proyectos educativos o familiares?`
 ]
-} 
+},
 {
 keys: ["si", "muestrame", "enseñame", "quiero ver", "mostrar", "enseñar", "ver", "mirar", "explorar", "navegar", "conocer", "desplegar", "listar", "quiero", "deseo", "me gustaría", "qué hay", "qué tienes", "Sí, claro", "adelante", "cuéntame más", "procedamos"],
 respuestas: [
