@@ -345,9 +345,7 @@ function puntuarCoincidencia(limpio, key) {
   let score = 0;
 
   // Frase completa
-  const palabras = limpio.split(" ");
-
-  if (palabras.includes(keyNormalizada)) score += 10;
+if (limpio.includes(keyNormalizada)) score += 10;
 
   // Palabra exacta
   for (const palabra of palabras) {
