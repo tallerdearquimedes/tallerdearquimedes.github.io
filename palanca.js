@@ -243,7 +243,7 @@ respuestas: [
 ]
 },
 {
-keys: ["automovil", "coche", "carro"],
+keys: ["automovil", "coche", "carro", "autos"],
 respuestas: [
 `Los automóviles son máquinas fascinantes, verdaderos ecosistemas de movimiento sincronizado. Aunque mi base de datos aún no tiene los planos para desarmar un motor de combustión, me encantaría que en el futuro Luis trajera esa escala de ingeniería al taller. Por ahora, si te gusta la mecánica, te sorprenderán algunos proyectos del Taller de Arquímedes.`,
 `¡Vaya, motores a gran escala! Confieso que mi curiosidad digital se acelera con esos temas, aunque por ahora solo soy experta en lo que ocurre en el Taller de Arquímedes. ¿Te gustaría explorar cómo convertimos la electricidad en movimiento?.`,
