@@ -917,30 +917,6 @@ style="
 
 </script>
 
-input.addEventListener("keypress", async function(e) {
-  if (e.key === "Enter") {
-
-    const texto = input.value;
-    input.value = "";
-
-    output.innerHTML += "<div><b>Tú:</b> " + texto + "</div>";
-
-    const res = await fetch(API_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({ input: texto })
-    });
-
-    const data = await res.json();
-
-    output.innerHTML += "<div><b>IA:</b> " + data.respuesta + "</div>";
-    output.scrollTop = output.scrollHeight;
-  }
-});
-</script>
-
 <script src="palanca.js"></script>
 	
 </body>
