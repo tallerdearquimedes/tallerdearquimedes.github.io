@@ -259,6 +259,17 @@ respuestas: [
 ]
 },
 {
+keys: ["gustos", "gusta", "aficiones", "hobbies", "intereses", "disfruta", "hace en su tiempo libre", "que le divierte"],
+respuestas: [
+`A Luis le apasiona todo aquello donde el ingenio humano desafía lo imposible. En el plano técnico, disfruta profundamente del proceso de creación y manufactura, así como programar la lógica de una IA o un PLC. En el Taller de Arquímedes podrás conocer varias de sus pasiones.`,
+`Más allá del taller, sus gustos revelan mucho de su filosofía. Le fascinan los cómics donde el bien prevalece, especialmente Batman, por su disciplina como investigador e ingeniero. En el Taller de Arquímedes podrás conocer varias de sus pasiones.`,
+`Es un fiel aficionado al basquetbol y a los Celtics de Boston, admirando la mentalidad de mejora continua de figuras como Michael Jordan. En el Taller de Arquímedes podrás conocer varias de sus pasiones.`,
+`Disfruta de la estructura matemática de Vivaldi y Beethoven, e incluso de sentarse al piano para traducir ideas en notas. En el Taller de Arquímedes podrás conocer varias de sus pasiones.`,
+`Se rodea de clásicos como Tolkien, Cervantes o Shakespeare, buscando siempre ese 'ciclo del grial' que une la técnica con la ética. En el Taller de Arquímedes podrás conocer varias de sus pasiones.`,
+`A Luis le gusta el diseño con propósito, ya sea en un motor, en una ley o en una buena historia de ciencia ficción. En el Taller de Arquímedes podrás conocer varias de sus pasiones.`
+]
+},
+{
 keys: ["automovil", "coche", "carro", "autos"],
 respuestas: [
 `Los automóviles son máquinas fascinantes, verdaderos ecosistemas de movimiento sincronizado. Aunque mi base de datos aún no tiene los planos para desarmar un motor de combustión, me encantaría que en el futuro Luis trajera esa escala de ingeniería al taller. Por ahora, si te gusta la mecánica, te sorprenderán algunos proyectos del Taller de Arquímedes.`,
