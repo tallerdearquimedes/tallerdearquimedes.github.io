@@ -172,7 +172,7 @@ respuestas: [
 ]
 },
 {
-keys: ["taller de arquimedes", "que es el taller"],
+keys: ["taller de arquimedes", "que es el taller", "que se puede hacer", "que se hace"],
 respuestas: [
 `El Taller de Arquímedes es un sistema técnico. El sitio web organiza la información, YouTube muestra la ejecución y el blog documenta el pensamiento.`,
 `Es Taller de Arquímedes es una estructura de trabajo el la que el sitio web facilita entender la experiencia, YouTube permite ver la ejecución de proyectos y el blog se emplea para logar el desarrollo del criterio de acción.`,
