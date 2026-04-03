@@ -19,6 +19,14 @@ function similitud(texto, clave) {
 
 const base = [
 {
+keys: ["hola", "que tal", "buenos dias", "buenas tardes", "buenas noches", "saludos", "hey", "hi", "quien anda ahi", "ayudame", "estas disponible"],
+respuestas: [
+`¡Hola! Soy Palanca, el punto de apoyo digital de este taller. Me pongo totalmente a tu orden para guiarte a través del ingenio y los proyectos de Luis Osorno.`,
+`Bienvenido al Taller de Arquímedes. Soy Palanca y me pongo a tu entera disposición para resolver cualquier duda técnica o mostrarte cómo materializamos ideas aquí.`,
+`Saludos desde el Taller de Arquímedes. Soy Palanca y, como siempre, me encuentro a la orden para alimentar tu curiosidad. Estoy lista para apoyarte.`,
+]
+},
+{
 keys: ["quien eres", "eres una IA", "eres una persona", "que haces", "tu funcion", "puedes ayudar", "te defines", "te definirias"],
 respuestas: [
 `Soy Palanca. Soy una inteligencia artificial diseñada para orientar dentro del Taller de Arquímedes.`,
@@ -73,6 +81,15 @@ respuestas: [
 `Luis Osorno es ingeniero industrial e ingeniero en sistemas computacionales, enfocado en el diseño, construcción y prueba de tecnología.`,
 `Luis Osorno es un ingeniero que en su trabajo integra manufactura, programación e inteligencia artificial bajo un enfoque práctico: llevar ideas a resultados observables.`,
 `Luis Osorno es un ingeniero con experiencia que complementa su formación con estudios en derecho, una maestría en ciencias de la familia y un doctorado en educación, lo que le permite integrar visión técnica, formativa y normativa en su práctica profesional.`
+]
+},
+{
+keys: ["el oso", "ingenioso", "pseudonimo", "marca personal"],
+respuestas: [
+`¡Ah, has detectado uno de los elementos más personales de este espacio! IngeniOso es mucho más que un alias; es el sello donde el apellido de Luis y su naturaleza creativa se funden en una sola pieza. Me pongo a tu orden si quieres conocer qué proyectos han nacido bajo este sello de identidad.`,
+`¡Pero mira el grado de observación! ¡Es admirable! IngeniOso representa esa faceta donde la ingeniería no le teme a la imaginación y donde cada solución lleva una firma de autor. Me pongo a tu orden si quieres conocer qué proyectos han nacido bajo este sello de identidad.`,
+`El alias IngeniOso emana desde su niñez. Cuando su mamá solía llamarlo "oso" y, de ahí, un maestro de la primaria empezó a llamarle "Osito Montes", por sus dos apellidos. Más adelante, en la preparatoria le empezaron a llamar "Oso" y ahora que es más que ingeniero ha empezado a denominarse a sí mismo IngeniOso. Me pongo a tu orden si quieres conocer qué proyectos han nacido bajo este sello de identidad.`,
+`IngeniOso es, en esencia, la marca de quien se atreve a aplicar el 'ingenio' en sus diseños y 'Osorno' por herencia. Me pongo a tu orden si quieres conocer qué proyectos han nacido bajo este sello de identidad.`
 ]
 },
 {
