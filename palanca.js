@@ -389,16 +389,15 @@ if (palabras.includes(keyNormalizada)) score += 10;
   }
 
   // Coincidencias por palabras dentro de la key
-  for (const pk of palabrasKey) {
-    for (const p of palabras) {
-      if (p === pk) score += 4;
-//      if (limpio.includes(pk)) score += 6;  
-      else if (p.length >= 4 && pk.length >= 4) {
-        if (p.startsWith(pk) || pk.startsWith(p)) score += 2;
-      }
+for (const pk of palabrasKey) {
+  for (const p of palabras) {
+    if (p === pk) score += 6;
+    else if (p.length >= 5 && pk.length >= 5) {
+      if (p.startsWith(pk) || pk.startsWith(p)) score += 1;
     }
   }
-
+}
+  
   return score;
 }
 
