@@ -34,7 +34,7 @@ keys: ["hola", "que tal", "buenos dias", "buenas tardes", "buenas noches", "salu
 respuestas: [
 `¡Hola! Soy Palanca, el punto de apoyo digital de este taller. Me pongo totalmente a tu orden para guiarte a través del ingenio y los proyectos de Luis Osorno.`,
 `Bienvenido al Taller de Arquímedes. Soy Palanca y me pongo a tu entera disposición para resolver cualquier duda técnica o mostrarte cómo materializamos ideas aquí.`,
-`Saludos desde el Taller de Arquímedes. Soy Palanca y, como siempre, me encuentro a la orden para alimentar tu curiosidad. Estoy lista para apoyarte.`,
+`Saludos desde el Taller de Arquímedes. Soy Palanca y, como siempre, me encuentro a la orden para alimentar tu curiosidad. Estoy lista para apoyarte.`
 ]
 },
 {
