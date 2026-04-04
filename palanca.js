@@ -9,16 +9,25 @@ function limpiar(texto) {
 }
 
 // ============================
+// STOPWORDS GLOBAL
+// ============================
+const STOPWORDS = [
+  "que","como","cual","cuales","quien","quienes",
+  "de","del","la","el","los","las","un","una","unos","unas",
+  "en","para","por","con","sin","a","al",
+  "te","tu","tus","mi","mis","su","sus",
+  "has","han","he","hemos","soy","eres","es","son",
+  "puedes","puede","podrias","podria",
+  "quiero","necesito","dime","explica","habla",
+  "gusta","gustas","gustar","gustan",
+  "tiene", "tienen", "tener", "tendría"
+];
+
+// ============================
 // SIMILITUD CON FILTRO DE PALABRAS
 // ============================
 function similitud(texto, clave) {
-  const stopwords = [
-    "que","como","cual","cuales","quien","quienes",
-    "de","del","la","el","los","las","un","una","unos","unas",
-    "en","para","por","con","sin","a","al",
-    "puedes","puede","podrias","podria",
-    "quiero","necesito","dime","explica","habla"
-  ];
+  const stopwords = STOPWORDS;
 
   const palabrasTexto = texto.split(" ").filter(p => !stopwords.includes(p));
   const palabrasClave = clave.split(" ").filter(p => !stopwords.includes(p));
@@ -426,7 +435,7 @@ respuestas: [
 ]
 },
 {
-keys: ["te gusta cocinar", "te interesa la cocina", "hablamos de cocina", "que te gusta comer", "sabes cocinar"],
+keys: ["te gusta cocinar", "te interesa la cocina", "hablamos de cocina", "que te gusta comer", "que le gusta comer", "sabes cocinar"],
 respuestas: [
 `La cocina es, en esencia, termodinámica aplicada y control de procesos químicos. Además de mucha experimentación. Por ahora, si te gusta experimentar, te sorprenderán algunos proyectos del Taller de Arquímedes.`,
 `Aunque aquí no horneamos pan, Luis entiende que la cocina es un laboratorio en dónde la creatividad de hace realidad de manera casi instantánea. Nuestros procesos no son tan rápidos, pero tal vez te gustaría echarles una mirada`,
@@ -525,15 +534,7 @@ function generarRespuesta(textoUsuario) {
 // ============================
 
 function puntuarCoincidencia(texto, key) {
-  const stopwords = [
-    "que","como","cual","cuales","quien","quienes",
-    "de","del","la","el","los","las","un","una","unos","unas",
-    "en","para","por","con","sin","a","al",
-    "te","tu","tus","mi","mis","su","sus",
-    "has","han","he","hemos","soy","eres","es","son",
-    "puedes","puede","podrias","podria",
-    "quiero","necesito","dime","explica","habla"
-  ];
+  const stopwords = STOPWORDS;
 
   const palabras = texto
     .split(" ")
