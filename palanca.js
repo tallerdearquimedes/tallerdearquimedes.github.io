@@ -524,32 +524,48 @@ function generarRespuesta(textoUsuario) {
 // MOTOR
 // ============================
 
-function puntuarCoincidencia(limpio, key) {
-  const palabras = limpio.split(" ");
-  const keyNormalizada = limpiar(key);
-  const palabrasKey = keyNormalizada.split(" ");
+function puntuarCoincidencia(texto, key) {
+  const stopwords = [
+    "que","como","cual","cuales","quien","quienes",
+    "de","del","la","el","los","las","un","una","unos","unas",
+    "en","para","por","con","sin","a","al",
+    "te","tu","tus","mi","mis","su","sus",
+    "has","han","he","hemos","soy","eres","es","son",
+    "puedes","puede","podrias","podria",
+    "quiero","necesito","dime","explica","habla"
+  ];
+
+  const palabras = texto
+    .split(" ")
+    .map(p => p.trim())
+    .filter(p => p.length > 0 && !stopwords.includes(p));
+
+  const palabrasKey = key
+    .split(" ")
+    .map(p => p.trim())
+    .filter(p => p.length > 0 && !stopwords.includes(p));
 
   let score = 0;
+  let coincidenciasExactas = 0;
 
-  // Frase completa
-if (palabras.includes(keyNormalizada)) score += 10;
-  
-  // Palabra exacta
-  for (const palabra of palabras) {
-    if (palabra === keyNormalizada) score += 8;
-  }
-
-  // Coincidencias por palabras dentro de la key
-for (const pk of palabrasKey) {
-  for (const p of palabras) {
-    if (p === pk) score += 6;
-    else if (p.length >= 5 && pk.length >= 5) {
-      if (p.startsWith(pk) || pk.startsWith(p)) score += 1;
+  for (const pk of palabrasKey) {
+    for (const p of palabras) {
+      if (p === pk) {
+        score += 6;
+        coincidenciasExactas++;
+      } else if (p.length >= 5 && pk.length >= 5) {
+        if (p.startsWith(pk) || pk.startsWith(p)) {
+          score += 1;
+        }
+      }
     }
   }
-}
-  
-  return score;
+
+  return {
+    score,
+    coincidenciasExactas,
+    palabrasClaveUtiles: palabrasKey.length
+  };
 }
 
 function responder(input) {
@@ -557,20 +573,52 @@ function responder(input) {
 
   let mejorItem = null;
   let mejorScore = 0;
+  let mejoresExactas = 0;
+  let mejoresClavesUtiles = 0;
 
   for (let i = 0; i < base.length; i++) {
     const item = base[i];
 
     for (let j = 0; j < item.keys.length; j++) {
       const key = item.keys[j];
-      const score = puntuarCoincidencia(limpio, key);
+      const resultado = puntuarCoincidencia(limpio, key);
 
-      if (score > mejorScore) {
-        mejorScore = score;
+      if (resultado.score > mejorScore) {
+        mejorScore = resultado.score;
+        mejoresExactas = resultado.coincidenciasExactas;
+        mejoresClavesUtiles = resultado.palabrasClaveUtiles;
         mejorItem = item;
       }
     }
   }
+
+  const matchValido =
+    mejorItem &&
+    mejorScore >= 6 &&
+    (
+      mejoresExactas >= 2 ||
+      (mejoresClavesUtiles === 1 && mejoresExactas === 1)
+    );
+
+  if (matchValido) {
+    const opciones = mejorItem.respuestas;
+    const respuesta = opciones[Math.floor(Math.random() * opciones.length)];
+
+    if (mejorItem.accion) {
+      setTimeout(mejorItem.accion, 800);
+    }
+
+    return respuesta;
+  }
+
+  const fallback = [
+    "No tengo suficiente contexto para responder eso con precisión. Puedo orientarte sobre el Taller de Arquímedes si lo deseas.",
+    "No logro clasificar esa pregunta dentro del alcance de Palanca. Puedo ayudarte con el Taller, sus proyectos o su estructura.",
+    "Esa consulta queda fuera del alcance actual de Palanca. Si quieres, puedo ayudarte con información del Taller de Arquímedes."
+  ];
+
+  return fallback[Math.floor(Math.random() * fallback.length)];
+}
 
   if (mejorItem && mejorScore >= 3) {
     const opciones = mejorItem.respuestas;
