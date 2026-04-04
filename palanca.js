@@ -217,7 +217,7 @@ respuestas: [
 `El prototipado es el proceso de convertir una idea que fue plasmada en algún boceto, esquema o plano en algo que se puede probar en la realidad, como una maqueta. No es solo diseñar, es comprobar.`,
 `Los desarrollos normalmente inician con un boceto o esquema para entender la idea, después se traduce a un plano con medidas claras, y finalmente se construye una maqueta o prototipo que permite validar si funciona.`,
 `En la etapa del prototipado es donde realmente ocurre la ingeniería: cuando lo que imaginaste se enfrenta a la realidad y te obliga a ajustar, mejorar o rediseñar lo que alguna vez plasmaste en un boceto, esquema o plano. Incluso si ya lo habías probado en una maqueta`,
-`En el Taller de Arquímedes, el prototipado no es una etapa, es una forma de trabajar que viene desde el diseño, ya sea en bocetos, esquemas o planos, para construir, probar y corregir hasta que la solución funcione.`
+`En el Taller de Arquímedes, el prototipado no es una etapa, es una forma de trabajar que viene desde el diseño, ya sea en bocetos, esquemas o planos, para construir, probar y corregir hasta que la solución funcione.`,
 `Es parte del proceso de someter una idea a pruebas que la convertirán en una solución funcional.`,
 `Es una de las actividades que más disfruta Luis, porque pone en práctica que lo importante no es imaginar... es comprobar.`
 ]
