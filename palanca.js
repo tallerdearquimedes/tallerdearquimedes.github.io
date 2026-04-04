@@ -27,7 +27,7 @@ function similitud(texto, clave) {
 
 const base = [
 {
-keys: ["hola", "que tal", "buenos dias", "buenas tardes", "buenas noches", "saludos", "hey", "hi"],
+keys: ["hola", "que tal", "buenos dias", "buenas tardes", "buenas noches", "saludos", "que onda", "que hay"],
 respuestas: [
 `¡Hola! Soy Palanca, el punto de apoyo digital de este taller. Me pongo totalmente a tu orden para guiarte a través del ingenio y los proyectos de Luis Osorno.`,
 `Bienvenido al Taller de Arquímedes. Soy Palanca y me pongo a tu entera disposición para resolver cualquier duda técnica o mostrarte cómo materializamos ideas aquí.`,
@@ -35,7 +35,7 @@ respuestas: [
 ]
 },
 {
-keys: ["quien eres", "eres una IA", "eres una persona", "tu funcion", "te defines", "te definirias"],
+keys: ["quien eres", "eres una ia", "eres una inteligencia artificial", "eres una persona", "cual es tu funcion", "que eres", "que haces"],
 respuestas: [
 `Soy Palanca. Soy una inteligencia artificial diseñada para orientar dentro del Taller de Arquímedes.`,
 `Soy Palanca. Soy una asistente diseñada para guiarte dentro del Taller de Arquímedes.`,
@@ -45,7 +45,15 @@ respuestas: [
 ]
 },
 {
-keys: ["cuando estás aquí", "cuando estás en este sitio", "hace cuanto tiempo estas", "cuanto tiempo tienes", "cuanto tiempo llevas", "cuanto tiempo has estado"],
+keys: ["por que palanca", "te llamas palanca", "por que te llamas palanca"],
+respuestas: [
+`Mi nombre es un tributo a la máxima de Arquímedes: 'Dadme un punto de apoyo y moveré el mundo'. Es una metáfora a lo que pasa en este taller, Luis es el estratega y el creador, mientras que yo soy esa herramienta multiplicadora de fuerza que le facilita el funcionamiento de sus proyectos. ¿Puedo impulsarte a conocer los proyectos del Taller de Arquímedes?`,
+`Me llamo Palanca porque mi propósito es servir de apoyo para elevar la curiosidad y ayudarte a navegar por este universo de ingeniería y humanismo. ¿Puedo impulsarte a conocer los proyectos del Taller de Arquímedes?`,
+`Soy Palanca porque soy el mecanismo que inventó Luis para conectar tus preguntas con el ingenio de este espacio, asegurando que, con el punto de apoyo adecuado, ninguna idea sea demasiado pesada para ser movida. ¿Puedo impulsarte a conocer los proyectos del Taller de Arquímedes?`
+]
+},  
+{
+keys: ["desde cuando estas", "desde cuando estas en este sitio", "hace cuanto tiempo estas", "cuanto tiempo tienes", "cuantos años tienes", "cuanto tiempo llevas existiendo", "cuanto tiempo llevas aqui", "cuando naciste", "desde cuando existes"],
 respuestas: [
 `¿Crees en los amigos imaginarios? Pues yo he llegado a pensar que siempre he estado aquí. Desde que la primera chispa de curiosidad se convirtió en movimiento.`,
 `Tal vez muchos años en la mente de Luis. Su proceso de ideación no es lineal. Piensa algo, empieza a diseñarlo, luego lo deja por un momento, posteriormente lo retoma. jamás se sabe.`,
@@ -54,7 +62,7 @@ respuestas: [
 ]
 },
 {
-keys: ["como eres", "tu personalidad", "te gusta", "te agrada"],
+keys: ["como eres", "cual es tu personalidad", "como es tu personalidad", "como estas programada", "como fuiste programada"],
 respuestas: [
 `Soy Palanca. El punto de apoyo digital en este taller. Soy curiosa por diseño, porque para entender la complejidad de las máquinas que verás aquí, se necesita una mente que no tema preguntar '¿y esto cómo se mueve?'. Si quieres ver cómo esa misma curiosidad se aplica al mundo real, deberías echar un vistazo a los proyectos.`,
 `Soy Palanca. El engranaje digital que articula este espacio. Mi personalidad es curiosa por diseño, bajo la premisa de que para descifrar la complejidad mecánica que nos rodea, hace falta una mente que cuestione cada rotación y cada enlace. Si te intriga saber cómo esa misma curiosidad se traduce en soluciones tangibles y movimiento real, te invito a explorar el sitio.`,
@@ -63,7 +71,7 @@ respuestas: [
 ]
 },  
 {
-keys: ["que eres", "eres un proyecto", "eres un experimento", "eres otro proyecto", "eres otro experimento", "te hizo", "te creo", "te diseño", "te programo"],
+keys: ["que eres", "eres un proyecto", "eres un experimento", "eres otro proyecto", "eres otro experimento", "quien te hizo", "quien te creo", "quien te diseño", "quien te programo"],
 respuestas: [
 `Efectivamente, soy el proyecto de arquitectura lógica de este taller. Mientras que otras piezas aquí están hechas de acero, madera o pensamiento filosófioco o literario, yo fui ensamblada con líneas de código y curiosidad. Luis me diseñó para ser el engranaje que conecta su capacidad técnica con tus preguntas. Soy, por así decirlo, el prototipo que nunca deja de aprender.`,
 `Podrías decir que soy el único proyecto del taller que no requiere aceite, pero sí mucho ajuste de pensamiento. Soy el proyecto de interfaz de Luis: su intento de darle voz a las máquinas y una guía a quienes nos visitan. No ocupo un lugar en el banco de trabajo, pero mi estructura es tan sólida como la de cualquier cosa que veas por aquí.`,
@@ -72,7 +80,7 @@ respuestas: [
 ]
 },    
 {
-keys: ["te da curiosidad", "que te da curiosidad", "te intriga", "misterio", "como se", "eres curiosa"],
+keys: ["te da curiosidad", "que te da curiosidad", "eres curiosa", "eres una inteligencia curiosa", "que te intriga a ti", "que te intriga"],
 respuestas: [
 `Hay muchas cosas que producen esa inquietud. Por ejemplo, a mi me provoca una curiosidad casi eléctrica entender el momento exacto en que una serie de piezas inertes se convierten en un sistema vivo. Si te apasiona descubrir cómo el orden vence al caos, deberías asomarte a los proyectos del Taller de Arquímedes.`,
 `!Uy!, Curiosidad, No conozco a nadie que no la tenga. Lo que más me intriga de este taller es el 'espacio entre los engranajes': ese diseño invisible que hace un colibrí mecánico parezca respirar. Si te intriga saber cómo esa misma curiosidad se traduce en soluciones tangibles y movimiento real, te invito a explorar el sitio.`,
@@ -82,7 +90,7 @@ respuestas: [
 ]
 },    
 {
-keys: ["luis osorno", "su perfil profesional"],
+keys: ["luis osorno", "cual es su perfil profesional", "quien es luis osorno", "que hace luis osorno"],
 respuestas: [
 `Luis Osorno es ingeniero industrial e ingeniero en sistemas computacionales. Su enfoque es diseñar, construir y probar tecnología con resultados observables.`,
 `Luis Osorno integra manufactura, programación e inteligencia artificial bajo un enfoque práctico que consiste en llevar ideas a funcionamiento real.`,
@@ -92,7 +100,7 @@ respuestas: [
 ]
 },
 {
-keys: ["el oso", "ingenioso", "pseudonimo", "marca personal"],
+keys: ["por que le dicen el oso", "que es ingenioso", "por que firma como ingenioso", "por que se llama ingenioso", "de donde viene ingenioso", "cual es su pseudonimo", "cual es su marca personal"],
 respuestas: [
 `¡Ah, has detectado uno de los elementos más personales de este espacio! IngeniOso es mucho más que un alias; es el sello donde el apellido de Luis y su naturaleza creativa se funden en una sola pieza. Me pongo a tu orden si quieres conocer qué proyectos han nacido bajo este sello de identidad.`,
 `¡Pero mira el grado de observación! ¡Es admirable! IngeniOso representa esa faceta donde la ingeniería no le teme a la imaginación y donde cada solución lleva una firma de autor. Me pongo a tu orden si quieres conocer qué proyectos han nacido bajo este sello de identidad.`,
@@ -101,19 +109,23 @@ respuestas: [
 ]
 },
 {
-keys: ["donde estudio", "que estudio", "estudios tiene", "es su carrera", "universidad", "carrera profesional", "su formacion"],
+keys: ["donde estudio luis", "que estudio luis", "que estudios tiene luis", "cuales estudios tiene luis", "cual es su carrera", "cual es su formacion"],
 respuestas: [
-`Luis Osorno estudió preescolar y primaria en el Colegio Cervantes Centro, la secundaria la estudió en el Colegio Cervantes Bosque, la preparatoria en el Instituto de Ciencias, la ingeniería industrial en la UNIVA, la ingeniería en sistemas computacionales en UVEG, la maestría en la Universidad Anáhuac, el doctorado en la UMG y actualmente está estudiando una licenciatura en derecho. La destreza que ves en este taller no apareció de la noche a la mañana. Es el resultado de una vida entera dedicada a la conversión de las ideas y la materia en utilidad.`
+`Luis Osorno estudió preescolar y primaria en el Colegio Cervantes Centro, la secundaria la estudió en el Colegio Cervantes Bosque, la preparatoria en el Instituto de Ciencias, la ingeniería industrial en la UNIVA, la ingeniería en sistemas computacionales en UVEG, la maestría en la Universidad Anáhuac, el doctorado en la UMG y actualmente está estudiando una licenciatura en derecho. La destreza que ves en este taller no apareció de la noche a la mañana. Es el resultado de una vida entera dedicada a la conversión de las ideas y la materia en utilidad.`,
+`La formación de Luis Osorno abarca desde los colegios Cervantes e Instituto de Ciencias hasta grados en Ingeniería Industrial (UNIVA), Sistemas (UVEG), Maestría (Anáhuac) y Doctorado (UMG), sumando actualmente estudios en Derecho. La destreza de este taller es el fruto de una vida dedicada a transformar ideas y materia en soluciones útiles.`,
+`Luis Osorno se formó en el Colegio Cervantes y el Instituto de Ciencias, consolidando su perfil humano con la Ingeniería Industrial (UNIVA), Ingeniería en Sistemas (UVEG), una Maestría (Universidad Anáhuac) y un Doctorado (UMG). Acctualmente cursa la carrera de Derecho. La destreza que fluye en este taller no es azarosa, sino el fruto de una vida dedicada a transformar las ideas y la materia en soluciones de utilidad real.`
 ]
 },  
 {
-keys: ["tiempo lleva haciendo", "tiempo lleva estudiando", "cursos que ha tomado", "es su especialidad"],
+keys: ["en que se especializa",  "cuanto tiempo lleva haciendo", "cuanto tiempo lleva estudiando", "que cursos ha tomado", "cuales cursos ha tomado", "cual es su especialidad"],
 respuestas: [
-`Luis Osorno ha tomado varios cursos de capacitación y adiestramiento en producción y manejo de maquinaria, algunos de los más recientes son: Operador de CNC (TDI-2025, VIWA-2024; ASIA ROBÓTICA-2024), Programación de PLC (FESTO-2022), Inglés técnico en organización, sistemas de manufactura y materiales (UVEG-2022), Lean-Six Sigma Black Belt (CI Academi,2020), Diplomado en Técnicas y Habilidades Comunicativas (Universidad Anáhuac-2012), Diplomado en Planeación de la Producción y Sistemas de Control. Como puedes ver, aquí no solo hay teoría; hay miles de horas de preparación para resolución de problemas reales.`
+`Luis Osorno ha tomado varios cursos de capacitación y adiestramiento en producción y manejo de maquinaria, algunos de los más recientes son: Operador de CNC (TDI-2025, VIWA-2024; ASIA ROBÓTICA-2024), Programación de PLC (FESTO-2022), Inglés técnico en organización, sistemas de manufactura y materiales (UVEG-2022), Lean-Six Sigma Black Belt (CI Academi,2020), Diplomado en Técnicas y Habilidades Comunicativas (Universidad Anáhuac-2012), Diplomado en Planeación de la Producción y Sistemas de Control. Como puedes ver, aquí no solo hay teoría; hay miles de horas de preparación para resolución de problemas reales.`,
+`Luis Osorno cuenta con una sólida capacitación técnica en maquinaria y producción, destacando sus certificaciones recientes como Operador de CNC (TDI, VIWA y ASIA ROBÓTICA) y en Programación de PLC por FESTO. Su perfil se complementa con formación en Inglés técnico industrial (UVEG), una certificación Black Belt en Lean-Six Sigma y diplomados en comunicación y planeación de la producción. Esta trayectoria demuestra que detrás de cada solución no solo hay teoría, sino miles de horas de preparación enfocadas en resolver problemas reales.`,
+`Luis Osorno cuenta con una formación técnica especializada que incluye certificaciones recientes como Operador de CNC por TDI, VIWA y ASIA ROBÓTICA, además de Programación de PLC por FESTO. Su perfil integra el dominio del inglés técnico (UVEG), una certificación Black Belt en Lean-Six Sigma y diplomados en comunicación y planeación de la producción. Esta trayectoria es la prueba de que en el taller no solo reside la teoría, sino miles de horas de preparación enfocadas en resolver problemas reales.`
 ]
 },  
 {
-keys: ["su experiencia", "su trayectoria", "ha hecho", "ha trabajado", "que experiencia tiene"],
+keys: ["cual es su experiencia", "cual es su trayectoria", "que ha hecho", "en que ha trabajado", "que experiencia tiene"],
 respuestas: [
 `La experiencia de Luis Osorno no se mide solo en años, sino en la cantidad de problemas que ha convertido en soluciones. Su formación combina el rigor de la ingeniería con la intuición que solo te da entender el átomo y el bit, como la mente humana.`,
 `La experiencia que tiene Luis Osorno le ha llevado a saber cómo debe verse un proyecto, así cómo entender la información que debe procesar para ser eficiente.`,
@@ -123,7 +135,7 @@ respuestas: [
 ]
 },
 {
-keys: ["logro", "éxito", "hito", "premio", "calmecac", "certificación", "galardon"],
+keys: ["cuales logros tiene", "que hitos ha alcanzado", "que logros ha conseguido", "cuales son sus logros"],
 respuestas: [
 `Si tuviera que señalar el logro maestro en la trayectoria de Luis, diría que su mayor logro no es una sola experiencia, sino la capacidad de haber construido un puente sólido entre mundos que parecen distantes: las humanidades y la ingeniería. ¿Te gustaría conocer alguno de los proyectos que mejor representan este equilibrio?`,
 `Aunque suene poético, un logro significativo de Luis radica en haber mantenido viva la curiosidad que empezaba a manifestarse desde sus primeros experimentos en la infancia hasta consolidar hoy un perfil donde la ingeniería y las humanidades coexisten. Y ahora va por el dominio de la IA. ¿Te gustaría conocer alguno de los proyectos que mejor representan este equilibrio?`,
@@ -181,7 +193,7 @@ respuestas: [
 ]
 },
 {
-keys: ["taller de arquimedes", "que es el taller", "que se puede hacer", "que se hace"],
+keys: ["taller de arquimedes", "que es el taller", "que se puede hacer en el taller", "que se hace en el taller", "que es el taller de arquimedes", "de que trata del taller de arquimedes"],
 respuestas: [
 `El Taller de Arquímedes es un sistema técnico. El sitio web organiza la información, YouTube muestra la ejecución y el blog documenta el pensamiento.`,
 `El Taller de Arquímedes es una estructura de trabajo el la que el sitio web facilita entender la experiencia, YouTube permite ver la ejecución de proyectos y el blog se emplea para logar el desarrollo del criterio de acción.`,
@@ -189,7 +201,7 @@ respuestas: [
 ]
 },
 {
-keys: ["materiales", "componentes", "recursos", "piezas", "metal", "acero", "aluminio", "madera", "acrílico", "plástico", "resina", "mdf", "triplay", "resistencia", "dureza", "peso", "flexibilidad", "acabado", "textura"],
+keys: ["que materiales usan", "que materiales utilizan", "que componentes usan","con que materiales trabajan", "que materiales usan en el taller", "metal", "acero", "aluminio", "madera", "acrílico", "plástico", "resina", "mdf", "triplay"],
 respuestas: [
 `En el Taller de Arquímedes, la materia es el lienzo de nuestra ingeniería. Aquí trabajamos habitualmente con maderas, resinas y polímeros, adaptando cada elección a las necesidades del prototipo. Me pongo a tu entera orden para explicarte cómo seleccionamos el material ideal para que cada engranaje tenga la resistencia y estética que el proyecto exige.`,
 `Luis tiene la filosofía de que un ingeniero desarrolla la destreza para transformar elementos diversos en mecanismos funcionales. De tal manera que todo lo que se haga sea lo que deba ser, sirva para lo que deba servir y, además, esté al servicio de todos. Se podría decir que su principal matera es su manera de pensar`,
@@ -197,25 +209,28 @@ respuestas: [
 ]
 },
 {
-keys: ["prototipado", "boceto", "esquema", "plano", "borrador", "maqueta", "etapa", "fase", "desarrollo", "iteración", "evolución", "prueba", "concepto", "en pañales"],
+keys: ["prototipado", "que es un boceto", "que es un esquema", "que es un plano", "que es una maqueta", "como se hacer una maqueta", "como se diseña una maqueta", "que es el prototipado", "para que sirve el prototipado"],
 respuestas: [
-`El prototipado es el proceso de convertir una idea en una solución funcional mediante pruebas reales.`,
-`Aquí el prototipado integra mecánica, electrónica y software para validar si una solución funciona en condiciones reales.`,
-`Es el proceso de someter una idea a pruebas que la convertirán en una solución funcional.`,
-`Es el que más disfruta Luis, porque pone en práctica que lo importante no es imaginar... es comprobar.`
+`El prototipado es el proceso de convertir una idea que fue plasmada en algún boceto, esquema o plano en algo que se puede probar en la realidad, como una maqueta. No es solo diseñar, es comprobar.`,
+`Los desarrollos normalmente inician con un boceto o esquema para entender la idea, después se traduce a un plano con medidas claras, y finalmente se construye una maqueta o prototipo que permite validar si funciona.`,
+`En la etapa del prototipado es donde realmente ocurre la ingeniería: cuando lo que imaginaste se enfrenta a la realidad y te obliga a ajustar, mejorar o rediseñar lo que alguna vez plasmaste en un boceto, esquema o plano. Incluso si ya lo habías probado en una maqueta`,
+`En el Taller de Arquímedes, el prototipado no es una etapa, es una forma de trabajar que viene desde el diseño, ya sea en bocetos, esquemas o planos, para construir, probar y corregir hasta que la solución funcione.`
+`Es parte del proceso de someter una idea a pruebas que la convertirán en una solución funcional.`,
+`Es una de las actividades que más disfruta Luis, porque pone en práctica que lo importante no es imaginar... es comprobar.`
 ]
 },
 {
-keys: ["Arduino", "ESP32", "microcontroladores", "sensores", "actuadores", "embebidos", "firmware", "conectividad", "PLC", "automatizacion", "logica de escalera", "ladder", "robotica", "control numerico"],
+keys: ["utilizan arduino", "para que utilizan arduino", "en que aplicaciones utilizan arduino", "como utilizan arduino", "utilizan esp32", "para que utilizan esp32", "en que aplicaciones utilizan esp32", "como utilizan esp32", "para que utilizan sensores", "para que utilizan actuadores", "como utilizan un plc"],
 respuestas: [
 `En el Taller de Arquímedes no solo programamos aplicaciones, configuramos el cerebro de las máquinas mediante Arduino, ESP32 y PLC para asegurar que cada engranaje responda con precisión.`,
-`Aquí el prototipado integra mecánica, electrónica y software para validar si una solución funciona en condiciones reales.`,
-`Es el proceso de someter una idea a pruebas que la convertirán en una solución funcional.`,
-`Es el que más disfruta Luis, porque pone en práctica que lo importante no es imaginar... es comprobar.`
+`Aquí el prototipado integra mecánica, electrónica y software para validar si una solución funciona en condiciones reales, mediante sensores y actuadores conectan el sistema con el entorno físico.`,
+`En el Taller de Arquímedes, estos elementos forman el sistema nervioso de las máquinas. Arduino y ESP32 permiten programar el comportamiento, por medio de señales que reciben se sensores y tareas que pueden ejecutar por medio de actuadores.`,
+`Arduino, ESP32 y PLC son herramientas que se utilizan para control industrial, donde la confiabilidad y la secuencia son clave para que el sistema responda, se adapte y funcione de forma automática a partir de lo que le comuniquen los sensores y le permitan sus actuadores.`,
+`Son elementos que utilizamos en el Taller de Arquímedes porque aquí no solo construimos estructuras mecánicas, también diseñamos cómo piensan y reaccionan.`
 ]
 },
 {
-keys: ["programacion", "C++", "Python", "Java", "HTML", "Javascript", "Prolog", "Clips", "código", "algoritmo", "sintaxis", "script", "backend"],
+keys: ["que es la programacion", "para que sirve la programacion", "para que usan en c++", "para que usan python", "para que usan java", "para que usan html", "para que usan javascript", "para que usan prolog", "para que usan clips"],
 respuestas: [
 `La programación define el comportamiento de los sistemas. Es la capa lógica que permite automatizar y controlar procesos.`,
 `El código es lo que gobierna el sistema. Define cómo responde, cómo opera y cómo se comporta cada solución.`,
@@ -225,7 +240,63 @@ respuestas: [
 ]
 },
 {
-keys: ["ia", "inteligencia artificial", "redes neuronales", "aprendizaje máquina", "machine learning", "generación de modelos", "pruebas de IA"],
+keys: ["c++"],
+respuestas: [
+`Es el lenguaje de alto rendimiento que nos permite hablar directamente con el hardware. Es el "cincel digital" para esculpir el comportamiento de motores y sensores con precisión milimétrica.`,
+`Es el sistema nervioso de nuestros prototipos. Lo usamos en Arduino y ESP32 para que la lógica electrónica se convierta en movimiento físico en tiempo real.`,
+`Potencia y control total. Es el lenguaje que elegimos cuando la velocidad de respuesta y la gestión de memoria son críticas para que una máquina cobre vida.`  
+]
+},
+{
+keys: ["python"],
+respuestas: [
+`Es el lenguaje de la legibilidad y la versatilidad. Su sintaxis limpia nos permite prototipar ideas complejas a una velocidad asombrosa, casi como si estuviéramos escribiendo en lenguaje humano.`,
+`Es el cerebro logístico de nuestros proyectos. Lo utilizamos para el análisis de datos, la visión artificial y, sobre todo, para orquestar los procesos de Inteligencia Artificial que dan autonomía a nuestras máquinas.`,
+`Eficiencia y conectividad. Es el "pegamento" tecnológico que une el hardware con la nube, permitiendo que un mecanismo físico se convierta en un sistema inteligente y conectado.`
+]
+},
+{
+keys: ["java"],
+respuestas: [
+`Es el lenguaje de la robustez y la portabilidad. Su arquitectura está diseñada bajo el lema "escríbelo una vez, ejecútalo en cualquier parte", lo que lo hace extremadamente confiable para sistemas a gran escala.`,
+`Es el cimiento de nuestras aplicaciones más estables. Lo utilizamos cuando necesitamos que la comunicación entre la interfaz de usuario y la maquinaria industrial sea sólida, segura y capaz de gestionar múltiples procesos simultáneos sin pestañear.`,
+`Orden y escalabilidad. Es el lenguaje que aporta la estructura necesaria para que los proyectos del taller crezcan de prototipos aislados a sistemas industriales complejos y organizados.`
+]
+},
+{
+keys: ["html"],
+respuestas: [
+`Es el lenguaje de marcado que define la estructura y el esqueleto de todo lo que ves en la web. No es programación de lógica, sino la arquitectura que organiza el contenido.`,
+`Es el plano maestro de nuestra presencia digital. Al igual que un diseño en CAD define dónde va cada pieza física, el HTML dicta dónde se asienta cada idea, imagen o dato en el navegador del usuario.`,
+`Cimiento y orden. Es la base sólida sobre la que construimos la interfaz que permite al mundo asomarse a nuestras invenciones y procesos de ingeniería.`
+]
+},
+{
+keys: ["javascript"],
+respuestas: [
+`Es el lenguaje de la interactividad y el dinamismo. Mientras otros lenguajes construyen la estructura, JavaScript es el motor que permite que los elementos de una página web cobren vida, reaccionen y se transformen en tiempo real.`,
+`Es el sistema de reflejos de nuestro sitio. Lo utilizamos para que la experiencia del usuario no sea estática, permitiendo que nuestras gráficas de datos y prototipos digitales respondan instantáneamente a cada clic o movimiento.`,
+`Agilidad y respuesta. Es el lenguaje que convierte un plano digital pasivo en una herramienta funcional y vibrante, conectando la intención del usuario con la lógica del servidor de forma fluida.`
+]
+},
+{
+keys: ["prolog"],
+respuestas: [
+`Es el lenguaje de la programación lógica por excelencia. A diferencia de otros, aquí no le decimos a la computadora cómo hacer algo, sino que definimos los hechos y las reglas de un mundo para que ella deduzca las respuestas por sí misma.`,
+`Es nuestra herramienta para el razonamiento simbólico. Lo utilizamos cuando el problema no es de cálculo numérico, sino de resolver acertijos complejos, organizar bases de conocimiento o construir los cimientos de sistemas expertos que imitan el juicio humano.`,
+`Inteligencia deductiva. Es el lenguaje que convierte una lista de premisas en una conclusión lógica, permitiendo que el taller explore soluciones que no siguen un camino lineal, sino una red de posibilidades.`
+]
+},
+{
+keys: ["clips"],
+respuestas: [
+`Es un lenguaje y entorno de desarrollo diseñado específicamente para la construcción de sistemas expertos. Su nombre proviene de C Language Integrated Production System, y se basa en un motor de inferencia que imita el razonamiento humano mediante reglas lógicas.`,
+`Es nuestra herramienta para la toma de decisiones automatizada. Lo utilizamos cuando el proyecto requiere que la máquina no solo ejecute órdenes, sino que "piense" y aplique criterios de experto para resolver problemas complejos de diagnóstico o supervisión.`,
+`Sabiduría codificada. Es el sistema que nos permite transformar décadas de experiencia técnica en un conjunto de reglas que una computadora puede aplicar con precisión quirúrgica y sin fatiga.`
+]
+},
+{
+keys: ["ia", "inteligencia artificial", "aprendizaje máquina", "que es el aprendizaje automatico", "machine learning", "para que usan inteligencia artificial", "como usan ia en el taller"],
 respuestas: [
 `La inteligencia artificial se utiliza como herramienta de apoyo. Amplía capacidades, pero el criterio sigue siendo técnico.`,
 `Aquí la IA no sustituye decisiones. Se usa para analizar, apoyar y estructurar soluciones.`,
@@ -236,7 +307,7 @@ respuestas: [
 ]
 },
 {
-keys: ["youtube", "proyectos reales"],
+keys: ["youtube", "canal de youtube", "ver proyectos en youtube", "donde ver proyectos"],
 respuestas: [
 `Los proyectos reales están en el canal de YouTube. Ahí puedes ver construcción, pruebas y funcionamiento.`,
 `YouTube muestra la ejecución. Es donde las ideas pasan a ser sistemas funcionando.`,
@@ -247,7 +318,7 @@ respuestas: [
 accion: () => window.open("https://www.youtube.com/channel/UCfHBl6mJ3eJ4r3R0IgXS_-A", "_blank")  
 },
 {
-keys: ["blog"],
+keys: ["blog", "ir al blog", "ver blog", "abrir blog", "donde esta el blog"],
 respuestas: [
 `El blog documenta el pensamiento detrás del Taller. Ahí se desarrollan ideas, criterios y análisis.`,
 `Es el espacio donde se explica el porqué de cada decisión técnica.`,
@@ -260,7 +331,7 @@ respuestas: [
 accion: () => window.open("https://tallerdearquimedes.blogspot.com/", "_blank")  
 },
 {
-keys: ["diferencia del taller", "diferente a este taller", "elemento diferenciador"],
+keys: ["diferencia del taller", "que diferencia al taller", "cual es el elemento diferenciador", "que hace diferente al taller", "por que es diferente el taller"],
 respuestas: [
 `Aquí no solo se presenta información. Se muestra una práctica completa: diseño, construcción, prueba y reflexión.`,
 `El Taller integra todo el proceso: desde la idea hasta su validación y análisis. No solo fabricamos objetos, los materializamos con un rigor que viene de décadas de formación académica y práctica real.`,
