@@ -656,6 +656,17 @@ function responder(input) {
   return fallback[Math.floor(Math.random() * fallback.length)];
 }
 
+//function preguntar(texto) {
+//  const input = document.getElementById("chat-input");
+//  const output = document.getElementById("chat-output");
+
+//  if (!input || !output) return;
+
+//  output.innerHTML += `<div><b>Tú:</b> ${texto}</div>`;
+//  output.innerHTML += `<div><b>Palanca:</b> ${responder(texto)}</div>`;
+//  output.scrollTop = output.scrollHeight;
+//}
+
 function preguntar(texto) {
   const input = document.getElementById("chat-input");
   const output = document.getElementById("chat-output");
@@ -663,8 +674,18 @@ function preguntar(texto) {
   if (!input || !output) return;
 
   output.innerHTML += `<div><b>Tú:</b> ${texto}</div>`;
-  output.innerHTML += `<div><b>Palanca:</b> ${responder(texto)}</div>`;
+  output.innerHTML += `<div class="thinking"><b>Palanca:</b> Procesando...</div>`;
   output.scrollTop = output.scrollHeight;
+
+  setTimeout(() => {
+    const thinking = output.querySelector(".thinking:last-of-type");
+    if (thinking) {
+      thinking.remove();
+    }
+
+    output.innerHTML += `<div><b>Palanca:</b> ${responder(texto)}</div>`;
+    output.scrollTop = output.scrollHeight;
+  }, 700);
 }
 
 document.addEventListener("DOMContentLoaded", function () {
