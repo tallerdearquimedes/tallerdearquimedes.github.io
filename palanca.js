@@ -581,22 +581,18 @@ if (sugerencias) {
       <button data-pregunta="luis osorno">¿Quién es Luis Osorno?</button>
       <button data-pregunta="quien eres">¿Quién eres?</button>
       <button data-pregunta="taller de arquimedes">¿Qué es el Taller?</button>
-      <button data-pregunta="conocer taller">Conocer el Taller?</button>
+      <button data-pregunta="conocer taller">Conocer el Taller</button>
       <button data-pregunta="youtube">Ver proyectos</button>
       <button data-pregunta="blog">Ir al blog</button>
     </div>
   `;
 }  
   
-const botones = document.querySelectorAll("#sugerencias button");
-
-if (botones.length > 0) {
-  botones.forEach((boton) => {
-    boton.addEventListener("click", function() {
-      preguntar(this.dataset.pregunta);
-    });
-  });
-}               
+document.addEventListener("click", function(e) {
+  if (e.target.matches("#sugerencias button")) {
+    preguntar(e.target.dataset.pregunta);
+  }
+});
                           
   // ============================
   // INTERACCIÓN
