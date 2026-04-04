@@ -548,7 +548,7 @@
   <!-- SECCION 01 - HERO / PORTADA PRINCIPAL                    -->
   <!-- ========================================================= -->
   <section id="hero" class="contenedor centrado">
-    <img src="Logo1_sinfondo.webp" alt="Logotipo de El Taller de Arquímedes" class="logo-principal" />
+    <img src="Logo1_sinfondo.png" alt="Logotipo de El Taller de Arquímedes" class="logo-principal" />
 
     <h1 class="titulo-principal">El Taller de Arquímedes</h1>
 
@@ -918,6 +918,28 @@ style="
 </script>
 
 <script defer src="palanca.js"></script>
+
+<script>
+function responderConIndicador(chat, respuesta, delay = 700) {
+  const thinking = document.createElement("div");
+  thinking.className = "thinking";
+  thinking.innerText = "Procesando...";
+  chat.appendChild(thinking);
+
+  chat.scrollTop = chat.scrollHeight;
+
+  setTimeout(() => {
+    chat.removeChild(thinking);
+
+    const msg = document.createElement("div");
+    msg.className = "respuesta";
+    msg.innerText = respuesta;
+    chat.appendChild(msg);
+
+    chat.scrollTop = chat.scrollHeight;
+  }, delay);
+}
+</script>	
 	
 </body>
 </html>
