@@ -559,7 +559,7 @@ function responder(input) {
     }
   }
 
-  if (mejorItem && mejorScore >= 12) {
+  if (mejorItem && mejorScore >= 2) {
     const opciones = mejorItem.respuestas;
     const respuesta = opciones[Math.floor(Math.random() * opciones.length)];
 
