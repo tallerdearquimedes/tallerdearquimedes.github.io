@@ -502,64 +502,47 @@ const fallback = [
 return fallback[Math.floor(Math.random() * fallback.length)];
 }
 
+function appendMensaje(etiqueta, texto) {
+  const output = document.getElementById("chat-output");
+  if (!output) return;
+
+  const bloque = document.createElement("div");
+  bloque.innerHTML = `<b>${etiqueta}:</b> ${texto}`;
+  output.appendChild(bloque);
+  output.scrollTop = output.scrollHeight;
+}
+
 function preguntar(texto) {
   const input = document.getElementById("chat-input");
   const output = document.getElementById("chat-output");
 
-  if (!input || !output) return;
+  if (!input || !output || !texto) return;
 
-  output.innerHTML += `<div><b>Tú:</b> ${texto}</div>`;
-  output.innerHTML += `<div><b>Palanca:</b> ${responder(texto)}</div>`;
-  output.scrollTop = output.scrollHeight;
+  appendMensaje("Tú", texto);
+  appendMensaje("Palanca", responder(texto));
 }
 
 document.addEventListener("DOMContentLoaded", function () {
   const input = document.getElementById("chat-input");
   const output = document.getElementById("chat-output");
+  const botones = document.querySelectorAll(".palanca-btn");
 
   if (!input || !output) return;
 
-  // ============================
-  // MENSAJES INICIALES
-  // ============================
+  output.innerHTML = "";
+  appendMensaje("IA", "Sistema activo. Puedes consultar sobre el taller, procesos o navegación.");
+  appendMensaje("Palanca", "Bienvenido al Taller de Arquímedes. Soy Palanca. Puedo ayudarte a entender cómo está organizado este espacio y qué tipo de trabajo se desarrolla aquí.");
 
-output.innerHTML = `
-  <div><b>IA:</b> Sistema activo. Puedes consultar sobre el taller, procesos o navegación.</div>
-  <div><b>Palanca:</b> Bienvenido al Taller de Arquímedes. Soy Palanca. Puedo ayudarte a entender cómo está organizado este espacio y qué tipo de trabajo se desarrolla aquí.</div>`;
-
-const sugerencias = document.getElementById("palanca-sugerencias");
-
-if (sugerencias) {
-  sugerencias.innerHTML = `
-    <div id="sugerencias" style="margin-top:10px;">
-      <button data-pregunta="luis osorno">¿Quién es Luis Osorno?</button>
-      <button data-pregunta="quien eres">¿Quién eres?</button>
-      <button data-pregunta="taller de arquimedes">¿Qué es el Taller?</button>
-      <button data-pregunta="youtube">Ver proyectos</button>
-      <button data-pregunta="blog">Ir al blog</button>
-    </div>
-  `;
-}  
-  
-const botones = document.querySelectorAll("#sugerencias button");
-
-if (botones.length > 0) {
   botones.forEach((boton) => {
-    boton.addEventListener("click", function() {
+    boton.addEventListener("click", function () {
       preguntar(this.dataset.pregunta);
     });
   });
-}               
-                          
-  // ============================
-  // INTERACCIÓN
-  // ============================
 
-  input.addEventListener("keypress", function (e) {
+  input.addEventListener("keydown", function (e) {
     if (e.key === "Enter") {
       const texto = input.value.trim();
       if (!texto) return;
-
       input.value = "";
       preguntar(texto);
     }
