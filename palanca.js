@@ -526,13 +526,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const input = document.getElementById("chat-input");
   const output = document.getElementById("chat-output");
   const botones = document.querySelectorAll(".palanca-btn");
-
+  
   if (!input || !output) return;
 
-  output.innerHTML = "";
-  appendMensaje("IA", "Sistema activo. Puedes consultar sobre el taller, procesos o navegación.");
-  appendMensaje("Palanca", "Bienvenido al Taller de Arquímedes. Soy Palanca. Puedo ayudarte a entender cómo está organizado este espacio y qué tipo de trabajo se desarrolla aquí.");
+  function iniciarSaludo() {
+    if (!output || output.innerHTML.trim() !== "") return;
 
+    appendMensaje("IA", "Sistema activo. Puedes consultar sobre el taller, procesos o navegación.");
+    appendMensaje("Palanca", "Bienvenido al Taller de Arquímedes. Soy Palanca. Puedo ayudarte a entender cómo está organizado este espacio y qué tipo de trabajo se desarrolla aquí.");
+  }
   botones.forEach((boton) => {
     boton.addEventListener("click", function () {
       preguntar(this.dataset.pregunta);
