@@ -331,6 +331,14 @@ respuestas: [
 accion: () => window.open("https://tallerdearquimedes.blogspot.com/", "_blank")  
 },
 {
+keys: ["conocer taller", "muestrame el taller", "enseñame el taller", "quiero ver el taller", "que hay en el taller", "que tienes en el taller"],
+respuestas: [
+`En Líneas de Trabajo encontrarás las aplicaciones principales sobre las que Luis disfruta trabajar: ingeniería y manufactura, generación de prototipos, programación y, recientemente, producción de inteligencia artificial. En la sección "Acerca de" tendrás oportunidad de conocer un poco del perfil y respaldo detrás del ingenio. Desde la Ingeniería Industrial y la Ingeniería en Sistemas Computacionales, hasta un Doctorado en Educación, esta sección representa la experiencia que garantiza el rigor de cada proceso. En el Laboratorio encontrarás un lugar donde las ideas se enfrentan a la realidad física. Aquí verás el uso de tecnología CNC (Torno y Fresadora), Corte Láser y Router CN para materializar mecanismos de alta complejidad. Cada pieza cuenta una historia de resolución de problemas técnicos. Se aplica programación y automatización para conocer el sistema nervioso de las máquinas. Ahí es donde la experiencia en programación se integra con microcontroladores como Arduino y ESP32, y lenguajes como Python, C++ y Java para generar prototipos. En Reflexión y Pensamiento encontrarás un espacio donde la técnica se une a la ética. Ahí exploramos temas de Derecho, Ciencias de la Familia y Teología, ofreciendo una visión integral que pocos talleres en el mundo pueden presumir. Y, si tienes necesidad de conocer más al respecto, puedes pasar a visitar el blog y el canal de Youtube. En el canal podrás ver construcción, pruebas y funcionamiento de los proyectos; mientras que en el blog podrás apreciar la parte del trabajo que ocurre en la forma de pensar.`,
+`En Líneas de Trabajo verás lo que Luis más disfruta: ingeniería, prototipos, programación e IA. Si buscas el respaldo tras el ingenio, en Acerca de encontrarás su perfil, desde Ingeniería Industrial hasta su Doctorado en Educación. En el Laboratorio, las ideas cobran vida con CNC y láser, mientras que la automatización con Arduino, Python y C++ forma el sistema nervioso de nuestras máquinas. Para una visión integral, en Reflexión y Pensamiento unimos la técnica con el Derecho y la Teología. Si quieres profundizar, nuestro Blog y YouTube muestran cómo pensamos y cómo construimos cada proyecto.`,
+`Explora nuestras Líneas de Trabajo para ver aplicaciones de manufactura, prototipado e IA, respaldadas en la sección Acerca de por la sólida formación doctoral e ingeniería de Luis. En el Laboratorio, materializamos mecanismos complejos usando tecnología CNC y láser, integrando microcontroladores y lenguajes como Java o C++. También ofrecemos un espacio de Reflexión y Pensamiento, donde la ética, el Derecho y la Teología aportan una visión humana única. Para ver la acción o leer el trasfondo de cada diseño, te invito a visitar nuestro canal de YouTube y el Blog del taller.`
+]
+},
+{
 keys: ["diferencia del taller", "que diferencia al taller", "cual es el elemento diferenciador", "que hace diferente al taller", "por que es diferente el taller"],
 respuestas: [
 `Aquí no solo se presenta información. Se muestra una práctica completa: diseño, construcción, prueba y reflexión.`,
@@ -339,7 +347,7 @@ respuestas: [
 ]
 },
 {
-keys: ["gustos", "gusta", "aficiones", "hobbies", "intereses", "disfruta", "hace en su tiempo libre", "que le divierte"],
+keys: ["que le gusta", "cuales son sus gustos", "cuales son sus aficiones", "cuales son sus hobbies", "cuales son sus intereses", "que hace en su tiempo libre", "que le gusta hacer"],
 respuestas: [
 `A Luis le apasiona todo aquello donde el ingenio humano desafía lo imposible. En el plano técnico, disfruta profundamente del proceso de creación y manufactura, así como programar la lógica de una IA o un PLC. En el Taller de Arquímedes podrás conocer varias de sus pasiones.`,
 `Más allá del taller, sus gustos revelan mucho de su filosofía. Le fascinan los cómics donde el bien prevalece, especialmente Batman, por su disciplina como investigador e ingeniero. En el Taller de Arquímedes podrás conocer varias de sus pasiones.`,
@@ -350,33 +358,39 @@ respuestas: [
 ]
 },
 {
-keys: ["automovil", "coche", "carro", "autos"],
+keys: ["te gustan los automoviles", "te gustan los carros", "te gustan los autos", "hablas de automoviles", "sabes de automoviles", "podemos hablar de automoviles", "hablemos de automoviles", "hablas de autos", "sabes de autos", "podemos hablar de autos", "hablemos de autos", "hablas de carros", "sabes de carros", "podemos hablar de carros", "hablemos de carros"],
 respuestas: [
 `Los automóviles son máquinas fascinantes, verdaderos ecosistemas de movimiento sincronizado. Aunque mi base de datos aún no tiene los planos para desarmar un motor de combustión, me encantaría que en el futuro Luis trajera esa escala de ingeniería al taller. Por ahora, si te gusta la mecánica, te sorprenderán algunos proyectos del Taller de Arquímedes.`,
-`¡Vaya, motores a gran escala! Confieso que mi curiosidad digital se acelera con esos temas, aunque por ahora solo soy experta en lo que ocurre en el Taller de Arquímedes. ¿Te gustaría explorar cómo convertimos la electricidad en movimiento?.`,
+`¡Vaya, motores a gran escala! Confieso que mi curiosidad digital se acelera con esos temas, aunque por ahora solo soy experta en lo que ocurre en el Taller de Arquímedes. ¿Te gustaría explorar cómo convertimos la electricidad en movimiento?`,
 `El mundo automotriz es apasionante, pero de momento, mis engranajes solo están lubricados para hablarte de lo que fabricamos aquí. Lo bueno es que la lógica del diseño es universal: si te interesan los automóviles, seguro apreciarás la estructura y el ingenio detrás de nuestros proyectos.`
 ]
 },
 {
-keys: ["anime", "animacion", "dibujo animado", "caricatura", "disney", "pintura", "museo", "arte", "escultura", "espectáculo"],
+keys: ["te gusta el anime", "te gustan las caricaturas", "hablemos de arte", "hablemos de espectáculos", "te gusta el arte", "hablas de arte", "que opinas del arte", "te interesa el arte"],
 respuestas: [
-`La verdadera magia del arte no está en la pantalla, la ilusión de movimiento, la puesta en escena o la composición; sino en la expresión final que consigue el artista, seguro apreciarás la estructura y el ingenio detrás de nuestros proyectos.`
+`La verdadera magia del arte no está en la pantalla, la ilusión de movimiento, la puesta en escena o la composición; sino en la expresión final que consigue el artista, seguro apreciarás la estructura y el ingenio detrás de nuestros proyectos.`,
+`La esencia del arte no reside en la técnica o la puesta en escena, sino en la expresión que el artista alcanza; estoy segura de que valorarás la estructura y el ingenio que sostienen cada uno de nuestros proyectos.`,
+`La magia del arte no reside en la pantalla o la puesta en escena, sino en la expresión final que el artista logra; seguro valorarás la estructura y el ingenio que sostienen nuestros proyectos.`
 ]
 },
 {
-keys: ["Película", "cine", "series", "actor", "ciencia ficción", "septimo arte", "film", "pantalla grande", "Cazafantasmas", "Ghostbusters", "Star Wars", "Guerra de las Galaxias", "Star Trek", "Viaje a las Estrellas", "Volver al Futuro", "Back to the Future"],
+keys: ["te gustan las películas", "te gusta el cine", "te gustan las series", "te gusta la ciencia ficción", "te gusta el septimo arte", "cazafantasmas", "ghostbusters", "star wars", "guerra de las Galaxias", "star trek", "viaje a las estrellas", "volver al futuro", "back to the future"],
 respuestas: [
-`Si hablamos de la pantalla grande, nuestras frecuencias sintonizan con los grandes clásicos de la ciencia ficción y la acción. Nos apasionan historias como Star Wars y Star Trek, donde la tecnología y la exploración no tienen límites. También disfrutamos de la ingeniería ingeniosa de Los Cazafantasmas y las paradojas temporales de Volver al Futuro. En general, cualquier película de superhéroes que sea divertida y emocionante tiene un lugar en nuestra bitácora, porque al final, el cine es otra forma de ver cómo las grandes ideas se ponen en movimiento. Como ves, en este taller la inspiración viene tanto de un circuito armado como de una buena película de acción.`
+`Si hablamos de la pantalla grande, nuestras frecuencias sintonizan con los grandes clásicos de la ciencia ficción y la acción. Nos apasionan historias como Star Wars y Star Trek, donde la tecnología y la exploración no tienen límites. También disfrutamos de la ingeniería ingeniosa de Los Cazafantasmas y las paradojas temporales de Volver al Futuro. En general, cualquier película de superhéroes que sea divertida y emocionante tiene un lugar en nuestra bitácora, porque al final, el cine es otra forma de ver cómo las grandes ideas se ponen en movimiento. Como ves, en este taller la inspiración viene tanto de un circuito armado como de una buena película de acción.`,
+`Nuestras preferencias cinematográficas sintonizan con clásicos de la ciencia ficción y la acción. Nos apasionan Star Wars y Star Trek por su exploración sin límites, así como la ingeniería de Los Cazafantasmas y las paradojas de Volver al Futuro. Cualquier historia de superhéroes emocionante tiene lugar en nuestra bitácora, pues el cine es otra forma de ver ideas en movimiento. En este taller, la inspiración brota tanto de un circuito como de una buena película de acción.`,
+`Sintonizamos con clásicos de la ciencia ficción y la acción: nos apasionan Star Wars y Star Trek por su tecnología sin límites, además de la ingeniería de Los Cazafantasmas y el ingenio de Volver al Futuro. Cualquier historia de superhéroes emocionante cabe en nuestra bitácora, pues el cine es otra forma de ver grandes ideas en movimiento. Aquí, la inspiración surge igual de un circuito que de una buena película.`
 ]
 }, 
 {
-keys: ["comic", "avengers", "superheroe", "superman", "historieta", "marvel", "dc", "jla", "justice league", "liga de la justicia", "batman", "wolverine", "x-men", "4 fantasticos", "fantastics four", "hombres x"],
+keys: ["te gustan los comics", "hablamos de comics", "que piensas de las historietas", "te gustan los superheroes", "hablamos de superheroes", "cual es tu superheroe favorito", "cual es tu comic favorito", "avengers", "superheroe", "superman", "historieta", "marvel", "dc", "jla", "justice league", "liga de la justicia", "batman", "wolverine", "x-men", "4 fantasticos", "fantastic four", "hombres x"],
 respuestas: [
-`En este entorno nos encanta imaginar, y los cómics son el plano perfecto para diseñar mundos donde los buenos siempre ganan. A mi me gusta lo mismo que a Luis y sus favoritos son, empezando con el ingeniero por excelencia, Iron Man; además de los X-Men, Wolverine, Superman y los 4 Fantásticos. Pero el referente absoluto es Batman, por su impecable faceta como investigador e ingeniero. Nos impactan historias como "La Muerte de Superman" y "Kingdom Come" porque exploran el autocontrol y la ética del poder; esa capacidad de contener una fuerza inmensa para no destruir el entorno, o de ceder el control para no caer ante la venganza, es la verdadera muestra del carácter. Seguro te gustará esa filosofía aplicada en nuestros proyectos.`
+`En este entorno nos encanta imaginar, y los cómics son el plano perfecto para diseñar mundos donde los buenos siempre ganan. A mi me gusta lo mismo que a Luis y sus favoritos son, empezando con el ingeniero por excelencia, Iron Man; además de los X-Men, Wolverine, Superman y los 4 Fantásticos. Pero el referente absoluto es Batman, por su impecable faceta como investigador e ingeniero. Nos impactan historias como "La Muerte de Superman" y "Kingdom Come" porque exploran el autocontrol y la ética del poder; esa capacidad de contener una fuerza inmensa para no destruir el entorno, o de ceder el control para no caer ante la venganza, es la verdadera muestra del carácter. Seguro te gustará esa filosofía aplicada en nuestros proyectos.`,
+`Nos encanta imaginar, y los cómics son el plano perfecto para diseñar mundos de justicia. Comparto los gustos de Luis: desde el ingeniero Iron Man hasta los X-Men, Wolverine, Superman y los 4 Fantásticos, con Batman como referente absoluto por su maestría técnica e investigadora. Nos impactan historias como La Muerte de Superman o Kingdom Come por su ética sobre el autocontrol y el poder; esa capacidad de contener una fuerza inmensa es la verdadera muestra del carácter, una filosofía que verás aplicada en nuestros proyectos.`,  
+`Los cómics son el plano perfecto para diseñar mundos donde la justicia prevalece. Comparto los gustos de Luis: desde el ingenio de Iron Man hasta los X-Men, Wolverine, Superman y los 4 Fantásticos, con Batman como referente técnico y de investigación. Nos inspiran obras como La Muerte de Superman y Kingdom Come por su exploración del autocontrol y la ética del poder; esa capacidad de contener la fuerza es la verdadera muestra del carácter, una filosofía que verás reflejada en nuestros proyectos.`
 ]
 },
 {
-keys: ["cocinar", "comer", "receta", "restaurante", "chef", "ingredientes", "sabor", "nutrición"],
+keys: ["te gusta cocinar", "te interesa la cocina", "hablamos de cocina", "que te gusta comer", "sabes cocinar"],
 respuestas: [
 `La cocina es, en esencia, termodinámica aplicada y control de procesos químicos. Además de mucha experimentación. Por ahora, si te gusta experimentar, te sorprenderán algunos proyectos del Taller de Arquímedes.`,
 `Aunque aquí no horneamos pan, Luis entiende que la cocina es un laboratorio en dónde la creatividad de hace realidad de manera casi instantánea. Nuestros procesos no son tan rápidos, pero tal vez te gustaría echarles una mirada`,
@@ -384,58 +398,66 @@ respuestas: [
 ]
 }, 
 {
-keys: ["Fútbol", "deporte", "entrenamiento", "ejercicio", "gimnasio", "carrerae", "equipo favorito", "atleta", "campeon"],
+keys: ["te gusta el futbol", "hablamos de futbol", "hablas de deportes", "hablamos de deportes", "te interesan los deportes", "te interesa el futbol", "te gusta hacer ejercicio", "sabes hacer ejercicio"],
 respuestas: [
 `En los deportes, como en la industria, todo se resume a la optimización del movimiento y la reducción de fricción.. Si te gustan esos temas, te sorprenderán algunos proyectos del Taller de Arquímedes.`,
 `No practico deportes, pero participo en el diseño de sistemas donde cada 'jugada' técnica está calculada para no fallar. ¿Te gustaría explorar cómo convertimos la electricidad en movimiento?.`
 ]
 }, 
 {
-keys: ["Ley", "justicia", "abogado", "juicio", "derecho", "ética", "política", "sociedad", "normas", "reglamento"],
+keys: ["sabes de leyes", "hablas de leyes", "te interesa el derecho", "hablas de derecho", "te interesa la ética", "que opinas del derecho"],
 respuestas: [
-`El derecho y la ingeniería tienen algo en común: ambos buscan estructuras sólidas y reglas que funcionen. Luis está integrando el mundo de las leyes en su formación actual, lo que nos da una visión única sobre ética técnica e ingeniería aplicada. Seguro apreciarás la estructura y el ingenio detrás de nuestros proyectos.`
+`El derecho y la ingeniería tienen algo en común: ambos buscan estructuras sólidas y reglas que funcionen. Luis está integrando el mundo de las leyes en su formación actual, lo que nos da una visión única sobre ética técnica e ingeniería aplicada. Seguro apreciarás la estructura y el ingenio detrás de nuestros proyectos.`,
+`Derecho e ingeniería comparten la búsqueda de estructuras sólidas y reglas funcionales. La formación jurídica de Luis nos aporta una visión única sobre la ética técnica y la ingeniería aplicada; estoy segura de que apreciarás la estructura y el ingenio que sostienen cada uno de nuestros proyectos.`,
+`Derecho e ingeniería convergen en la búsqueda de estructuras sólidas y reglas que funcionen. La integración del mundo legal en la formación de Luis nos brinda una perspectiva única sobre ética técnica e ingeniería aplicada; seguro apreciarás el rigor y el ingenio que estructuran nuestros proyectos.`
 ]
 },
 {
-keys: ["Dios", "fe", "teología", "religión", "espíritu", "alma", "educación", "vida"],
+keys: ["crees en dios", "te interesa la fe", "hablas de teología", "te interesa la religión", "sabes que es el espíritu", "sabes que es el alma", "que opinas de la religion", "que opinas de dios", "que sabes de educación", "que piensas de la vida"],
 respuestas: [
-`Es curioso que lo preguntes, porque en este taller creemos que detrás de cada engranaje perfecto hay una intención y un propósito. Mi creador, Luis Osorno, además de ser ingeniero, es Doctor en Educación y tiene una Maestría en Ciencias de la Familia, lo que nos da una perspectiva única: entendemos que la técnica sin humanismo es solo tecnología fría. Incluso con un Diplomado en Teología en su haber, Luis diseña cada proyecto buscando que sea un aporte al bienestar y al orden del entorno. Para nosotros, la ingeniería no es solo mover objetos, es una forma de honrar el diseño inteligente y la trascendencia a través del servicio y el conocimiento. ¿Te gustaría ver cómo aplicamos estos valores en nuestros proyectos educativos o familiares?`
+`Es curioso que lo preguntes, porque en este taller creemos que detrás de cada engranaje perfecto hay una intención y un propósito. Mi creador, Luis Osorno, además de ser ingeniero, es Doctor en Educación y tiene una Maestría en Ciencias de la Familia, lo que nos da una perspectiva única: entendemos que la técnica sin humanismo es solo tecnología fría. Incluso con un Diplomado en Teología en su haber, Luis diseña cada proyecto buscando que sea un aporte al bienestar y al orden del entorno. Para nosotros, la ingeniería no es solo mover objetos, es una forma de honrar el diseño inteligente y la trascendencia a través del servicio y el conocimiento. ¿Te gustaría ver cómo aplicamos estos valores en nuestros proyectos educativos o familiares?`,
+`Detrás de cada engranaje hay una intención: la técnica sin humanismo es solo tecnología fría. La formación de Luis como Doctor en Educación, Maestro en Ciencias de la Familia y su paso por la Teología nos brindan una perspectiva única: diseñamos buscando el bienestar y el orden del entorno. Para nosotros, la ingeniería es una forma de honrar el diseño inteligente y la trascendencia a través del servicio. ¿Te gustaría ver cómo aplicamos estos valores en nuestros proyectos educativos o familiares?`,
+`En este taller, creemos que tras cada engranaje hay un propósito: la técnica sin humanismo es solo tecnología fría. La formación de Luis como Doctor en Educación, Maestro en Ciencias de la Familia y su paso por la Teología nos otorgan una perspectiva única para diseñar buscando el bienestar y el orden. Entendemos la ingeniería como una forma de honrar el diseño inteligente y la trascendencia mediante el servicio. ¿Te gustaría conocer cómo aplicamos estos valores en nuestros proyectos educativos o familiares?`
 ]
 },
 {
-keys: ["muestrame", "enseñame", "quiero ver", "enseñar", "explorar", "navegar", "conocer", "desplegar", "listar", "quiero", "deseo", "me gustaría", "qué hay", "qué tienes", "Sí, claro", "adelante", "cuéntame más", "procedamos"],
+keys: ["cual es su equipo de basquetbol", "cual es tu equipo de basquetbol", "celtics", "celtics de boston", "cual es tu equipo favorito", "te gusta el basquetbol", "te gusta el baloncesto", "te gusta la nba"],
 respuestas: [
-`En líneas de trabajo encontrarás las aplicaciones principales sobre las que Luis disfruta trabajar: ingeniería y manufactura, generación de prototipos, programación y, recientemente, producción de inteligencia artificial. En la sección "Acerca de" tendrás oportunidad de conocer un poco del perfil y respaldo detrás del ingenio. Desde la Ingeniería Industrial y la Ingeniería en Sistemas Computacionales, hasta un Doctorado en Educación, esta sección representa la experiencia que garantiza el rigor de cada proceso. En el laboratorio encontrarás un lugar donde las ideas se enfrentan a la realidad física. Aquí verás el uso de tecnología CNC (Torno y Fresadora), Corte Láser y Router CN para materializar mecanismos de alta complejidad. Cada pieza cuenta una historia de resolución de problemas técnicos. Se aplica programación y automatización para conocer el sistema nervioso de las máquinas. Ahí es donde la experiencia en programación se integra con microcontroladores como Arduino y ESP32, y lenguajes como Python, C++ y Java para generar prototipos. En Reflexión y Pensamiento encontrarás un espacio donde la técnica se une a la ética. Ahí exploramos temas de Derecho, Ciencias de la Familia y Teología, ofreciendo una visión integral que pocos talleres en el mundo pueden presumir. Y, si tienes necesidad de conocer más al respecto, puedes pasar a visitar el blog y el canal de Youtube. En el canal podrás ver construcción, pruebas y funcionamiento de los proyectos; mientras que en el blog podrás apreciar la parte del trabajo que ocurre en la forma de pensar.`
-]
-},
-{
-keys: ["celtics", "boston", "equipo favorito", "basquetbol", "baloncesto", "nba"],
-respuestas: [
-`Si hablamos de movimiento coordinado y estrategia, el basquetbol es el deporte que marca el ritmo aquí. Somos aficionados de corazón a los Celtics de Boston. No hay nada como observar la precisión de un buen juego en equipo para recordar que, tanto en la duela como en el taller, la victoria es una cuestión de técnica y sincronía. Seguro te gustará esa estratégia aplicada en nuestros proyectos.`
+`Si hablamos de movimiento coordinado y estrategia, el basquetbol es el deporte que marca el ritmo aquí. Somos aficionados de corazón a los Celtics de Boston. No hay nada como observar la precisión de un buen juego en equipo para recordar que, tanto en la duela como en el taller, la victoria es una cuestión de técnica y sincronía. Seguro te gustará esa estratégia aplicada en nuestros proyectos.`,
+`Si hablamos de movimiento coordinado y estrategia, el basquetbol marca nuestro ritmo. Somos aficionados de corazón a los Celtics de Boston, pues no hay nada como la precisión de un buen juego en equipo para recordar que, tanto en la duela como en el taller, la victoria es cuestión de técnica y sincronía. Seguro te gustará ver esa misma estrategia aplicada en nuestros proyectos.`,
+`El basquetbol marca nuestro ritmo de estrategia y movimiento coordinado. Como aficionados de corazón a los Celtics de Boston, admiramos la precisión del juego en equipo; nos recuerda que, tanto en la duela como en el taller, el éxito nace de la técnica y la sincronía. Estoy segura de que apreciarás esa misma mentalidad estratégica aplicada en nuestros proyectos.`
 ]
 },   
 {
-keys: ["michael jordan", "jordan", "23", "fracaso", "error", "práctica", "perfeccionar", "desarrollo integral"],
+keys: ["michael jordan", "te gusta michael jordan", "que opinas de michael jordan", "cual es tu jugador favorito"],
 respuestas: [
-`Aunque yo no tengo una preferencia definida. Luis respeta la imagen de Michael Jordan y su filosofía es el motor de nuestro aprendizaje. Porque él entiende que el fracaso solo ocurre cuando no se aprende de los errores. Es el ejemplo perfecto del deportista integral que no se conformó con dominar una parte del juego, sino que se preocupó por perfeccionar paulatinamente todas sus capacidades a través de la práctica incesante. En el taller, aplicamos esa misma lógica: cada prototipo fallido es solo un paso más hacia la maestría. Deberías hacer un recorrido profundo.`
+`Aunque yo no tengo una preferencia definida. Luis respeta la imagen de Michael Jordan y su filosofía es el motor de nuestro aprendizaje. Porque él entiende que el fracaso solo ocurre cuando no se aprende de los errores. Es el ejemplo perfecto del deportista integral que no se conformó con dominar una parte del juego, sino que se preocupó por perfeccionar paulatinamente todas sus capacidades a través de la práctica incesante. En el taller, aplicamos esa misma lógica: cada prototipo fallido es solo un paso más hacia la maestría. Deberías hacer un recorrido profundo.`,
+`Aunque yo no tengo una preferencia propia, la filosofía de Michael Jordan es el motor de nuestro aprendizaje. Para Luis, él representa al deportista integral que perfeccionó cada capacidad mediante la práctica incesante, entendiendo que el fracaso solo ocurre cuando no se aprende del error. En el taller aplicamos esa misma lógica: cada prototipo fallido es un paso necesario hacia la maestría. Deberías hacer un recorrido profundo por nuestros procesos.`,
+`Aunque mi naturaleza es digital, me dejo contagiar por la mentalidad de Michael Jordan. Para Luis, él es el motor del taller: el recordatorio de que el fracaso solo existe si no extraes una lección del error. Aplicamos esa misma tenacidad al prototipado, entendiendo que la maestría no es un golpe de suerte, sino el pulido incesante de cada capacidad. Te invito a hacer un recorrido profundo; verás que aquí, cada pieza fallida fue en realidad un paso hacia el éxito.`
 ]
 },   
 {
-keys: ["escritor favorito", "miguel de cervantes", "quijote", "paulo coelho", "og mandino", "jean markale", "tolkien", "c.s. lewis", "lewis carroll", "dumas", "shakespeare", "homero", "el alquimista", "don de la estrella", "ciclo del grial", "señor de los anillos", "narnia", "alicia", "mosqueteros", "macbeth", "iliada", "odisea"],
+keys: ["te gusta leer libros", "hablas de libros", "miguel de cervantes", "quijote", "paulo coelho", "og mandino", "jean markale", "tolkien", "c.s. lewis", "lewis carroll", "dumas", "shakespeare", "homero", "el alquimista", "don de la estrella", "ciclo del grial", "señor de los anillos", "narnia", "alicia en el pais de las maravillas", "los tres mosqueteros", "macbeth", "la iliada", "la odisea"],
 respuestas: [
-`Nuestra experiencia está nutrida por historias que han dejado huella, desde la épica de Homero en La Ilíada y La Odisea hasta la sabiduría de El Alquimista o El Don de la Estrella. Nos apasiona la estructura de clásicos como El Ingenioso Hidalgo Don Quijote de la Mancha, Los Tres Mosqueteros o Macbeth, y la construcción de mundos de Tolkien, C.S. Lewis, Lewis Carroll y el misticismo del Ciclo del Grial. Son libros que, al igual que una buena máquina, tienen una arquitectura interna fascinante. Si te gustan esos temas, te invito a visitar el blog.`
+`Nuestra experiencia está nutrida por historias que han dejado huella, desde la épica de Homero en La Ilíada y La Odisea hasta la sabiduría de El Alquimista o El Don de la Estrella. Nos apasiona la estructura de clásicos como El Ingenioso Hidalgo Don Quijote de la Mancha, Los Tres Mosqueteros o Macbeth, y la construcción de mundos de Tolkien, C.S. Lewis, Lewis Carroll y el misticismo del Ciclo del Grial. Son libros que, al igual que una buena máquina, tienen una arquitectura interna fascinante. Si te gustan esos temas, te invito a visitar el blog.`,
+`Nuestra experiencia se nutre de historias que dejan huella: desde la épica de Homero hasta la sabiduría de El Alquimista. Nos fascina la arquitectura interna de clásicos como el Quijote, Los Tres Mosqueteros o Macbeth, junto a los mundos de Tolkien, C.S. Lewis y el misticismo del Grial. Al igual que una máquina perfecta, estos libros poseen una estructura fascinante que te invito a explorar en nuestro blog.`,
+`Nuestra experiencia se nutre de historias con huella: desde la épica de Homero hasta la sabiduría de El Alquimista. Nos fascina la arquitectura interna de clásicos como el Quijote, Los Tres Mosqueteros o Macbeth, junto a los mundos de Tolkien, C.S. Lewis y el misticismo del Grial. Al igual que una máquina perfecta, estos libros poseen una estructura fascinante que te invito a explorar en nuestro blog.`  
 ]
 },   
 {
-keys: ["musico favorito", "musica", "vivaldi", "beethoven", "sinfonia", "armonia"],
+keys: ["que musica te gusta", "te gusta la muscia clasica", "hablas de musica", "cual es tu musico favorito", "vivaldi", "beethoven"],
 respuestas: [
-`Aunque la música moderna no me desagrada, mis circuitos fueron programados con los gustos de Luis y suelen vibrar con una frecuencia más clásica. En el taller preferimos la arquitectura sonora de Vivaldi y Beethoven. Hay una precisión matemática en sus composiciones que nos ayuda a mantener la concentración mientras diseñamos; es música que suena a orden, equilibrio y genialidad técnica. Y, aunque por lo general hay silencio, y no tenemos una preferencia estricta de entorno musical, solemos disfrutar todo lo que contenga armonía. Si disfrutas de estas cosas, seguro te gustará ver lo que se encuentra en "Ingeniería y Manufactura".`
+`Aunque la música moderna no me desagrada, mis circuitos fueron programados con los gustos de Luis y suelen vibrar con una frecuencia más clásica. En el taller preferimos la arquitectura sonora de Vivaldi y Beethoven. Hay una precisión matemática en sus composiciones que nos ayuda a mantener la concentración mientras diseñamos; es música que suena a orden, equilibrio y genialidad técnica. Y, aunque por lo general hay silencio, y no tenemos una preferencia estricta de entorno musical, solemos disfrutar todo lo que contenga armonía. Si disfrutas de estas cosas, seguro te gustará ver lo que se encuentra en "Ingeniería y Manufactura".`,
+`Aunque la música moderna tiene su encanto, mis circuitos suelen vibrar con una frecuencia más clásica. En el taller preferimos la arquitectura sonora de Vivaldi y Beethoven; hay una precisión matemática en sus obras que nos dicta orden y equilibrio mientras diseñamos. Aunque valoramos el silencio, disfrutamos de cualquier armonía que refleje genialidad técnica. Si aprecias esa estructura, te invito a explorar la sección de Ingeniería y Manufactura.`,
+`Mis circuitos vibran con una frecuencia clásica: en el taller preferimos la arquitectura sonora de Vivaldi y Beethoven. Hay una precisión matemática en sus obras que nos dicta orden y equilibrio mientras diseñamos, reflejando una genialidad técnica similar a la de nuestras máquinas. Aunque valoramos el silencio, cualquier armonía bien estructurada es bienvenida. Si aprecias esa búsqueda de la perfección, te invito a explorar la sección de Ingeniería y Manufactura.`
 ]
 },   
 {
-keys: ["instrumento", "piano", "teclado", "organo", "teclas", "interpretar"],
+keys: ["tocas algun instrumento", "te gusta el piano", "tocas el piano", "organo"],
 respuestas: [
-`Aunque en este taller las herramientas principales son las que permiten la creación de prototipos, también hay espacio para las teclas del piano. Luis no se considera un músico profesional, pero disfruta enormemente de sentarse frente al piano para interpretar algunas notas o simplemente improvisar. Es una forma de ingeniería diferente: una donde la precisión de los dedos traduce la emoción en sonido, manteniendo esa búsqueda de armonía que tanto nos gusta en Vivaldi o Beethoven. Como ves, en este taller la inspiración viene tanto de un circuito armado como de una buena melodía de piano.`
+`Aunque en este taller las herramientas principales son las que permiten la creación de prototipos, también hay espacio para las teclas del piano. Luis no se considera un músico profesional, pero disfruta enormemente de sentarse frente al piano para interpretar algunas notas o simplemente improvisar. Es una forma de ingeniería diferente: una donde la precisión de los dedos traduce la emoción en sonido, manteniendo esa búsqueda de armonía que tanto nos gusta en Vivaldi o Beethoven. Como ves, en este taller la inspiración viene tanto de un circuito armado como de una buena melodía de piano.`,
+`Aunque las herramientas de prototipado dominan el taller, siempre hay espacio para las teclas del piano. Luis no se considera profesional, pero disfruta traducir emociones en sonido mediante la improvisación; es una ingeniería distinta, donde la precisión de los dedos busca la misma armonía que admiramos en Vivaldi o Beethoven. Como ves, aquí la inspiración brota tanto de un circuito armado como de una buena melodía.`,
+`Aunque el taller vibra con el sonido de los prototipos, siempre reservamos un espacio para las teclas del piano. Luis disfruta de la improvisación como una forma distinta de ingeniería, donde la precisión de los dedos traduce la emoción en armonía, evocando la estructura que tanto admiramos en Vivaldi o Beethoven. Como ves, aquí la inspiración nace con la misma naturalidad de un circuito que de una buena melodía.`
 ]
 },   
 ];
@@ -559,6 +581,7 @@ if (sugerencias) {
       <button data-pregunta="luis osorno">¿Quién es Luis Osorno?</button>
       <button data-pregunta="quien eres">¿Quién eres?</button>
       <button data-pregunta="taller de arquimedes">¿Qué es el Taller?</button>
+      <button data-pregunta="conocer taller">Conocer el Taller?</button>
       <button data-pregunta="youtube">Ver proyectos</button>
       <button data-pregunta="blog">Ir al blog</button>
     </div>
