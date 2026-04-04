@@ -596,8 +596,11 @@ function responder(input) {
     mejorItem &&
     mejorScore >= 6 &&
     (
-      mejoresExactas >= 2 ||
-      (mejoresClavesUtiles === 1 && mejoresExactas === 1)
+      mejoresExactas >= 1 &&
+      (
+        mejoresExactas >= 2 ||
+        mejoresClavesUtiles <= 2
+      )
     );
 
   if (matchValido) {
