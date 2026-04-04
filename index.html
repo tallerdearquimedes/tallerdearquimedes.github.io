@@ -658,11 +658,19 @@
       </article>
 
 	  <script>
-      document.getElementById("tarjeta-ia")
-        .addEventListener("click", function() {
-          document.getElementById("chatbot").style.display = "flex";
-        });
-      </script>
+    document.getElementById("tarjeta-ia")
+      .addEventListener("click", function() {
+        const chat = document.getElementById("chatbot");
+        const output = document.getElementById("chat-output");
+
+        chat.style.display = "flex";
+
+        if (output && output.innerHTML.trim() === "") {
+          appendMensaje("IA", "Sistema activo. Puedes consultar sobre el taller, procesos o navegación.");
+          appendMensaje("Palanca", "Bienvenido al Taller de Arquímedes. Soy Palanca. Puedo ayudarte a entender cómo está organizado este espacio y qué tipo de trabajo se desarrolla aquí.");
+        }
+      });
+	  </script>
 		
     </div>
   </section>
