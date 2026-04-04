@@ -12,13 +12,36 @@ function similitud(texto, clave) {
   const palabrasTexto = texto.split(" ");
   const palabrasClave = clave.split(" ");
 
-  return palabrasTexto.some(pt =>
-    palabrasClave.some(pc =>
-      pt.length >= 4 &&
-      pc.length >= 4 &&
-      (pt.startsWith(pc) || pc.startsWith(pt))
-    )
-  );
+  let coincidencias = 0;
+
+  palabrasTexto.forEach(pt => {
+    palabrasClave.forEach(pc => {
+      if (pt === pc) coincidencias++;
+    });
+  });
+
+  return coincidencias;
+}
+
+// ============================
+// SELECCIÓN DE MEJOR INTENCIÓN
+// ============================
+function encontrarMejorRespuesta(texto) {
+  let mejorItem = null;
+  let mejorScore = 0;
+
+  base.forEach(item => {
+    item.keys.forEach(clave => {
+      const score = similitud(texto, clave);
+
+      if (score > mejorScore) {
+        mejorScore = score;
+        mejorItem = item;
+      }
+    });
+  });
+
+  return mejorScore > 0 ? mejorItem : null;
 }
 
 // ============================
@@ -463,6 +486,28 @@ respuestas: [
 ];
 
 // ============================
+// MOTOR DE RESPUESTA
+// ============================
+function generarRespuesta(textoUsuario) {
+  const texto = limpiar(textoUsuario);
+
+  const item = encontrarMejorRespuesta(texto);
+
+  if (item) {
+    const respuestas = item.respuestas;
+    const respuesta = respuestas[Math.floor(Math.random() * respuestas.length)];
+
+    if (item.accion) {
+      item.accion();
+    }
+
+    return respuesta;
+  }
+
+  return "No estoy segura de haber entendido. ¿Puedes reformular tu pregunta?";
+}
+
+// ============================
 // MOTOR
 // ============================
 
@@ -525,17 +570,6 @@ function responder(input) {
     return respuesta;
   }
 
-  if (Math.random() < 0.2) {
-    const reflexiones = [
-      "En este espacio, la ingeniería no se entiende como especialización aislada, sino como integración de capacidades.",
-      "No todo lo que se construye es físico. Parte del trabajo ocurre en la forma de pensar.",
-      "El Taller se plantea como un entorno donde diseñar, construir y probar no son etapas separadas, sino un mismo proceso.",
-      "Aquí la tecnología no se presenta como producto terminado, sino como proceso observable."
-    ];
-
-    return reflexiones[Math.floor(Math.random() * reflexiones.length)];
-  }
-
   const fallback = [
     "¡Zaz! No puedo ayudarte directamente con eso. Pero puedo explicarte cómo funciona el Taller de Arquímedes si te interesa.",
     "¡Uy! Le atinaste a una consulta que está fuera de mi alcance. Si quieres, puedo orientarte dentro del Taller o mostrarte cómo se estructura el trabajo.",
@@ -544,9 +578,14 @@ function responder(input) {
     "He analizado tu consulta y, aunque posee una lógica intrigante, se encuentra fuera del alcance de mi conocimiento actual. Lo que sí domino con total precisión es la estructura de este espacio; así que puedo orientarte dentro de las secciones del Taller de Arquímedes o mostrarte cómo se organiza el trabajo de ingeniería de Luis.",
     "¡Cielos! Admito que no cuento con la información necesaria para responderte con la exactitud que el Taller de Arquímedes. Estoy optimizada para la ingeniería y la creación. Si me lo permites, puedo mostrarte nuestras áreas de desarrollo o explicarte cómo se vive la ingeniería aplicada en este entorno.",
     "La verdad, no puedo darte una respuesta directa sobre ese punto, pues mi motor de búsqueda prefiere enfocarse en lo que mejor sabemos hacer. Lo que sí puedo explicarte con detalle es cómo integramos la ingeniería, la programación y la inteligencia artificial en cada proyecto del Taller de Arquímedes.",
+    "No estoy segura de haber entendido. ¿Puedes reformular tu pregunta?",
+    "No logro clasificar tu pregunta dentro del Taller. ¿Puedes ser más específico?",
+    "No tengo suficiente contexto para responder con precisión. Intenta formularlo de otra forma."
   ];
 
   return fallback[Math.floor(Math.random() * fallback.length)];
+
+  
 }
 function preguntar(texto) {
   const input = document.getElementById("chat-input");
