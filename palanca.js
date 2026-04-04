@@ -8,17 +8,33 @@ function limpiar(texto) {
     .replace(/[¿?]/g, "");
 }
 
+// ============================
+// SIMILITUD CON FILTRO DE PALABRAS
+// ============================
 function similitud(texto, clave) {
-  const palabrasTexto = texto.split(" ");
-  const palabrasClave = clave.split(" ");
+  const stopwords = [
+    "que","como","cual","cuales","quien","quienes",
+    "de","del","la","el","los","las","un","una","unos","unas",
+    "en","para","por","con","sin","a","al",
+    "puedes","puede","podrias","podria",
+    "quiero","necesito","dime","explica","habla"
+  ];
+
+  const palabrasTexto = texto.split(" ").filter(p => !stopwords.includes(p));
+  const palabrasClave = clave.split(" ").filter(p => !stopwords.includes(p));
 
   let coincidencias = 0;
 
   palabrasTexto.forEach(pt => {
     palabrasClave.forEach(pc => {
-      if (pt === pc) coincidencias++;
+      if (pt === pc) {
+        coincidencias++;
+      }
     });
   });
+
+  return coincidencias;
+}
 
   return coincidencias;
 }
