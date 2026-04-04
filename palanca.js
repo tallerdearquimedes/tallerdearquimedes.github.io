@@ -535,6 +535,17 @@ document.addEventListener("DOMContentLoaded", function () {
     appendMensaje("IA", "Sistema activo. Puedes consultar sobre el taller, procesos o navegación.");
     appendMensaje("Palanca", "Bienvenido al Taller de Arquímedes. Soy Palanca. Puedo ayudarte a entender cómo está organizado este espacio y qué tipo de trabajo se desarrolla aquí.");
   }
+
+  const tarjeta = document.getElementById("tarjeta-ia");
+  const chat = document.getElementById("chatbot");
+
+  if (tarjeta && chat) {
+    tarjeta.addEventListener("click", function () {
+      chat.style.display = "flex";
+      iniciarSaludo();
+    });
+  }
+  
   botones.forEach((boton) => {
     boton.addEventListener("click", function () {
       preguntar(this.dataset.pregunta);
