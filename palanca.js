@@ -633,7 +633,7 @@ function responder(input) {
     "La verdad, no puedo darte una respuesta directa sobre ese punto, pues mi motor de búsqueda prefiere enfocarse en lo que mejor sabemos hacer. Lo que sí puedo explicarte con detalle es cómo integramos la ingeniería, la programación y la inteligencia artificial en cada proyecto del Taller de Arquímedes.",
     "No estoy segura de haber entendido. ¿Puedes reformular tu pregunta?",
     "No logro clasificar tu pregunta dentro del Taller. ¿Puedes ser más específico?",
-    "No tengo suficiente contexto para responder con precisión. Intenta formularlo de otra forma."
+    "No tengo suficiente contexto para responder con precisión. Intenta formularlo de otra forma.",
     "No tengo suficiente contexto para responder eso con precisión. Puedo orientarte sobre el Taller de Arquímedes si lo deseas.",
     "No logro clasificar esa pregunta dentro del alcance de Palanca. Puedo ayudarte con el Taller, sus proyectos o su estructura.",
     "Esa consulta queda fuera del alcance actual de Palanca. Si quieres, puedo ayudarte con información del Taller de Arquímedes."
