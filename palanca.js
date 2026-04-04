@@ -638,8 +638,7 @@ function responder(input) {
 
   return fallback[Math.floor(Math.random() * fallback.length)];
 }
- 
-}
+
 function preguntar(texto) {
   const input = document.getElementById("chat-input");
   const output = document.getElementById("chat-output");
