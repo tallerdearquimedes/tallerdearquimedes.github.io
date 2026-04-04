@@ -506,6 +506,14 @@ respuestas: [
 ]
 },
 {
+keys: ["tiene mascotas", "que mascotas le gustan", "le gustan las mascotas", "tiene perro", "le gustan los animales", "que animales le gustan"],
+respuestas: [
+`En este espacio valoramos el contraste y el equilibrio, algo que se refleja muy bien en nuestras preferencias animales. Nos entusiasma la lealtad dinámica y la energía de los perros, pero también sentimos una profunda admiración por la calma estructural y la paciencia milenaria de las tortugas. Es esa mezcla de entusiasmo y serenidad la que guía nuestra forma de trabajar.`,
+`Si hablamos de compañía, nos inclinamos por la nobleza. Por un lado, la alegría incondicional de los perros que siempre nos impulsa a seguir adelante; por otro, la fascinante ingeniería natural de las tortugas, que nos recuerdan que los proyectos más sólidos se construyen con paso firme y sin prisas. Ambas son, a su manera, maestras de vida en nuestro taller.`,
+`La naturaleza siempre ofrece las mejores lecciones de diseño. Nos encantan los perros por su capacidad de conectar y su espíritu proactivo, cualidades esenciales en cualquier equipo creativo. Y, por supuesto, tenemos una debilidad por las tortugas: nos inspiran con su resistencia y esa armadura perfecta que las protege mientras exploran el mundo a su propio ritmo.`
+]
+},
+{
 keys: ["que no le gusta", "que le desagrada", "que nunca haría", "que nunca tendría"],
 respuestas: [
 `No sé decirte a profundidad. Pero en este espacio, seguimos la estructura de pensamiento de Luis, de modo que cultivamos una alergia natural a la ineficiencia y a la falta de claridad. No nos agrada dejar una duda sin resolver, permitir que la calidez se pierda en respuestas mecánicas o que la experiencia de usuario sea menos que fluida. Más que una lista de disgustos, lo que evitamos es cualquier obstáculo que impida una comunicación honesta, proactiva y creativa, porque entendemos que el tiempo es el recurso más valioso y merece ser tratado con elegancia y precisión.`,
