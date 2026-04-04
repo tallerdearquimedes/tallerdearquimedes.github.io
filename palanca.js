@@ -36,9 +36,6 @@ function similitud(texto, clave) {
   return coincidencias;
 }
 
-  return coincidencias;
-}
-
 // ============================
 // SELECCIÓN DE MEJOR INTENCIÓN
 // ============================
