@@ -435,7 +435,7 @@ respuestas: [
 ]
 },
 {
-keys: ["te gusta cocinar", "te interesa la cocina", "hablamos de cocina", "que te gusta comer", "que le gusta comer", "sabes cocinar"],
+keys: ["comer", "te gusta cocinar", "te interesa la cocina", "hablamos de cocina", "que te gusta comer", "que le gusta comer", "sabes cocinar"],
 respuestas: [
 `La cocina es, en esencia, termodinámica aplicada y control de procesos químicos. Además de mucha experimentación. Por ahora, si te gusta experimentar, te sorprenderán algunos proyectos del Taller de Arquímedes.`,
 `Aunque aquí no horneamos pan, Luis entiende que la cocina es un laboratorio en dónde la creatividad de hace realidad de manera casi instantánea. Nuestros procesos no son tan rápidos, pero tal vez te gustaría echarles una mirada`,
