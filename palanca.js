@@ -656,17 +656,6 @@ function responder(input) {
   return fallback[Math.floor(Math.random() * fallback.length)];
 }
 
-//function preguntar(texto) {
-//  const input = document.getElementById("chat-input");
-//  const output = document.getElementById("chat-output");
-
-//  if (!input || !output) return;
-
-//  output.innerHTML += `<div><b>Tú:</b> ${texto}</div>`;
-//  output.innerHTML += `<div><b>Palanca:</b> ${responder(texto)}</div>`;
-//  output.scrollTop = output.scrollHeight;
-//}
-
 function preguntar(texto) {
   const input = document.getElementById("chat-input");
   const output = document.getElementById("chat-output");
@@ -707,15 +696,14 @@ const sugerencias = document.getElementById("palanca-sugerencias");
 if (sugerencias) {
   sugerencias.innerHTML = `
     <div id="sugerencias" style="margin-top:10px;">
-      <button data-pregunta="luis osorno">¿Quién es Luis Osorno?</button>
-      <button data-pregunta="quien eres">¿Quién eres?</button>
-      <button data-pregunta="taller de arquimedes">¿Qué es el Taller?</button>
-      <button data-pregunta="conocer taller">Conocer el Taller?</button>
-      <button data-pregunta="youtube">Ver proyectos</button>
-      <button data-pregunta="blog">Ir al blog</button>
+      <button class="chatbot-btn" data-pregunta="luis osorno">¿Quién es Luis Osorno?</button>
+      <button class="chatbot-btn" data-pregunta="quien eres">¿Quién eres?</button>
+      <button class="chatbot-btn" data-pregunta="taller de arquimedes">¿Qué es el Taller?</button>
+      <button class="chatbot-btn" data-pregunta="conocer taller">Conocer el Taller?</button>
+      <button class="chatbot-btn" data-pregunta="youtube">Ver proyectos</button>
+      <button class="chatbot-btn" data-pregunta="blog">Ir al blog</button>
     </div>
-  `;
-}  
+  `;}  
   
 const botones = document.querySelectorAll("#sugerencias button");
 
