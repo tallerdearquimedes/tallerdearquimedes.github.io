@@ -594,13 +594,13 @@ function responder(input) {
 
   const matchValido =
     mejorItem &&
+    typeof mejorScore === "number" &&
     mejorScore >= 6 &&
+    typeof mejoresExactas === "number" &&
+    typeof mejoresClavesUtiles === "number" &&
     (
-      mejoresExactas >= 1 &&
-      (
-        mejoresExactas >= 2 ||
-        mejoresClavesUtiles <= 2
-      )
+      mejoresExactas >= 2 ||
+      (mejoresExactas === 1 && mejoresClavesUtiles <= 2)
     );
 
   if (matchValido) {
