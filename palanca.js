@@ -576,6 +576,9 @@ function responder(input) {
   let mejoresExactas = 0;
   let mejoresClavesUtiles = 0;
 
+  // ============================
+  // BÚSQUEDA
+  // ============================
   for (let i = 0; i < base.length; i++) {
     const item = base[i];
 
@@ -592,17 +595,20 @@ function responder(input) {
     }
   }
 
+  // ============================
+  // VALIDACIÓN
+  // ============================
   const matchValido =
     mejorItem &&
-    typeof mejorScore === "number" &&
     mejorScore >= 6 &&
-    typeof mejoresExactas === "number" &&
-    typeof mejoresClavesUtiles === "number" &&
     (
       mejoresExactas >= 2 ||
       (mejoresExactas === 1 && mejoresClavesUtiles <= 2)
     );
 
+  // ============================
+  // RESPUESTA
+  // ============================
   if (matchValido) {
     const opciones = mejorItem.respuestas;
     const respuesta = opciones[Math.floor(Math.random() * opciones.length)];
@@ -614,26 +620,9 @@ function responder(input) {
     return respuesta;
   }
 
-  const fallback = [
-    "No tengo suficiente contexto para responder eso con precisión. Puedo orientarte sobre el Taller de Arquímedes si lo deseas.",
-    "No logro clasificar esa pregunta dentro del alcance de Palanca. Puedo ayudarte con el Taller, sus proyectos o su estructura.",
-    "Esa consulta queda fuera del alcance actual de Palanca. Si quieres, puedo ayudarte con información del Taller de Arquímedes."
-  ];
-
-  return fallback[Math.floor(Math.random() * fallback.length)];
-}
-
-  if (mejorItem && mejorScore >= 3) {
-    const opciones = mejorItem.respuestas;
-    const respuesta = opciones[Math.floor(Math.random() * opciones.length)];
-
-    if (mejorItem.accion) {
-      setTimeout(mejorItem.accion, 800);
-    }
-
-    return respuesta;
-  }
-
+  // ============================
+  // FALLBACK ÚNICO
+  // ============================
   const fallback = [
     "¡Zaz! No puedo ayudarte directamente con eso. Pero puedo explicarte cómo funciona el Taller de Arquímedes si te interesa.",
     "¡Uy! Le atinaste a una consulta que está fuera de mi alcance. Si quieres, puedo orientarte dentro del Taller o mostrarte cómo se estructura el trabajo.",
@@ -645,11 +634,14 @@ function responder(input) {
     "No estoy segura de haber entendido. ¿Puedes reformular tu pregunta?",
     "No logro clasificar tu pregunta dentro del Taller. ¿Puedes ser más específico?",
     "No tengo suficiente contexto para responder con precisión. Intenta formularlo de otra forma."
+    "No tengo suficiente contexto para responder eso con precisión. Puedo orientarte sobre el Taller de Arquímedes si lo deseas.",
+    "No logro clasificar esa pregunta dentro del alcance de Palanca. Puedo ayudarte con el Taller, sus proyectos o su estructura.",
+    "Esa consulta queda fuera del alcance actual de Palanca. Si quieres, puedo ayudarte con información del Taller de Arquímedes."
   ];
 
   return fallback[Math.floor(Math.random() * fallback.length)];
-
-  
+}
+ 
 }
 function preguntar(texto) {
   const input = document.getElementById("chat-input");
