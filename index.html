@@ -161,6 +161,23 @@
       transform: translateY(-2px);
     }
 
+	.chatbot-btn {
+      background-color: #1a1a1a;
+      color: var(--color-texto);
+      border: 1px solid var(--color-borde);
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-size: 0.85rem;
+      transition: all 0.2s ease;
+    }
+
+    .chatbot-btn:hover {
+      border-color: var(--color-acento);
+      color: var(--color-acento);
+      background-color: #111;
+      box-shadow: 0 0 8px rgba(242, 195, 0, 0.15);
+    }  
+
     /* ========================================================= */
     /* SECCION CSS 05 - GRID GENERAL                             */
     /* ========================================================= */
@@ -540,9 +557,36 @@
       direction: ltr;
     }
 
+	#chatbot-header {
+      border-bottom: 1px solid var(--color-borde);
+      background: linear-gradient(
+        to bottom,
+        #141414,
+        #0f0f0f
+      );
+    }
+
 	.thinking {
       color: var(--color-texto-suave);
       font-style: italic;
+	  border: 1px solid var(--color-borde);
+      box-shadow:
+        0 0 0 1px rgba(242, 195, 0, 0.08),   /* halo muy sutil */
+        0 12px 30px rgba(0, 0, 0, 0.6);      /* profundidad */
+      backdrop-filter: blur(6px);	
+    }
+
+    #chat-input {
+      background-color: #111;
+      border: 1px solid var(--color-borde);
+      color: var(--color-texto);
+      border-radius: 8px;
+      padding: 8px;
+    }
+
+    #chat-input:focus {
+      outline: none;
+      border-color: var(--color-acento);
     }
 	  
   </style>
