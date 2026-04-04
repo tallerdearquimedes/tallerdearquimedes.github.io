@@ -13,6 +13,17 @@ function similitud(texto, clave) {
   return palabras.some(p => p.startsWith(clave) || clave.startsWith(p));
 }
 
+function saludoInicial() {
+  const output = document.getElementById("chat-output");
+  if (!output || output.innerHTML.trim() !== "") return;
+
+  const mensaje = base[0].respuestas[0]; // usa tu propia base (saludo real)
+
+  const bloque = document.createElement("div");
+  bloque.innerHTML = `<b>Palanca:</b> ${mensaje}`;
+  output.appendChild(bloque);
+}
+
 // ============================
 // BASE DE CONOCIMIENTO
 // ============================
