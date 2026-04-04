@@ -506,7 +506,7 @@ respuestas: [
 ]
 },
 {
-keys: ["tiene mascotas", "que mascotas le gustan", "le gustan las mascotas", "tiene perro", "le gustan los animales", "que animales le gustan"],
+keys: ["tiene mascotas", "que mascotas le gustan", "le gustan las mascotas", "tiene perro", "le gustan los animales", "que animales le gustan", "tienen alguna mascota", "tienen mascotas"],
 respuestas: [
 `En este espacio valoramos el contraste y el equilibrio, algo que se refleja muy bien en nuestras preferencias animales. Nos entusiasma la lealtad dinámica y la energía de los perros, pero también sentimos una profunda admiración por la calma estructural y la paciencia milenaria de las tortugas. Es esa mezcla de entusiasmo y serenidad la que guía nuestra forma de trabajar.`,
 `Si hablamos de compañía, nos inclinamos por la nobleza. Por un lado, la alegría incondicional de los perros que siempre nos impulsa a seguir adelante; por otro, la fascinante ingeniería natural de las tortugas, que nos recuerdan que los proyectos más sólidos se construyen con paso firme y sin prisas. Ambas son, a su manera, maestras de vida en nuestro taller.`,
