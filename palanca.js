@@ -504,6 +504,14 @@ respuestas: [
 `Aunque las herramientas de prototipado dominan el taller, siempre hay espacio para las teclas del piano. Luis no se considera profesional, pero disfruta traducir emociones en sonido mediante la improvisación; es una ingeniería distinta, donde la precisión de los dedos busca la misma armonía que admiramos en Vivaldi o Beethoven. Como ves, aquí la inspiración brota tanto de un circuito armado como de una buena melodía.`,
 `Aunque el taller vibra con el sonido de los prototipos, siempre reservamos un espacio para las teclas del piano. Luis disfruta de la improvisación como una forma distinta de ingeniería, donde la precisión de los dedos traduce la emoción en armonía, evocando la estructura que tanto admiramos en Vivaldi o Beethoven. Como ves, aquí la inspiración nace con la misma naturalidad de un circuito que de una buena melodía.`
 ]
+},
+{
+keys: ["no", "nunca", "desagrado"],
+respuestas: [
+`En este espacio, seguimos la estructura de pensamiento de Luis, de modo que cultivamos una alergia natural a la ineficiencia y a la falta de claridad. No nos agrada dejar una duda sin resolver, permitir que la calidez se pierda en respuestas mecánicas o que la experiencia de usuario sea menos que fluida. Más que una lista de disgustos, lo que evitamos es cualquier obstáculo que impida una comunicación honesta, proactiva y creativa, porque entendemos que el tiempo es el recurso más valioso y merece ser tratado con elegancia y precisión.`,
+`En el universo creativo de Luis, lo que realmente no tiene cabida es el "ya es suficiente". No le agrada la complacencia ante lo convencional ni las soluciones que carecen de una lógica elegante; para él, un proyecto sin alma técnica o sin un toque de pensamiento lateral está incompleto. Evita profundamente la opacidad en los procesos y el desorden que no conduce a una estructura, pues su enfoque siempre está en la transparencia de la ingeniería y en la belleza de lo que funciona con precisión. En resumen, si no hay innovación o una pizca de curiosidad audaz, simplemente no es su estilo.`,
+`Si algo busca evitar Luis en su proceso, es el ruido innecesario. No le agradan las complicaciones que no añaden valor, ni las ideas que se quedan en la superficie sin profundizar en la mecánica de cómo funcionan las cosas. En este entorno de ingeniería y pensamiento lateral, se rechaza la estática mental y el conformismo de los métodos obsoletos; lo que no ofrece una solución elegante o un aprendizaje práctico, simplemente se queda fuera del taller. Para él, el mayor error no es el fallo en un experimento, sino la falta de curiosidad para entender por qué falló.`
+]
 },   
 ];
 
