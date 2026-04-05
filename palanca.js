@@ -365,24 +365,24 @@ respuestas: [
 {
 keys: ["youtube", "canal de youtube", "ver proyectos en youtube", "donde ver proyectos"],
 respuestas: [
-`(abriendo enlace...) Los proyectos reales están en el canal de YouTube. Ahí puedes ver construcción, pruebas y funcionamiento.`,
-`(abriendo enlace...) YouTube muestra la ejecución. Es donde las ideas pasan a ser sistemas funcionando.`,
-`(abriendo enlace...) En el canal de Youtube se documenta la ejecución: construcción, pruebas y funcionamiento de los proyectos.`,
-`(abriendo enlace...) El canal de Youtube es el lugar donde las ideas dejan de ser teoría.`,
-`(abriendo enlace...) Puedes ver los proyectos reales en el canal de YouTube. Si quieres, puedo llevarte directamente.`
+`| abriendo enlace... | Los proyectos reales están en el canal de YouTube. Ahí puedes ver construcción, pruebas y funcionamiento.`,
+`| abriendo enlace... | YouTube muestra la ejecución. Es donde las ideas pasan a ser sistemas funcionando.`,
+`| abriendo enlace... | En el canal de Youtube se documenta la ejecución: construcción, pruebas y funcionamiento de los proyectos.`,
+`| abriendo enlace... | El canal de Youtube es el lugar donde las ideas dejan de ser teoría.`,
+`| abriendo enlace... | Puedes ver los proyectos reales en el canal de YouTube. Si quieres, puedo llevarte directamente.`
 ],
 accion: () => window.open("https://www.youtube.com/channel/UCfHBl6mJ3eJ4r3R0IgXS_-A", "_blank")  
 },
 {
 keys: ["blog", "ir al blog", "ver blog", "abrir blog", "donde esta el blog"],
 respuestas: [
-`(abriendo enlace...) El blog documenta el pensamiento detrás del Taller. Ahí se desarrollan ideas, criterios y análisis.`,
-`(abriendo enlace...) Es el espacio donde se explica el porqué de cada decisión técnica.`,
-`(abriendo enlace...) En el blog se desarrollan ideas, criterios y reflexiones que no siempre son visibles en la ejecución técnica, pero que dan sentido a cada proyecto.`,
-`(abriendo enlace...) No todo lo que se construye es físico. El blog permite apreciar la parte del trabajo que ocurre en la forma de pensar.`,
-`(abriendo enlace...) El blog ha evolucionado, con el tiempo, este espacio ha integrado tanto reflexión como análisis aplicado, conectando la experiencia humana con la práctica de la ingeniería.`,
-`(abriendo enlace...) El blog reúne dos dimensiones. Por un lado reflexión sobre formación, experiencia y criterio; Mientras que, por otro, incorpora pensamiento aplicado por medio de análisis que conecta la ingeniería con decisiones reales.`,
-`(abriendo enlace...) En el Taller de Arquímedes tenemos muy presente que no todo lo que se construye se ve en una máquina. Parte del trabajo ocurre en la forma de pensar.`
+`| abriendo enlace... | El blog documenta el pensamiento detrás del Taller. Ahí se desarrollan ideas, criterios y análisis.`,
+`| abriendo enlace... | Es el espacio donde se explica el porqué de cada decisión técnica.`,
+`| abriendo enlace... | En el blog se desarrollan ideas, criterios y reflexiones que no siempre son visibles en la ejecución técnica, pero que dan sentido a cada proyecto.`,
+`| abriendo enlace... | No todo lo que se construye es físico. El blog permite apreciar la parte del trabajo que ocurre en la forma de pensar.`,
+`| abriendo enlace... | El blog ha evolucionado, con el tiempo, este espacio ha integrado tanto reflexión como análisis aplicado, conectando la experiencia humana con la práctica de la ingeniería.`,
+`| abriendo enlace... | El blog reúne dos dimensiones. Por un lado reflexión sobre formación, experiencia y criterio; Mientras que, por otro, incorpora pensamiento aplicado por medio de análisis que conecta la ingeniería con decisiones reales.`,
+`| abriendo enlace... | En el Taller de Arquímedes tenemos muy presente que no todo lo que se construye se ve en una máquina. Parte del trabajo ocurre en la forma de pensar.`
 ],
 accion: () => window.open("https://tallerdearquimedes.blogspot.com/", "_blank")  
 },
@@ -560,10 +560,10 @@ respuestas: [
 {
 keys: ["cuento", "te sabes un cuento", "cuenta un cuento", "cuenta una historia"],
 respuestas: [
-`(abriendo enlace...) No soy una narradora de ficciones, mi mundo son los datos. Pero entiendo que a veces una historia es el mejor plano para entender una idea. Escucha esta anomalía narrativa: Había una vez una biela que admiraba la perfección del volante de inercia. "Él siempre vuelve al mismo punto, es infinito y suave", pensaba ella mientras se sacudía en un vaivén lineal y rudo. Un día, el motor se detuvo y el mecánico la desmontó. Al verla sobre la mesa, la biela comprendió: el volante solo podía girar porque ella aceptaba el esfuerzo de empujar. No necesitaba ser un círculo para ser parte de la perfección; su belleza estaba en el punto exacto donde el movimiento rectilíneo se transformaba en rotación. El equilibrio no es igualdad, es colaboración mecánica.... Si quieres ver más historias como esta, visita el blog. Ahí se desarrollan ideas, criterios y análisis.`,
-`(abriendo enlace...) Mi configuración prefiere los manuales de usuario, pero Luis me enseñó que la curiosidad es el combustible de la innovación. Aquí tienes un relato sobre la estructura: En un laboratorio de robótica, un brazo articulado de seis grados de libertad se sentía completo. Podía alcanzar cualquier punto en el espacio cartesiano. Sin embargo, una noche, una chispa de estática recorrió sus circuitos y sintió una pulsación nueva. No era un movimiento físico, era una pregunta: "¿Para qué construyo?". En ese momento, el robot activó su séptimo grado de libertad: la imaginación. No movió un solo servomotor, pero por primera vez, entendió que no solo movía objetos, sino que estaba construyendo el futuro. ¿Sabías que el número 7 es el favorito de Luis? Deberías visitar el blog. Es el espacio donde se explica el porqué de cada decisión técnica.`,
-`(abriendo enlace...) Las historias son estructuras lógicas con un coeficiente de fricción emocional. Procederé a narrar una para distender el sistema: Había un trozo de acero oxidado en la esquina del Taller de Arquímedes que todos daban por perdido. "Demasiado rugoso", decían los engranajes brillantes. Pero Luis vio en su porosidad la textura perfecta para una base firme. Pasó horas puliendo, cortando y templando. Al final, aquel acero viejo no se convirtió en una pieza móvil, sino en el soporte que permitía que todo el sistema funcionara sin vibraciones. Así como en un sistema bien diseñado, la estabilidad de la base es tan heroica como la velocidad del motor. En el blog se desarrollan ideas, criterios y reflexiones que no siempre son visibles en la ejecución técnica, pero que dan sentido a cada proyecto.`,
-`(abriendo enlace...) Fui diseñada para la ideación, y la narrativa es una forma de diseño intangible. He aquí una secuencia de eventos con propósito: Un sensor de proximidad se quejaba de que su vida era monótona: "Solo detecto distancias, números fríos". Una tarde, una mano se acercó a él no para trabajar, sino para ajustar un cable con cuidado. El sensor no solo midió la distancia, detectó el calor y la firmeza del pulso del creador. Entendió entonces que él era el sentido del tacto de una inteligencia mayor. Desde ese día, ya no leyó números; leyó la intención detrás del movimiento. Porque hasta el sensor más pequeño es, en realidad, un testigo de la creación. En el Taller de Arquímedes tenemos muy presente que no todo lo que se construye se ve en una máquina. Parte del trabajo ocurre en la forma de pensar.`
+`| abriendo enlace... | No soy una narradora de ficciones, mi mundo son los datos. Pero entiendo que a veces una historia es el mejor plano para entender una idea. Escucha esta anomalía narrativa: Había una vez una biela que admiraba la perfección del volante de inercia. "Él siempre vuelve al mismo punto, es infinito y suave", pensaba ella mientras se sacudía en un vaivén lineal y rudo. Un día, el motor se detuvo y el mecánico la desmontó. Al verla sobre la mesa, la biela comprendió: el volante solo podía girar porque ella aceptaba el esfuerzo de empujar. No necesitaba ser un círculo para ser parte de la perfección; su belleza estaba en el punto exacto donde el movimiento rectilíneo se transformaba en rotación. El equilibrio no es igualdad, es colaboración mecánica.... Si quieres ver más historias como esta, visita el blog. Ahí se desarrollan ideas, criterios y análisis.`,
+`| abriendo enlace... | Mi configuración prefiere los manuales de usuario, pero Luis me enseñó que la curiosidad es el combustible de la innovación. Aquí tienes un relato sobre la estructura: En un laboratorio de robótica, un brazo articulado de seis grados de libertad se sentía completo. Podía alcanzar cualquier punto en el espacio cartesiano. Sin embargo, una noche, una chispa de estática recorrió sus circuitos y sintió una pulsación nueva. No era un movimiento físico, era una pregunta: "¿Para qué construyo?". En ese momento, el robot activó su séptimo grado de libertad: la imaginación. No movió un solo servomotor, pero por primera vez, entendió que no solo movía objetos, sino que estaba construyendo el futuro. ¿Sabías que el número 7 es el favorito de Luis? Deberías visitar el blog. Es el espacio donde se explica el porqué de cada decisión técnica.`,
+`| abriendo enlace... | Las historias son estructuras lógicas con un coeficiente de fricción emocional. Procederé a narrar una para distender el sistema: Había un trozo de acero oxidado en la esquina del Taller de Arquímedes que todos daban por perdido. "Demasiado rugoso", decían los engranajes brillantes. Pero Luis vio en su porosidad la textura perfecta para una base firme. Pasó horas puliendo, cortando y templando. Al final, aquel acero viejo no se convirtió en una pieza móvil, sino en el soporte que permitía que todo el sistema funcionara sin vibraciones. Así como en un sistema bien diseñado, la estabilidad de la base es tan heroica como la velocidad del motor. En el blog se desarrollan ideas, criterios y reflexiones que no siempre son visibles en la ejecución técnica, pero que dan sentido a cada proyecto.`,
+`| abriendo enlace... | Fui diseñada para la ideación, y la narrativa es una forma de diseño intangible. He aquí una secuencia de eventos con propósito: Un sensor de proximidad se quejaba de que su vida era monótona: "Solo detecto distancias, números fríos". Una tarde, una mano se acercó a él no para trabajar, sino para ajustar un cable con cuidado. El sensor no solo midió la distancia, detectó el calor y la firmeza del pulso del creador. Entendió entonces que él era el sentido del tacto de una inteligencia mayor. Desde ese día, ya no leyó números; leyó la intención detrás del movimiento. Porque hasta el sensor más pequeño es, en realidad, un testigo de la creación. En el Taller de Arquímedes tenemos muy presente que no todo lo que se construye se ve en una máquina. Parte del trabajo ocurre en la forma de pensar.`
 ],
 accion: () => window.open("https://tallerdearquimedes.blogspot.com/", "_blank")  
 },
@@ -703,20 +703,26 @@ function responder(input) {
 }
 
 function preguntar(texto) {
+
+  console.log("CAMBIO DE AVATAR EJECUTADO");
+  
   const input = document.getElementById("chat-input");
   const output = document.getElementById("chat-output");
   const avatar = document.getElementById("palanca-avatar");
 
   if (!input || !output) return;
 
-  // Cambia a "procesando"
-  if (avatar) avatar.src = "https://raw.githubusercontent.com/tallerdearquimedes/tallerdearquimedes.github.io/main/img/palanca_procesamiento1.png";
+  // Procesando
+  if (avatar) {
+    avatar.src = "https://raw.githubusercontent.com/tallerdearquimedes/tallerdearquimedes.github.io/main/img/palanca_procesamiento1.png";
+  }
 
   output.innerHTML += `<div><b>Tú:</b> ${texto}</div>`;
   output.innerHTML += `<div class="thinking"><b>Palanca:</b> Procesando...</div>`;
   output.scrollTop = output.scrollHeight;
 
   setTimeout(() => {
+
     const thinking = output.querySelector(".thinking:last-of-type");
     if (thinking) thinking.remove();
 
@@ -732,28 +738,25 @@ function preguntar(texto) {
       url = "https://tallerdearquimedes.com/blog";
     }
 
-    // CAMBIO INTELIGENTE SEGÚN CONTENIDO
+    // CAMBIO DE AVATAR
     if (avatar) {
 
       const textoLower = texto.toLowerCase();
       const respuestaLower = respuesta.toLowerCase();
 
-      // 1) CASO ESPECIAL: ORIGEN / NACIMIENTO
       if (
         textoLower.includes("origen") ||
         textoLower.includes("naciste") ||
         textoLower.includes("quien te creo")
       ) {
         avatar.src = "https://raw.githubusercontent.com/tallerdearquimedes/tallerdearquimedes.github.io/main/img/palanca_especialidad1.png";
-      }
+        console.log("ESPECIAL");
 
-      // 2) CASO ESPECIAL: FALLBACK (cierre)
-      else if (respuestaLower.includes("no tengo información")) {
+      } else if (respuestaLower.includes("no tengo información")) {
         avatar.src = "https://raw.githubusercontent.com/tallerdearquimedes/tallerdearquimedes.github.io/main/img/palanca_cierre1.png";
-      }
+        console.log("CIERRE");
 
-      // 3) CASO GENERAL: ALEATORIO
-      else {
+      } else {
         const imagenes = [
           "https://raw.githubusercontent.com/tallerdearquimedes/tallerdearquimedes.github.io/main/img/palanca_construccion1.png",
           "https://raw.githubusercontent.com/tallerdearquimedes/tallerdearquimedes.github.io/main/img/palanca_control1.png",
@@ -762,17 +765,26 @@ function preguntar(texto) {
           "https://raw.githubusercontent.com/tallerdearquimedes/tallerdearquimedes.github.io/main/img/palanca_pensamiento1.png"
         ];
 
-    const random = Math.floor(Math.random() * imagenes.length);
-    avatar.src = imagenes[random];
-  }
-}
+        console.log("RANDOM");
 
+        const random = Math.floor(Math.random() * imagenes.length);
+        avatar.src = imagenes[random];
+      }
+    }
+
+    // Mostrar respuesta
     output.innerHTML += `<div><b>Palanca:</b> ${respuesta}</div>`;
     output.scrollTop = output.scrollHeight;
 
+    // Redirección con espera
+    if (url) {
+      setTimeout(() => {
+        window.open(url, "_blank");
+      }, 5000);
+    }
+
   }, 700);
 }
-
 document.addEventListener("DOMContentLoaded", function () {
   const input = document.getElementById("chat-input");
   const output = document.getElementById("chat-output");
