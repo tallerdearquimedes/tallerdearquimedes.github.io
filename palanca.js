@@ -676,7 +676,7 @@ function preguntar(texto) {
 
     const respuesta = responder(texto);
 
-    // 🔥 CAMBIO INTELIGENTE SEGÚN CONTENIDO
+    // CAMBIO INTELIGENTE SEGÚN CONTENIDO
     if (avatar) {
       if (texto.includes("proyecto") || texto.includes("youtube")) {
         avatar.src = "img/palanca_construccion.png";
