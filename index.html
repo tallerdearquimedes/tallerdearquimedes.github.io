@@ -707,10 +707,16 @@
       </article>
 
 	  <script>
-      document.getElementById("tarjeta-ia")
-        .addEventListener("click", function() {
-          document.getElementById("chatbot").style.display = "flex";
-        });
+        document.getElementById("tarjeta-ia")
+          .addEventListener("click", function() {
+            const chat = document.getElementById("chatbot");
+
+            if (chat.style.display === "flex") {  
+              chat.style.display = "none";
+            } else {
+              chat.style.display = "flex";
+            }
+          });
       </script>
 		
     </div>
