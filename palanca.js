@@ -705,8 +705,6 @@ function responder(input) {
 
 function preguntar(texto) {
 
-  console.log("CAMBIO DE AVATAR EJECUTADO");
-  
   const input = document.getElementById("chat-input");
   const output = document.getElementById("chat-output");
   const avatar = document.getElementById("palanca-avatar");
@@ -776,13 +774,6 @@ function preguntar(texto) {
     // Mostrar respuesta
     output.innerHTML += `<div><b>Palanca:</b> ${respuesta}</div>`;
     output.scrollTop = output.scrollHeight;
-
-    // Redirección con espera
-    if (url) {
-      setTimeout(() => {
-        window.open(url, "_blank");
-      }, 5000);
-    }
 
   }, 700);
 }
