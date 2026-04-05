@@ -16,7 +16,7 @@ const STOPWORDS = [
   "de","del","la","el","los","las","un","una","unos","unas",
   "en","para","por","con","sin","a","al",
   "te","tu","tus","mi","mis","su","sus",
-  "has","han","he","hemos","soy","eres","es","son",
+  "has","han","he","hemos","soy","es","son",
   "puedes","puede","podrias","podria",
   "quiero","necesito","dime","explica","habla",
   "gusta","gustas","gustar","gustan",
