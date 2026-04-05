@@ -101,6 +101,143 @@
 
     a { text-decoration: none; }
 
+	/* ========================================================= */
+	/* SECCION CSS 09B - LABORATORIO INTERACTIVO MODERNO         */
+	/* ========================================================= */
+	.laboratorio-intro {
+	  max-width: 760px;
+	  margin-bottom: 28px;
+	}
+
+	.laboratorio-grid {
+	  display: grid;
+	  grid-template-columns: repeat(2, 1fr);
+	  gap: 22px;
+	  margin-top: 28px;
+	}
+
+	.laboratorio-card {
+	  position: relative;
+	  min-height: 430px;
+	  border-radius: var(--radio);
+	  overflow: hidden;
+	  border: 1px solid var(--color-borde);
+	  background-color: var(--color-fondo-secundario);
+	  cursor: pointer;
+	  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+	}
+
+	.laboratorio-card:hover {
+	  transform: translateY(-6px);
+	  border-color: var(--color-acento);
+	  box-shadow: var(--sombra-acento);
+	}
+
+	.laboratorio-card img {
+	  width: 100%;
+	  height: 100%;
+	  object-fit: cover;
+	  transition: transform 0.7s ease;
+	}
+
+	.laboratorio-card:hover img {
+	  transform: scale(1.05);
+	}
+
+	.laboratorio-capa {
+	  position: absolute;
+	  inset: 0;
+	  background: linear-gradient(
+    	to top,
+	    rgba(0, 0, 0, 0.92) 0%,
+    	rgba(0, 0, 0, 0.68) 42%,
+	    rgba(0, 0, 0, 0.22) 100%
+	  );
+	  display: flex;
+	  align-items: flex-end;
+	  padding: 24px;
+	}
+
+	.laboratorio-contenido {
+	  width: 100%;
+	  transform: translateY(88px);
+	  transition: transform 0.45s ease;
+	}
+
+	.laboratorio-card:hover .laboratorio-contenido {
+	  transform: translateY(0);
+	}
+
+	.laboratorio-etiqueta {
+	  display: inline-block;
+	  font-size: 0.78rem;
+	  letter-spacing: 0.08em;
+	  text-transform: uppercase;
+	  color: var(--color-acento);
+	  margin-bottom: 10px;
+	  font-weight: 700;
+	}
+
+	.laboratorio-titulo {
+	  font-size: 1.35rem;
+	  color: var(--color-texto);
+	  margin: 0 0 8px 0;
+	}
+
+	.laboratorio-subtitulo {
+	  color: var(--color-acento);
+	  font-size: 0.96rem;
+	  margin-bottom: 14px;
+	  font-weight: 600;
+	}
+
+	.laboratorio-texto {
+	  color: var(--color-texto-secundario);
+	  line-height: 1.7;
+	  font-size: 0.96rem;
+	  max-height: 0;
+	  overflow: hidden;
+	  opacity: 0;
+	  transition: max-height 0.45s ease, opacity 0.35s ease;
+	}
+
+	.laboratorio-card:hover .laboratorio-texto {
+	  max-height: 220px;
+	  opacity: 1;
+	}
+
+	.laboratorio-estado {
+	  margin-top: 14px;
+	  color: var(--color-texto);
+	  font-size: 0.9rem;
+	}
+
+	.laboratorio-estado span {
+	  color: var(--color-acento);
+	  font-weight: 700;
+	}
+
+	@media (max-width: 900px) {
+	  .laboratorio-grid {
+	    grid-template-columns: 1fr;
+  	}
+
+	  .laboratorio-card {
+	    min-height: 380px;
+	  }
+	}
+
+	@media (max-width: 700px) {
+	  .laboratorio-contenido {
+    	transform: translateY(0);
+	  }
+
+	  .laboratorio-texto {
+    	max-height: 220px;
+	    opacity: 1;
+	  }
+	}
+    
   </style>
 </head>
 
@@ -178,6 +315,94 @@
         <p>Se ajusta el diseño con base en lo aprendido.</p>
       </div>
 
+<section id="laboratorio" class="contenedor seccion">
+  <h2 class="titulo-seccion">Proyectos en desarrollo</h2>
+
+  <p class="texto laboratorio-intro">
+    El laboratorio es el espacio donde las ideas aún no terminan de ser, pero ya pueden probarse.
+    Aquí los proyectos no aparecen como piezas cerradas, sino como etapas visibles de una búsqueda
+    técnica en desarrollo.
+  </p>
+
+<section class="contenedor seccion">
+  <h2 class="titulo">Proyectos en desarrollo</h2>
+
+  <p class="texto laboratorio-intro">
+    El laboratorio es el espacio donde las ideas aún no terminan de ser, pero ya pueden probarse.
+    Aquí los proyectos no aparecen como piezas cerradas, sino como etapas visibles de una búsqueda
+    técnica en desarrollo.
+  </p>
+    
+    <!-- PROYECTO 01 -->
+    <article class="laboratorio-card">
+      <img src="Laboratorio001.webp" alt="Motor de embobinado manual" loading="lazy">
+      <div class="laboratorio-capa">
+        <div class="laboratorio-contenido">
+          <div class="laboratorio-etiqueta">Proyecto 01</div>
+          <h3 class="laboratorio-titulo">Motor de Inducción Primario</h3>
+          <div class="laboratorio-subtitulo">Génesis experimental · Electromagnetismo</div>
+          <div class="laboratorio-texto">
+            Este dispositivo representa el punto de ruptura entre la teoría y la acción. Lo construí cuando tenía 12 años, es un ejercicio de arqueología técnica que utiliza el embobinado manual para domesticar el campo magnético. Más que un motor, es la prueba física de la conversión de energía eléctrica en movimiento rotatorio mediante fuerza electromotriz.
+            <div class="laboratorio-estado"><span>Fundamento:</span> Interacción de campos magnéticos y torque mecánico.</div>
+            <div class="laboratorio-estado"><span>Estado:</span> Prototipo funcional.</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROYECTO 02 -->
+    <article class="laboratorio-card">
+      <img src="Laboratorio002.webp" alt="Caldera experimental" loading="lazy">
+      <div class="laboratorio-capa">
+        <div class="laboratorio-contenido">
+          <div class="laboratorio-etiqueta">Proyecto 02</div>
+          <h3 class="laboratorio-titulo">Caldera</h3>
+          <div class="laboratorio-subtitulo">Sistema térmodinámico · Generación de presión</div>
+          <div class="laboratorio-texto">
+            Un sistema diseñado para el estudio del cambio de fase y la energía cinética del vapor. Esta caldera no es un elemento aislado, sino el núcleo de potencia para un ecosistema mecánico mayor. Explora la termodinámica aplicada, el control de fluidos y la resistencia de materiales bajo estrés de presión constante.
+            <div class="laboratorio-estado"><span>Fundamento:</span> Transferencia de calor, leyes de los gases y mecánica de fluidos.</div>
+            <div class="laboratorio-estado"><span>Estado:</span> Prototipo funcional.</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROYECTO 03 -->
+    <article class="laboratorio-card">
+      <img src="Laboratorio003.webp" alt="Colibrí mecánico" loading="lazy">
+      <div class="laboratorio-capa">
+        <div class="laboratorio-contenido">
+          <div class="laboratorio-etiqueta">Proyecto 03</div>
+          <h3 class="laboratorio-titulo">Autómata cinático: Colibrí</h3>
+          <div class="laboratorio-subtitulo">Cinemática de precisión · Transmisión de movimiento</div>
+          <div class="laboratorio-texto">
+            Este modelo es una exploración de la cinemática aplicada. Utiliza un sistema de biela-manivela y un paralelogramo articulado para traducir la rotación pura en una trayectoria orgánica compleja. Aquí, el movimiento deja de ser una abstracción matemática para convertirse en un sistema geométrico tangible que prioriza la relación entre torque y velocidad.
+            <div class="laboratorio-estado"><span>Fundamento:</span> Engranajes, mecanismos de cuatro barras y síntesis de trayectoria.</div>
+            <div class="laboratorio-estado"><span>Estado:</span> Modelo demostrativo funcional.</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROYECTO 04 -->
+    <article class="laboratorio-card">
+      <img src="Laboratorio004.webp" alt="Línea de producción automatizada" loading="lazy">
+      <div class="laboratorio-capa">
+        <div class="laboratorio-contenido">
+          <div class="laboratorio-etiqueta">Proyecto 04</div>
+          <h3 class="laboratorio-titulo">Línea de producción automatizada</h3>
+          <div class="laboratorio-subtitulo">Integración de sistemas · Automatización y Robótica</div>
+          <div class="laboratorio-texto">
+            Una arquitectura de automatización industrial a escala que integra control digital y ejecución mecánica. El sistema coordina una banda transportadora con manipuladores de 4 y 6 grados de libertad (DOF), gestionados mediante microcontroladores. Representa el flujo de operaciones autónomas y la armonización de múltiples variables de control en un entorno de producción.
+            <div class="laboratorio-estado"><span>Fundamento:</span> Robótica de servicios, lógica de control (Arduino/PLC) y cinemática inversa.</div>
+            <div class="laboratorio-estado"><span>Estado:</span> Sistema complejo en desarrollo.</div>
+          </div>
+        </div>
+      </div>
+    </article>
+  
+  <div class="laboratorio-grid">
+     
     </div>
   </section>
 
