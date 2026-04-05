@@ -796,8 +796,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // ============================
 
 output.innerHTML = `
-  <div><b>IA:</b> Sistema activo. Puedes consultar sobre el taller, procesos o navegación. Si deseas SALIR, vuelve a presionar la tarjeta INTELIGENCIA ARTIFICIAL.</div>
-  <div><b>Palanca:</b> Bienvenido al Taller de Arquímedes. Soy Palanca. Puedo ayudarte a entender cómo está organizado este espacio y qué tipo de trabajo se desarrolla aquí.</div>`;
+  <div><b>IA:</b> Sistema activo. Puedes consultar sobre el taller, procesos o navegación.</div>
+  <div><b>IA:</b> Si deseas SALIR, vuelve a presionar la tarjeta INTELIGENCIA ARTIFICIAL.</div>
+  <div><b>Palanca:</b> Bienvenido al Taller de Arquímedes. Soy Palanca. Puedo ayudarte a entender cómo está organizado este espacio y qué tipo de trabajo se desarrolla aquí.</div>
+  <div><b>Palanca:</b> Opero bajo la versión 2.0. Puedo cometer varios erroes.</div>`;
 
 const sugerencias = document.getElementById("palanca-sugerencias");
 
