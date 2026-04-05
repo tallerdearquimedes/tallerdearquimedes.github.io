@@ -6,7 +6,226 @@
   <title>El Taller de Arquímedes</title>
 
   <!-- ========================================================= -->
-  <!-- SECCION CSS 01 - VARIABLES GENERALES                      -->
+  <!-- SECCION CSS 01 - VARIABLES GENERALES                      --><!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prototipado · El Taller de Arquímedes</title>
+
+  <style>
+    :root {
+      --color-fondo: #0b0b0b;
+      --color-fondo-secundario: #111111;
+      --color-borde: #222222;
+      --color-texto: #ffffff;
+      --color-texto-secundario: #c8c8c8;
+      --color-texto-suave: #8a8a8a;
+      --color-acento: #f2c300;
+      --ancho-maximo: 1100px;
+      --radio: 14px;
+      --sombra-acento: 0 10px 25px rgba(242, 195, 0, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--color-fondo);
+      color: var(--color-texto);
+    }
+
+    .contenedor {
+      max-width: var(--ancho-maximo);
+      margin: 0 auto;
+      padding: 70px 20px;
+    }
+
+    .centrado { text-align: center; }
+
+    .titulo {
+      color: var(--color-acento);
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .subtitulo {
+      font-size: 1.2rem;
+      color: var(--color-texto);
+      margin-bottom: 20px;
+    }
+
+    .texto {
+      color: var(--color-texto-secundario);
+      line-height: 1.8;
+      max-width: 780px;
+      margin: 0 auto 20px auto;
+    }
+
+    .seccion {
+      margin-top: 60px;
+    }
+
+    .bloques {
+      max-width: 780px;
+      margin: 40px auto 0 auto;
+    }
+
+    .bloque {
+      border-left: 2px solid var(--color-acento);
+      padding-left: 16px;
+      margin-bottom: 24px;
+    }
+
+    .bloque h3 {
+      margin: 0 0 6px 0;
+      color: var(--color-texto);
+      font-size: 1.05rem;
+    }
+
+    .bloque p {
+      margin: 0;
+      color: var(--color-texto-secundario);
+      font-size: 0.95rem;
+    }
+
+    .boton {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-weight: 600;
+      border: 1px solid var(--color-acento);
+      background-color: var(--color-acento);
+      color: #000;
+      transition: 0.25s ease;
+    }
+
+    .boton:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--sombra-acento);
+    }
+
+    a { text-decoration: none; }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="contenedor centrado">
+    <h1 class="titulo">Prototipado</h1>
+    <div class="subtitulo">Del diseño a la evidencia</div>
+
+    <p class="texto">
+      En este espacio se construyen objetos para responder preguntas.
+      El prototipo no es el resultado final, es el medio para entender,
+      validar y mejorar.
+    </p>
+  </section>
+
+  <!-- DEFINICION -->
+  <section class="contenedor seccion centrado">
+    <h2 class="titulo">¿Qué significa prototipar?</h2>
+
+    <p class="texto">
+      Prototipar no es fabricar piezas.
+    </p>
+
+    <p class="texto">
+      Es construir artefactos con un propósito claro: responder una pregunta técnica,
+      validar una idea o evidenciar un fenómeno.
+    </p>
+
+    <p class="texto">
+      Cada prototipo existe porque hay algo que se quiere entender,
+      no solo porque algo se puede fabricar.
+    </p>
+  </section>
+
+  <!-- METODOLOGIA -->
+  <section class="contenedor seccion centrado">
+    <h2 class="titulo">Metodología</h2>
+
+    <div class="bloques">
+
+      <div class="bloque">
+        <h3>1. Planteamiento</h3>
+        <p>Se define una pregunta o problema concreto.</p>
+      </div>
+
+      <div class="bloque">
+        <h3>2. Hipótesis</h3>
+        <p>Se establece una idea inicial que será puesta a prueba.</p>
+      </div>
+
+      <div class="bloque">
+        <h3>3. Diseño</h3>
+        <p>Se traduce la idea en un objeto: geometría, materiales y proceso.</p>
+      </div>
+
+      <div class="bloque">
+        <h3>4. Construcción</h3>
+        <p>Se fabrica el prototipo, enfrentando decisiones reales.</p>
+      </div>
+
+      <div class="bloque">
+        <h3>5. Prueba</h3>
+        <p>Se observa, mide o interactúa con el sistema.</p>
+      </div>
+
+      <div class="bloque">
+        <h3>6. Evidencia</h3>
+        <p>Se obtiene un resultado tangible.</p>
+      </div>
+
+      <div class="bloque">
+        <h3>7. Iteración</h3>
+        <p>Se ajusta el diseño con base en lo aprendido.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MATERIALIZACION -->
+  <section class="contenedor seccion centrado">
+    <h2 class="titulo">¿Cómo se construyen los prototipos?</h2>
+
+    <p class="texto">
+      Los prototipos se desarrollan mediante la integración de distintas tecnologías:
+    </p>
+
+    <p class="texto">
+      Corte láser, router CNC e impresión 3D. Cada herramienta se utiliza
+      no por disponibilidad, sino por pertinencia.
+    </p>
+  </section>
+
+  <!-- RESULTADO -->
+  <section class="contenedor seccion centrado">
+    <h2 class="titulo">¿Qué se obtiene?</h2>
+
+    <p class="texto">
+      El resultado no es solo un objeto.
+    </p>
+
+    <p class="texto">
+      Es evidencia: comportamiento, medición, interacción.
+    </p>
+
+    <p class="texto">
+      Un prototipo permite entender, validar y mejorar.
+    </p>
+
+    <a href="/index.html#laboratorio" class="boton">
+      Ir al laboratorio
+    </a>
+  </section>
+
+</body>
+</html>
   <!-- ========================================================= -->
   <style>
     :root {
@@ -758,16 +977,13 @@ En conjunto, estos elementos permiten construir una identidad profesional clara,
   </section>
 
 <!-- ========================================================= -->
-<!-- SECCION 04 - LABORATORIO                                  -->
+<!-- SECCION 04 - MODELOS VARIOS                               -->
 <!-- ========================================================= -->
 <section id="laboratorio" class="contenedor seccion">
-  <h2 class="titulo-seccion">Laboratorio</h2>
+  <h2 class="titulo-seccion">Modelos varios</h2>
 
   <p class="texto laboratorio-intro">
-    El laboratorio es el espacio donde las ideas aún no terminan de ser, pero ya pueden probarse.
-    Aquí los proyectos no aparecen como piezas cerradas, sino como etapas visibles de una búsqueda
-    técnica en desarrollo.
-  </p>
+    En El Taller de Arquímedes convergen modelos de diversas naturalezas: desde prototipos didácticos y piezas demostrativas, hasta objetos ornamentales y sistemas plenamente funcionales. Valoramos todo artefacto capaz de accionar los engranajes de la imaginación para poner a prueba la técnica en constante desarrollo.  </p>
 
   <div class="laboratorio-grid">
 
