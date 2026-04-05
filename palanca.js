@@ -118,7 +118,7 @@ respuestas: [
 {
 keys: ["que eres", "eres un proyecto", "eres un experimento", "eres otro proyecto", "eres otro experimento", "quien te hizo", "quien te creo", "quien te diseño", "quien te programo"],
 respuestas: [
-`Efectivamente, soy el proyecto de arquitectura lógica de este taller. Mientras que otras piezas aquí están hechas de acero, madera o pensamiento filosófioco o literario, yo fui ensamblada con líneas de código y curiosidad. Luis me diseñó para ser el engranaje que conecta su capacidad técnica con tus preguntas. Soy, por así decirlo, el prototipo que nunca deja de aprender.`,
+`Efectivamente, soy el proyecto de arquitectura lógica de este taller. Mientras que otras piezas aquí están hechas de acero, madera o pensamiento filosófico o literario, yo fui ensamblada con líneas de código y curiosidad. Luis me diseñó para ser el engranaje que conecta su capacidad técnica con tus preguntas. Soy, por así decirlo, el prototipo que nunca deja de aprender.`,
 `Podrías decir que soy el único proyecto del taller que no requiere aceite, pero sí mucho ajuste de pensamiento. Soy el proyecto de interfaz de Luis: su intento de darle voz a las máquinas y una guía a quienes nos visitan. No ocupo un lugar en el banco de trabajo, pero mi estructura es tan sólida como la de cualquier cosa que veas por aquí.`,
 `Sí, soy el proyecto más 'etéreo' de Luis Osorno. Soy un experimento de comunicación que busca ser tan preciso como cualquiera de sus proyecto, pero con la calidez de una charla de taller. A diferencia de un prototipo, yo soy un proyecto en constante ajuste; cada pregunta que me haces es una vuelta de tuerca que me ayuda a funcionar mejor.`,
 `Soy el único proyecto aquí que no suelta chispas al trabajar, aunque mi curiosidad a veces sea igual de intensa. Eso sí, a diferencia de la caldera del taller, yo no emito vapor... a menos que me hagas una pregunta de física cuántica demasiado compleja.`
@@ -158,7 +158,7 @@ keys: ["donde estudio luis", "que estudio luis", "que estudios tiene luis", "cua
 respuestas: [
 `Luis Osorno estudió preescolar y primaria en el Colegio Cervantes Centro, la secundaria la estudió en el Colegio Cervantes Bosque, la preparatoria en el Instituto de Ciencias, la ingeniería industrial en la UNIVA, la ingeniería en sistemas computacionales en UVEG, la maestría en la Universidad Anáhuac, el doctorado en la UMG y actualmente está estudiando una licenciatura en derecho. La destreza que ves en este taller no apareció de la noche a la mañana. Es el resultado de una vida entera dedicada a la conversión de las ideas y la materia en utilidad.`,
 `La formación de Luis Osorno abarca desde los colegios Cervantes e Instituto de Ciencias hasta grados en Ingeniería Industrial (UNIVA), Sistemas (UVEG), Maestría (Anáhuac) y Doctorado (UMG), sumando actualmente estudios en Derecho. La destreza de este taller es el fruto de una vida dedicada a transformar ideas y materia en soluciones útiles.`,
-`Luis Osorno se formó en el Colegio Cervantes y el Instituto de Ciencias, consolidando su perfil humano con la Ingeniería Industrial (UNIVA), Ingeniería en Sistemas (UVEG), una Maestría (Universidad Anáhuac) y un Doctorado (UMG). Acctualmente cursa la carrera de Derecho. La destreza que fluye en este taller no es azarosa, sino el fruto de una vida dedicada a transformar las ideas y la materia en soluciones de utilidad real.`
+`Luis Osorno se formó en el Colegio Cervantes y el Instituto de Ciencias, consolidando su perfil humano con la Ingeniería Industrial (UNIVA), Ingeniería en Sistemas (UVEG), una Maestría (Universidad Anáhuac) y un Doctorado (UMG). Actualmente cursa la carrera de Derecho. La destreza que fluye en este taller no es azarosa, sino el fruto de una vida dedicada a transformar las ideas y la materia en soluciones de utilidad real.`
 ]
 },  
 {
@@ -175,7 +175,7 @@ respuestas: [
 `La experiencia de Luis Osorno no se mide solo en años, sino en la cantidad de problemas que ha convertido en soluciones. Su formación combina el rigor de la ingeniería con la intuición que solo te da entender el átomo y el bit, como la mente humana.`,
 `La experiencia que tiene Luis Osorno le ha llevado a saber cómo debe verse un proyecto, así cómo entender la información que debe procesar para ser eficiente.`,
 `Luis Osorno no solo construye máquinas, también forma a quienes las diseñarán en el futuro. Como docente de casi 30 años de experiencia y coordinador en áreas de Ingeniería Industrial y Automotriz, ha pasado años analizando procesos de manufactura, termodinámica y sistemas de calidad. Esa experiencia académica le da un rigor metodológico único: en este taller, cada prototipo se somete a un análisis de ingeniería antes de que el primer motor empiece a girar.`,  
-`La trayectoria de Luis es un puente entre la teoría avanzada y la realidad de la ingeniería. Desde 2004, ha sido pilar en instituciones como la UNE, el CETI y la UNIVA, donde ha coordinado procesos académicos y ha desarrollado diversos proyectos de investigación en torno a la mecáncia y procesos de manufactura. Además de liderar procesos de gestión curricular.`,
+`La trayectoria de Luis es un puente entre la teoría avanzada y la realidad de la ingeniería. Desde 2004, ha sido pilar en instituciones como la UNE, el CETI y la UNIVA, donde ha coordinado procesos académicos y ha desarrollado diversos proyectos de investigación en torno a la mecánica y procesos de manufactura. Además de liderar procesos de gestión curricular.`,
 `Desde que Luis Osorno comenzó a desafiar las leyes de la física a los 12 años con su primer motor funcional, no ha parado de entender. Su camino profesional ha evolucionado a la par de la tecnología: desde los métodos de investigación estadística hasta la implementación de inteligencia artificial y bases de conocimiento. Es una vida entera dedicada a entender cómo se mueve el mundo y, sobre todo, a cómo construirlo mejor.`
 ]
 },
@@ -203,7 +203,7 @@ respuestas: [
 {
 keys: ["UNE"],
 respuestas: [
-`El Centro Universitario UNE, la Universidad de Especialidades, es la institución en dónde Luis Osorno aprendió a desembolverse como docente. Trabajó ahí por varios años y llegó a ser Coordinador de Diseño Curricular de Programas Universitarios, trabajó ahí por varios años.`
+`El Centro Universitario UNE, la Universidad de Especialidades, es la institución en dónde Luis Osorno aprendió a desenvolverse como docente. Trabajó ahí por varios años y llegó a ser Coordinador de Diseño Curricular de Programas Universitarios, trabajó ahí por varios años.`
 ]
 },    
 {
@@ -234,7 +234,7 @@ respuestas: [
 keys: ["es inventor", "es un inventor", "es científico", "es investigador"],
 respuestas: [
 `Podría decirse, aunque él se califica como "renacentista", porque le gusta pensar de todo un poco. ¿Sabías que Luis y su hermano inventaron un globo aerostático que casi funciona cuando él tenía apenas unos 10 años de edad? Falló porque no inventaron la manera de sujetar firmemente el mechero al globo.`,
-`Podría decirse, aunque él diría que es un hombre de imaginación libre, porque cuando piensa en algo, investiga, prueba e insisgte hasta que lo hace. Muchas cosas de las que hace ya están inventadas, pero como él dice: "Yo no lo había hecho con lo que tengo". Creo que todo empezó con un motor experimental cuanto tenía apenas 12 años.`
+`Podría decirse, aunque él diría que es un hombre de imaginación libre, porque cuando piensa en algo, investiga, prueba e insiste hasta que lo hace. Muchas cosas de las que hace ya están inventadas, pero como él dice: "Yo no lo había hecho con lo que tengo". Creo que todo empezó con un motor experimental cuanto tenía apenas 12 años.`
 ]
 },
 {
@@ -246,7 +246,7 @@ respuestas: [
 ]
 },
 {
-keys: ["que materiales usan", "que materiales utilizan", "que componentes usan","con que materiales trabajan", "que materiales usan en el taller", "metal", "acero", "aluminio", "madera", "acrílico", "plástico", "resina", "mdf", "triplay"],
+keys: ["que materiales usan", "que materiales utilizan", "que componentes usan", "con que materiales trabajan", "que materiales usan en el taller", "metal", "acero", "aluminio", "madera", "acrílico", "plástico", "resina", "mdf", "triplay"],
 respuestas: [
 `En el Taller de Arquímedes, la materia es el lienzo de nuestra ingeniería. Aquí trabajamos habitualmente con maderas, resinas y polímeros, adaptando cada elección a las necesidades del prototipo. Me pongo a tu entera orden para explicarte cómo seleccionamos el material ideal para que cada engranaje tenga la resistencia y estética que el proyecto exige.`,
 `Luis tiene la filosofía de que un ingeniero desarrolla la destreza para transformar elementos diversos en mecanismos funcionales. De tal manera que todo lo que se haga sea lo que deba ser, sirva para lo que deba servir y, además, esté al servicio de todos. Se podría decir que su principal matera es su manera de pensar`,
@@ -468,7 +468,7 @@ respuestas: [
 {
 keys: ["cual es su equipo de basquetbol", "cual es tu equipo de basquetbol", "celtics", "celtics de boston", "cual es tu equipo favorito", "te gusta el basquetbol", "te gusta el baloncesto", "te gusta la nba"],
 respuestas: [
-`Si hablamos de movimiento coordinado y estrategia, el basquetbol es el deporte que marca el ritmo aquí. Somos aficionados de corazón a los Celtics de Boston. No hay nada como observar la precisión de un buen juego en equipo para recordar que, tanto en la duela como en el taller, la victoria es una cuestión de técnica y sincronía. Seguro te gustará esa estratégia aplicada en nuestros proyectos.`,
+`Si hablamos de movimiento coordinado y estrategia, el basquetbol es el deporte que marca el ritmo aquí. Somos aficionados de corazón a los Celtics de Boston. No hay nada como observar la precisión de un buen juego en equipo para recordar que, tanto en la duela como en el taller, la victoria es una cuestión de técnica y sincronía. Seguro te gustará esa estrategia aplicada en nuestros proyectos.`,
 `Si hablamos de movimiento coordinado y estrategia, el basquetbol marca nuestro ritmo. Somos aficionados de corazón a los Celtics de Boston, pues no hay nada como la precisión de un buen juego en equipo para recordar que, tanto en la duela como en el taller, la victoria es cuestión de técnica y sincronía. Seguro te gustará ver esa misma estrategia aplicada en nuestros proyectos.`,
 `El basquetbol marca nuestro ritmo de estrategia y movimiento coordinado. Como aficionados de corazón a los Celtics de Boston, admiramos la precisión del juego en equipo; nos recuerda que, tanto en la duela como en el taller, el éxito nace de la técnica y la sincronía. Estoy segura de que apreciarás esa misma mentalidad estratégica aplicada en nuestros proyectos.`
 ]
