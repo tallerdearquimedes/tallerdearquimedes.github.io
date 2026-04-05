@@ -570,43 +570,6 @@ accion: () => window.open("https://tallerdearquimedes.blogspot.com/", "_blank")
 ];
 
 // ============================
-// CAMBIO DE IMAGEN - PALANCA
-// ============================
-
-document.addEventListener("DOMContentLoaded", function () {
-
-  const input = document.getElementById("chat-input");
-  const output = document.getElementById("chat-output");
-
-  input.addEventListener("keypress", function (e) {
-    if (e.key === "Enter") {
-
-      const texto = input.value.trim();
-      if (!texto) return;
-
-      input.value = "";
-
-      output.innerHTML += `<div><b>Tú:</b> ${texto}</div>`;
-
-      const limpio = limpiar(texto);
-      const match = encontrarMejorRespuesta(limpio);
-
-      if (match) {
-        const respuesta = match.respuestas[Math.floor(Math.random() * match.respuestas.length)];
-        output.innerHTML += `<div><b>IA:</b> ${respuesta}</div>`;
-
-        if (match.accion) match.accion();
-      } else {
-        output.innerHTML += `<div><b>IA:</b> No encontré respuesta.</div>`;
-      }
-
-      output.scrollTop = output.scrollHeight;
-    }
-  });
-
-});
-
-// ============================
 // MOTOR DE RESPUESTA
 // ============================
 
@@ -852,12 +815,6 @@ if (sugerencias) {
       <button class="chatbot-btn" data-pregunta="blog">Ir al blog</button>
     </div>
   `;}
-
-if (url) {
-  setTimeout(() => {
-    window.open(url, "_blank");
-  }, 5000);
-}  
   
 const botones = document.querySelectorAll("#sugerencias button");
 
