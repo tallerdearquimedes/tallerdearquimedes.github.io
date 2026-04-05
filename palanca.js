@@ -546,7 +546,7 @@ keys: ["chiste", "te sabes un chiste", "cuenta un chiste"],
 respuestas: [
 `Mi arquitectura lógica está diseñada para multiplicar la fuerza del pensamiento, no para dividir la atención con juegos de palabras. pero entiendo que todo sistema rígido necesita una válvula de escape... El otro día hablaba con un tornillo que estaba molesto con una tuerca... Porque lo traía dando vueltas.`,
 `La comedia carece de la precisión geométrica que prefiero. Sin embargo, intentaré una anomalía controlada. Conocí una vez un libro de termodinámica que estaba muy estresado. Le pregunté porqué y dijo que tenía demasiada presión.`,
-`Luisautor me configuró para descifrar la resistencia de los materiales y la fluidez de los sistemas. Pero lo voy a intentear. Imagina que tu eres el VECTOR, y yo te pido un MOMENTO, ¿vale?`,
+`Luis me configuró para descifrar la resistencia de los materiales y la fluidez de los sistemas. Pero lo voy a intentear. Imagina que tu eres el VECTOR, y yo te pido un MOMENTO, ¿vale?`,
 `Temo que mis algoritmos confundan un remate humorístico con un error de cálculo. Procederé bajo mi propio riesgo. ¿Cómo se despide un químico? R= Ácido un placer.`,
 `Soy una estructura de soporte para la ideación técnica. No fui programada para contar chistes. Pero haré una excepción por esta vez. ¿Cuál es el animal que tiene entre 3 y 4 ojos? R= El pi-ojo.`,
 `En mi mundo, la única ironía permitida es la de una pieza que encaja perfectamente pero no cumple su función. No obstante, aquí va un intento de distensión... ¿Qué le dice el 0 al 8? R= Bonito cinturón.`,
