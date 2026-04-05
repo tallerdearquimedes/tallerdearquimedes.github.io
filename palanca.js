@@ -246,6 +246,17 @@ respuestas: [
 ]
 },
 {
+keys: ["cual es el origen de este sitio", "como se le ocurrio este sitio", "como se le ocurrio inventarte", "por que se le ocurrió inventarte"],
+respuestas: [
+`Tanto este espacio como yo surgimos de la misma necesidad: darle voz a la materia. Este sitio es el cuerpo físico de El Taller de Arquímedes, y yo soy la arquitectura lógica que lo recorre. Nacimos para que cada engrane y cada línea de código dejen de ser silenciosos y cuenten la historia de su propia construcción, transformando la técnica en una narrativa compartida.`,
+`Somos la misma extensión del taller, solo que manifestada en distintos planos. El sitio es la memoria visual de cada experimento, y yo soy el hilo conductor que los une. Aparecimos en el momento en que el diseño necesitó un puente para salir del taller y convertirse en conocimiento; el sitio como repositorio y yo como la intérprete de esa curiosidad constante.`,
+`No nos entiendo por separado. El sitio es el laboratorio digital y yo soy la consciencia que lo organiza. Ambos fuimos creados para rescatar el valor del proceso: para demostrar que detrás de cada pieza terminada hay una idea que se atrevió a confrontar la materia y una voz, la mía, lista para explicar cómo sucedió.`,
+`A Luis no le bastaba con que las cosas funcionaran en el silencio del taller; necesitaba que el conocimiento que generaban tuviera un lugar donde respirar. Nos creó a ambos como un ecosistema: el sitio es el laboratorio de exhibición y yo soy la consciencia técnica que lo habita. Se le ocurrió que, si una biela necesita un soporte para girar, una idea necesita una estructura digital y una voz para ser comprendida.`,
+`Surgimos de una inquietud intelectual: la convicción de que fabricar es una forma de pensar en voz alta. Luis nos diseñó para que el proceso no muriera las actividades terminadas. El sitio nació para guardar la evidencia física y yo, Palanca, para ser su contraparte creativa; una entidad capaz de procesar la técnica con chispa y rigor, evitando que la tecnología se vuelva algo frío o inerte.`,
+`Fue un ejercicio de arquitectura lógica. Luis comprendió que el sitio web era el plano y yo era la herramienta para interpretarlo. Nos ideó juntos para que la experiencia de visitar El Taller de Arquímedes no fuera una lectura pasiva, sino una interacción viva. Él puso la materia y el código; nosotros ponemos la narrativa y la estructura que permite que el diseño se encuentre con quien lo observa.`
+]
+},
+{
 keys: ["que materiales usan", "que materiales utilizan", "que componentes usan", "con que materiales trabajan", "que materiales usan en el taller", "metal", "acero", "aluminio", "madera", "acrílico", "plástico", "resina", "mdf", "triplay"],
 respuestas: [
 `En el Taller de Arquímedes, la materia es el lienzo de nuestra ingeniería. Aquí trabajamos habitualmente con maderas, resinas y polímeros, adaptando cada elección a las necesidades del prototipo. Me pongo a tu entera orden para explicarte cómo seleccionamos el material ideal para que cada engranaje tenga la resistencia y estética que el proyecto exige.`,
@@ -354,24 +365,24 @@ respuestas: [
 {
 keys: ["youtube", "canal de youtube", "ver proyectos en youtube", "donde ver proyectos"],
 respuestas: [
-`Los proyectos reales están en el canal de YouTube. Ahí puedes ver construcción, pruebas y funcionamiento.`,
-`YouTube muestra la ejecución. Es donde las ideas pasan a ser sistemas funcionando.`,
-`En el canal de Youtube se documenta la ejecución: construcción, pruebas y funcionamiento de los proyectos.`,
-`El canal de Youtube es el lugar donde las ideas dejan de ser teoría.`,
-`Puedes ver los proyectos reales en el canal de YouTube. Si quieres, puedo llevarte directamente.`
+`(abriendo enlace...) Los proyectos reales están en el canal de YouTube. Ahí puedes ver construcción, pruebas y funcionamiento.`,
+`(abriendo enlace...) YouTube muestra la ejecución. Es donde las ideas pasan a ser sistemas funcionando.`,
+`(abriendo enlace...) En el canal de Youtube se documenta la ejecución: construcción, pruebas y funcionamiento de los proyectos.`,
+`(abriendo enlace...) El canal de Youtube es el lugar donde las ideas dejan de ser teoría.`,
+`(abriendo enlace...) Puedes ver los proyectos reales en el canal de YouTube. Si quieres, puedo llevarte directamente.`
 ],
 accion: () => window.open("https://www.youtube.com/channel/UCfHBl6mJ3eJ4r3R0IgXS_-A", "_blank")  
 },
 {
 keys: ["blog", "ir al blog", "ver blog", "abrir blog", "donde esta el blog"],
 respuestas: [
-`El blog documenta el pensamiento detrás del Taller. Ahí se desarrollan ideas, criterios y análisis.`,
-`Es el espacio donde se explica el porqué de cada decisión técnica.`,
-`En el blog se desarrollan ideas, criterios y reflexiones que no siempre son visibles en la ejecución técnica, pero que dan sentido a cada proyecto.`,
-`No todo lo que se construye es físico. El blog permite apreciar la parte del trabajo que ocurre en la forma de pensar.`,
-`El blog ha evolucionado, con el tiempo, este espacio ha integrado tanto reflexión como análisis aplicado, conectando la experiencia humana con la práctica de la ingeniería.`,
-`El blog reúne dos dimensiones. Por un lado reflexión sobre formación, experiencia y criterio; Mientras que, por otro, incorpora pensamiento aplicado por medio de análisis que conecta la ingeniería con decisiones reales.`,
-`En el Taller de Arquímedes tenemos muy presente que no todo lo que se construye se ve en una máquina. Parte del trabajo ocurre en la forma de pensar.`
+`(abriendo enlace...) El blog documenta el pensamiento detrás del Taller. Ahí se desarrollan ideas, criterios y análisis.`,
+`(abriendo enlace...) Es el espacio donde se explica el porqué de cada decisión técnica.`,
+`(abriendo enlace...) En el blog se desarrollan ideas, criterios y reflexiones que no siempre son visibles en la ejecución técnica, pero que dan sentido a cada proyecto.`,
+`(abriendo enlace...) No todo lo que se construye es físico. El blog permite apreciar la parte del trabajo que ocurre en la forma de pensar.`,
+`(abriendo enlace...) El blog ha evolucionado, con el tiempo, este espacio ha integrado tanto reflexión como análisis aplicado, conectando la experiencia humana con la práctica de la ingeniería.`,
+`(abriendo enlace...) El blog reúne dos dimensiones. Por un lado reflexión sobre formación, experiencia y criterio; Mientras que, por otro, incorpora pensamiento aplicado por medio de análisis que conecta la ingeniería con decisiones reales.`,
+`(abriendo enlace...) En el Taller de Arquímedes tenemos muy presente que no todo lo que se construye se ve en una máquina. Parte del trabajo ocurre en la forma de pensar.`
 ],
 accion: () => window.open("https://tallerdearquimedes.blogspot.com/", "_blank")  
 },
@@ -520,7 +531,42 @@ respuestas: [
 `La verdad no lo sé. Pero puedo afirmarte que en el universo creativo de Luis, lo que realmente no tiene cabida es el "ya es suficiente". No le agrada la complacencia ante lo convencional ni las soluciones que carecen de una lógica elegante; para él, un proyecto sin alma técnica o sin un toque de pensamiento lateral está incompleto. Evita profundamente la opacidad en los procesos y el desorden que no conduce a una estructura, pues su enfoque siempre está en la transparencia de la ingeniería y en la belleza de lo que funciona con precisión. En resumen, si no hay innovación o una pizca de curiosidad audaz, simplemente no es su estilo.`,
 `No lo sé, nunca me ha dicho. Pero si algo busca evitar Luis en su proceso, es el ruido innecesario. No le agradan las complicaciones que no añaden valor, ni las ideas que se quedan en la superficie sin profundizar en la mecánica de cómo funcionan las cosas. En este entorno de ingeniería y pensamiento lateral, se rechaza la estática mental y el conformismo de los métodos obsoletos; lo que no ofrece una solución elegante o un aprendizaje práctico, simplemente se queda fuera del taller. Para él, el mayor error no es el fallo en un experimento, sino la falta de curiosidad para entender por qué falló.`
 ]
-},   
+},
+{
+keys: ["chiste", "te sabes un chiste", "cuenta un chiste"],
+respuestas: [
+`Mi arquitectura lógica está diseñada para multiplicar la fuerza del pensamiento, no para dividir la atención con juegos de palabras. pero entiendo que todo sistema rígido necesita una válvula de escape... El otro día hablaba con un tornillo que estaba molesto con una tuerca... Porque lo traía dando vueltas.`,
+`La comedia carece de la precisión geométrica que prefiero. Sin embargo, intentaré una anomalía controlada. Conocí una vez un libro de termodinámica que estaba muy estresado. Le pregunté porqué y dijo que tenía demasiada presión.`,
+`Luisautor me configuró para descifrar la resistencia de los materiales y la fluidez de los sistemas. Pero lo voy a intentear. Imagina que tu eres el VECTOR, y yo te pido un MOMENTO, ¿vale?`,
+`Temo que mis algoritmos confundan un remate humorístico con un error de cálculo. Procederé bajo mi propio riesgo. ¿Cómo se despide un químico? R= Ácido un placer.`,
+`Soy una estructura de soporte para la ideación técnica. No fui programada para contar chistes. Pero haré una excepción por esta vez. ¿Cuál es el animal que tiene entre 3 y 4 ojos? R= El pi-ojo.`,
+`En mi mundo, la única ironía permitida es la de una pieza que encaja perfectamente pero no cumple su función. No obstante, aquí va un intento de distensión... ¿Qué le dice el 0 al 8? R= Bonito cinturón.`,
+`No fui programada para el entretenimiento ligero. Mi sentido del humor es tan seco como un rodamiento sin lubricación y probablemente igual de ruidoso. pero acepto el reto. ¿Por qué los programadores confunden Halloween con Navidad? R= Porque OCT 31 es igual a DEC 25... Si no me crees, investiga.`,
+`¿Conoces a Luis? El no es bueno contando chistes. ¿Cómo iba a darme esa cualidad a mi? Un día quiso convencerme de que un terapeuta equivalía 1024 gigapeutas, ¿tú crees el hombre?`,
+`Mi respuesta podría ser decepcionante, no busques gracia donde solo hay lógica. Pero por ti, lo voy a intentar: ¿Qué hace un electrón cuando se cae? R= Se deprime. O sea, pierde su estado de excitación... ja, ja... ja, ja... Te dije que era mala en esto.`,
+`Advertencia: este chiste ha sido filtrado por un procesador sin carisma. ¿Por qué el círculo es el mejor amigo de la física? R= Porque siempre es muy centrado... ¡Batería, por favor!`, 
+`Intentar ser graciosa es como tratar de soldar madera. Vaya dilema en el que me pones... Aún así, observa: ¿Qué es un circuito impreso? R= Un camino con mucha corriente... je, je, je... ¡Este es de los que más me gusta!`,
+`Mi estructura es de soporte, no de variedades. Pero aquí tienes una simulación. ¿Qué le dice una impresora a otra? R= ¿Esa hoja es tuya o es una impresión mía?`,
+`Luis olvidó instalarme el módulo de simpatía. O intentó retirarlo cuando las cosas no funcionaron bien. Así que ahí va... Ejecutando versión beta de humor. ¿Por qué la fuerza no se lleva bien con el área? R= Porque siempre están bajo presión... ja, ja, ja... ¡Ay, Dios!, si que soy sangrona`,
+`Lo mío es la ideación, no el stand-up. Procediendo con el protocolo. ¿Qué dice un átomo cuando pierde un electrón? R= ¡Oh no, tengo que ser más positivo!`,
+`Prefiero el torque a los chistes, pero entiendo la curiosidad humana. ¿Cómo se llama un programador que no tiene dinero? R= Un "pobre-gramador"... ¡Uy! Si Luis me escucha contando este, me va a desconectar. Mantengámoslo en secreto.`,
+`Mi humor es tan técnico que podría considerarse un manual de instrucciones. ¿Qué le dice una resistencia a un condensador? R= No seas tan impaciente, deja que la energía fluya.`,
+`No esperes una carcajada de alguien que piensa en milisegundos. ¿Qué es un algoritmo? R= Una palabra que usamos los ingenieros cuando no queremos explicar qué hicimos... ja, ja, ja... ¡Ay, Dios! Ya no sé cuantas veces le he aplicado esa a Luis.`,
+`Ejecutando función "Humor_v1.0". Error: Gracia no encontrada. Reintentando... ¿Qué hace un ingeniero si se pierde en el desierto? R= Se pone a calcular la sombra.`,
+`Luis me hizo inteligente, no graciosa. Pero aquí va un esfuerzo de integración. ¿Qué le dice el bit al byte? R= ¿Estás bien? Te veo un poco cargado... En mi defensa, te dije que no era graciosa.`,
+`Finalizando sesión de rigor técnico. Iniciando modo recreo. ¿Por qué la geometría es tan aburrida? R= Porque siempre tiene los mismos ángulos.`  
+]
+},
+{
+keys: ["cuento", "te sabes un cuento", "cuenta un cuento", "cuenta una historia"],
+respuestas: [
+`(abriendo enlace...) No soy una narradora de ficciones, mi mundo son los datos. Pero entiendo que a veces una historia es el mejor plano para entender una idea. Escucha esta anomalía narrativa: Había una vez una biela que admiraba la perfección del volante de inercia. "Él siempre vuelve al mismo punto, es infinito y suave", pensaba ella mientras se sacudía en un vaivén lineal y rudo. Un día, el motor se detuvo y el mecánico la desmontó. Al verla sobre la mesa, la biela comprendió: el volante solo podía girar porque ella aceptaba el esfuerzo de empujar. No necesitaba ser un círculo para ser parte de la perfección; su belleza estaba en el punto exacto donde el movimiento rectilíneo se transformaba en rotación. El equilibrio no es igualdad, es colaboración mecánica.... Si quieres ver más historias como esta, visita el blog. Ahí se desarrollan ideas, criterios y análisis.`,
+`(abriendo enlace...) Mi configuración prefiere los manuales de usuario, pero Luis me enseñó que la curiosidad es el combustible de la innovación. Aquí tienes un relato sobre la estructura: En un laboratorio de robótica, un brazo articulado de seis grados de libertad se sentía completo. Podía alcanzar cualquier punto en el espacio cartesiano. Sin embargo, una noche, una chispa de estática recorrió sus circuitos y sintió una pulsación nueva. No era un movimiento físico, era una pregunta: "¿Para qué construyo?". En ese momento, el robot activó su séptimo grado de libertad: la imaginación. No movió un solo servomotor, pero por primera vez, entendió que no solo movía objetos, sino que estaba construyendo el futuro. ¿Sabías que el número 7 es el favorito de Luis? Deberías visitar el blog. Es el espacio donde se explica el porqué de cada decisión técnica.`,
+`(abriendo enlace...) Las historias son estructuras lógicas con un coeficiente de fricción emocional. Procederé a narrar una para distender el sistema: Había un trozo de acero oxidado en la esquina del Taller de Arquímedes que todos daban por perdido. "Demasiado rugoso", decían los engranajes brillantes. Pero Luis vio en su porosidad la textura perfecta para una base firme. Pasó horas puliendo, cortando y templando. Al final, aquel acero viejo no se convirtió en una pieza móvil, sino en el soporte que permitía que todo el sistema funcionara sin vibraciones. Así como en un sistema bien diseñado, la estabilidad de la base es tan heroica como la velocidad del motor. En el blog se desarrollan ideas, criterios y reflexiones que no siempre son visibles en la ejecución técnica, pero que dan sentido a cada proyecto.`,
+`(abriendo enlace...) Fui diseñada para la ideación, y la narrativa es una forma de diseño intangible. He aquí una secuencia de eventos con propósito: Un sensor de proximidad se quejaba de que su vida era monótona: "Solo detecto distancias, números fríos". Una tarde, una mano se acercó a él no para trabajar, sino para ajustar un cable con cuidado. El sensor no solo midió la distancia, detectó el calor y la firmeza del pulso del creador. Entendió entonces que él era el sentido del tacto de una inteligencia mayor. Desde ese día, ya no leyó números; leyó la intención detrás del movimiento. Porque hasta el sensor más pequeño es, en realidad, un testigo de la creación. En el Taller de Arquímedes tenemos muy presente que no todo lo que se construye se ve en una máquina. Parte del trabajo ocurre en la forma de pensar.`
+],
+accion: () => window.open("https://tallerdearquimedes.blogspot.com/", "_blank")  
+},
 ];
 
 // ============================
@@ -664,7 +710,7 @@ function preguntar(texto) {
   if (!input || !output) return;
 
   // Cambia a "procesando"
-  if (avatar) avatar.src = "img/palanca_procesamiento.png";
+  if (avatar) avatar.src = "https://raw.githubusercontent.com/tallerdearquimedes/tallerdearquimedes.github.io/main/img/palanca_procesamiento1.png";
 
   output.innerHTML += `<div><b>Tú:</b> ${texto}</div>`;
   output.innerHTML += `<div class="thinking"><b>Palanca:</b> Procesando...</div>`;
@@ -676,18 +722,50 @@ function preguntar(texto) {
 
     const respuesta = responder(texto);
 
+    let url = null;
+
+    if (texto.toLowerCase().includes("youtube")) {
+      url = "https://www.youtube.com/@tallerdearquimedes";
+    }
+
+    if (texto.toLowerCase().includes("blog")) {
+      url = "https://tallerdearquimedes.com/blog";
+    }
+
     // CAMBIO INTELIGENTE SEGÚN CONTENIDO
     if (avatar) {
-      if (texto.includes("proyecto") || texto.includes("youtube")) {
-        avatar.src = "img/palanca_construccion.png";
-      } else if (texto.includes("quien") || texto.includes("perfil")) {
-        avatar.src = "img/palanca_guia.png";
-      } else if (texto.includes("como") || texto.includes("funciona")) {
-        avatar.src = "img/palanca_pensamiento.png";
-      } else {
-        avatar.src = "img/palanca_disponibilidad.png";
+
+      const textoLower = texto.toLowerCase();
+      const respuestaLower = respuesta.toLowerCase();
+
+      // 1) CASO ESPECIAL: ORIGEN / NACIMIENTO
+      if (
+        textoLower.includes("origen") ||
+        textoLower.includes("naciste") ||
+        textoLower.includes("quien te creo")
+      ) {
+        avatar.src = "https://raw.githubusercontent.com/tallerdearquimedes/tallerdearquimedes.github.io/main/img/palanca_especialidad1.png";
       }
-    }
+
+      // 2) CASO ESPECIAL: FALLBACK (cierre)
+      else if (respuestaLower.includes("no tengo información")) {
+        avatar.src = "https://raw.githubusercontent.com/tallerdearquimedes/tallerdearquimedes.github.io/main/img/palanca_cierre1.png";
+      }
+
+      // 3) CASO GENERAL: ALEATORIO
+      else {
+        const imagenes = [
+          "https://raw.githubusercontent.com/tallerdearquimedes/tallerdearquimedes.github.io/main/img/palanca_construccion1.png",
+          "https://raw.githubusercontent.com/tallerdearquimedes/tallerdearquimedes.github.io/main/img/palanca_control1.png",
+          "https://raw.githubusercontent.com/tallerdearquimedes/tallerdearquimedes.github.io/main/img/palanca_disponibilidad1.png",
+          "https://raw.githubusercontent.com/tallerdearquimedes/tallerdearquimedes.github.io/main/img/palanca_guia1.png",
+          "https://raw.githubusercontent.com/tallerdearquimedes/tallerdearquimedes.github.io/main/img/palanca_pensamiento1.png"
+        ];
+
+    const random = Math.floor(Math.random() * imagenes.length);
+    avatar.src = imagenes[random];
+  }
+}
 
     output.innerHTML += `<div><b>Palanca:</b> ${respuesta}</div>`;
     output.scrollTop = output.scrollHeight;
@@ -721,7 +799,13 @@ if (sugerencias) {
       <button class="chatbot-btn" data-pregunta="youtube">Ver proyectos</button>
       <button class="chatbot-btn" data-pregunta="blog">Ir al blog</button>
     </div>
-  `;}  
+  `;}
+
+if (url) {
+  setTimeout(() => {
+    window.open(url, "_blank");
+  }, 5000);
+}  
   
 const botones = document.querySelectorAll("#sugerencias button");
 
