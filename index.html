@@ -709,13 +709,15 @@
 	  <script>
         document.getElementById("tarjeta-ia")
           .addEventListener("click", function() {
+
             const chat = document.getElementById("chatbot");
 
-            if (chat.style.display === "flex") {  
-              chat.style.display = "none";
-            } else {
+            if (chat.style.display === "" || chat.style.display === "none") {
               chat.style.display = "flex";
+            } else {
+              chat.style.display = "none";
             }
+  
           });
       </script>
 		
