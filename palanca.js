@@ -659,8 +659,12 @@ function responder(input) {
 function preguntar(texto) {
   const input = document.getElementById("chat-input");
   const output = document.getElementById("chat-output");
+  const avatar = document.getElementById("palanca-avatar");
 
   if (!input || !output) return;
+
+  // Cambia a "procesando"
+  if (avatar) avatar.src = "img/palanca_procesamiento.png";
 
   output.innerHTML += `<div><b>Tú:</b> ${texto}</div>`;
   output.innerHTML += `<div class="thinking"><b>Palanca:</b> Procesando...</div>`;
@@ -668,12 +672,26 @@ function preguntar(texto) {
 
   setTimeout(() => {
     const thinking = output.querySelector(".thinking:last-of-type");
-    if (thinking) {
-      thinking.remove();
+    if (thinking) thinking.remove();
+
+    const respuesta = responder(texto);
+
+    // 🔥 CAMBIO INTELIGENTE SEGÚN CONTENIDO
+    if (avatar) {
+      if (texto.includes("proyecto") || texto.includes("youtube")) {
+        avatar.src = "img/palanca_construccion.png";
+      } else if (texto.includes("quien") || texto.includes("perfil")) {
+        avatar.src = "img/palanca_guia.png";
+      } else if (texto.includes("como") || texto.includes("funciona")) {
+        avatar.src = "img/palanca_pensamiento.png";
+      } else {
+        avatar.src = "img/palanca_disponibilidad.png";
+      }
     }
 
-    output.innerHTML += `<div><b>Palanca:</b> ${responder(texto)}</div>`;
+    output.innerHTML += `<div><b>Palanca:</b> ${respuesta}</div>`;
     output.scrollTop = output.scrollHeight;
+
   }, 700);
 }
 
