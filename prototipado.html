@@ -52,6 +52,20 @@
       padding-top: 70px;
       padding-bottom: 40px;
     }  
+
+    .navegacion-superior a {
+      color: var(--color-texto-secundario);
+      font-size: 0.9rem;
+      transition: 0.2s ease;
+    }
+
+    .navegacion-superior a:hover {
+      color: var(--color-acento);
+    }
+
+	.navegacion-superior {
+      margin-bottom: 20px;
+    }
 	  
     .texto {
       color: var(--color-texto-secundario);
@@ -254,7 +268,8 @@
     <div class="navegacion-superior">
       <a href="index.html">← Volver al inicio</a>
     </div>
-	
+  </section>
+
   <section class="contenedor centrado">
     <h1 class="titulo">Prototipado</h1>
     <div class="subtitulo">Del diseño a la evidencia</div>
@@ -329,14 +344,16 @@
   </section>	
 	
 <section class="contenedor seccion centrado">	
-  <h2 class="titulo-seccion">Proyectos en desarrollo</h2>
+  <h2 class="titulo">Proyectos en desarrollo</h2>
 
   <p class="texto laboratorio-intro">
     El laboratorio es el espacio donde las ideas aún no terminan de ser, pero ya pueden probarse.
     Aquí los proyectos no aparecen como piezas cerradas, sino como etapas visibles de una búsqueda
     técnica en desarrollo.
   </p>
-    
+
+  <div class="laboratorio-grid">
+	
     <!-- PROYECTO 01 -->
     <article class="laboratorio-card">
       <img src="Laboratorio001.webp" alt="Motor de embobinado manual" loading="lazy">
@@ -405,9 +422,7 @@
       </div>
     </article>
   
-  <div class="laboratorio-grid">
-     
-    </div>
+     </div>
   </section>
 
   <!-- MATERIALIZACION -->
@@ -441,7 +456,7 @@
     </p>
 
     <a href="/index.html#laboratorio" class="boton">
-      Ir al inicio
+      Volver al inicio
     </a>
   </section>
 
