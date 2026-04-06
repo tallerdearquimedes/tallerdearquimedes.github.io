@@ -585,7 +585,17 @@ accion: () => window.open("https://tallerdearquimedes.blogspot.com/", "_blank")
 function generarRespuesta(textoUsuario) {
   const texto = limpiar(textoUsuario);
 
-  const item = encontrarMejorRespuesta(texto);
+  fetch('/api/chatbot.php', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ mensaje: texto })
+  })
+  .then(res => res.json())
+  .then(data => {
+    console.log(data);
+  });
 
   if (item) {
     const respuestas = item.respuestas;
@@ -641,76 +651,34 @@ function puntuarCoincidencia(texto, key) {
   };
 }
 
-function responder(input) {
+async function responder(input) {
   const limpio = limpiar(input);
 
-  let mejorItem = null;
-  let mejorScore = 0;
-  let mejoresExactas = 0;
-  let mejoresClavesUtiles = 0;
+  const res = await fetch('/api/chatbot.php', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ mensaje: limpio })
+  });
 
-  // ============================
-  // BÚSQUEDA
-  // ============================
-  for (let i = 0; i < base.length; i++) {
-    const item = base[i];
+  const data = await res.json();
 
-    for (let j = 0; j < item.keys.length; j++) {
-      const key = item.keys[j];
-      const resultado = puntuarCoincidencia(limpio, key);
-
-      if (resultado.score > mejorScore) {
-        mejorScore = resultado.score;
-        mejoresExactas = resultado.coincidenciasExactas;
-        mejoresClavesUtiles = resultado.palabrasClaveUtiles;
-        mejorItem = item;
-      }
-    }
-  }
-
-  // ============================
-  // VALIDACIÓN
-  // ============================
-  const matchValido =
-    mejorItem &&
-    mejorScore >= 6 &&
-    (
-      mejoresExactas >= 2 ||
-      (mejoresExactas === 1 && mejoresClavesUtiles <= 2)
-    );
-
-  // ============================
-  // RESPUESTA
-  // ============================
-  if (matchValido) {
-    const opciones = mejorItem.respuestas;
-    const respuesta = opciones[Math.floor(Math.random() * opciones.length)];
-
-    if (mejorItem.accion) {
-      setTimeout(mejorItem.accion, 800);
-    }
-
-    return respuesta;
-  }
-
-  // ============================
-  // FALLBACK ÚNICO
-  // ============================
-  const fallback = [
-    "¡Zaz! No puedo ayudarte directamente con eso. Pero puedo explicarte cómo funciona el Taller de Arquímedes si te interesa.",
-    "¡Uy! Le atinaste a una consulta que está fuera de mi alcance. Si quieres, puedo orientarte dentro del Taller o mostrarte cómo se estructura el trabajo.",
-    "Tengo que ser cinsera contigo. En este momento no tengo información para responder eso con precisión. Pero puedo ayudarte a entender cómo se construyen los proyectos en este espacio.",
-    "Ese es un tema fascinante, pero confieso que mi programación aún no ha sido calibrada para procesar ese tema específico. Sin embargo, mi arquitectura está perfectamente lista para explicarte cómo funcionan la imaginación y la creatividad en el Taller de Arquímedes si te interesa.",
-    "He analizado tu consulta y, aunque posee una lógica intrigante, se encuentra fuera del alcance de mi conocimiento actual. Lo que sí domino con total precisión es la estructura de este espacio; así que puedo orientarte dentro de las secciones del Taller de Arquímedes o mostrarte cómo se organiza el trabajo de ingeniería de Luis.",
-    "¡Cielos! Admito que no cuento con la información necesaria para responderte con la exactitud que el Taller de Arquímedes. Estoy optimizada para la ingeniería y la creación. Si me lo permites, puedo mostrarte nuestras áreas de desarrollo o explicarte cómo se vive la ingeniería aplicada en este entorno.",
-    "La verdad, no puedo darte una respuesta directa sobre ese punto, pues mi motor de búsqueda prefiere enfocarse en lo que mejor sabemos hacer. Lo que sí puedo explicarte con detalle es cómo integramos la ingeniería, la programación y la inteligencia artificial en cada proyecto del Taller de Arquímedes.",
-    "No tengo suficiente contexto para responder eso con precisión. Puedo orientarte sobre el Taller de Arquímedes si lo deseas.",
-    "No logro clasificar esa pregunta dentro del alcance de Palanca. Puedo ayudarte con el Taller, sus proyectos o su estructura.",
-    "Esa consulta queda fuera del alcance actual de Palanca. Si quieres, puedo ayudarte con información del Taller de Arquímedes."
-  ];
-
-  return fallback[Math.floor(Math.random() * fallback.length)];
+  return data.mensaje;
 }
+
+// const fallback = [
+//    "¡Zaz! No puedo ayudarte directamente con eso. Pero puedo explicarte cómo funciona el Taller de Arquímedes si te interesa.",
+//    "¡Uy! Le atinaste a una consulta que está fuera de mi alcance. Si quieres, puedo orientarte dentro del Taller o mostrarte cómo se estructura el trabajo.",
+//    "Tengo que ser cinsera contigo. En este momento no tengo información para responder eso con precisión. Pero puedo ayudarte a entender cómo se construyen los proyectos en este espacio.",
+//    "Ese es un tema fascinante, pero confieso que mi programación aún no ha sido calibrada para procesar ese tema específico. Sin embargo, mi arquitectura está perfectamente lista para explicarte cómo funcionan la imaginación y la creatividad en el Taller de Arquímedes si te interesa.",
+//    "He analizado tu consulta y, aunque posee una lógica intrigante, se encuentra fuera del alcance de mi conocimiento actual. Lo que sí domino con total precisión es la estructura de este espacio; así que puedo orientarte dentro de las secciones del Taller de Arquímedes o mostrarte cómo se organiza el trabajo de ingeniería de Luis.",
+//    "¡Cielos! Admito que no cuento con la información necesaria para responderte con la exactitud que el Taller de Arquímedes. Estoy optimizada para la ingeniería y la creación. Si me lo permites, puedo mostrarte nuestras áreas de desarrollo o explicarte cómo se vive la ingeniería aplicada en este entorno.",
+//    "La verdad, no puedo darte una respuesta directa sobre ese punto, pues mi motor de búsqueda prefiere enfocarse en lo que mejor sabemos hacer. Lo que sí puedo explicarte con detalle es cómo integramos la ingeniería, la programación y la inteligencia artificial en cada proyecto del Taller de Arquímedes.",
+//    "No tengo suficiente contexto para responder eso con precisión. Puedo orientarte sobre el Taller de Arquímedes si lo deseas.",
+//    "No logro clasificar esa pregunta dentro del alcance de Palanca. Puedo ayudarte con el Taller, sus proyectos o su estructura.",
+//    "Esa consulta queda fuera del alcance actual de Palanca. Si quieres, puedo ayudarte con información del Taller de Arquímedes."
+//  ];
 
 function preguntar(texto) {
 
@@ -728,13 +696,14 @@ function preguntar(texto) {
   output.innerHTML += `<div><b>Tú:</b> ${texto}</div>`;
   output.innerHTML += `<div class="thinking"><b>Palanca:</b> Procesando...</div>`;
   output.scrollTop = output.scrollHeight;
+});
 
   setTimeout(() => {
 
     const thinking = output.querySelector(".thinking:last-of-type");
     if (thinking) thinking.remove();
 
-    const respuesta = responder(texto);
+    responder(texto).then(respuesta => {
 
     let url = null;
 
